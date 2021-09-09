@@ -191,14 +191,14 @@
   <Delivering.verb>配送</Delivering.verb>
 
 
-  <!-- Scanning -->
+  <!-- 99 Scanning -->
 
-  <Scanning.label>Scan</Scanning.label>
-  <Scanning.description>Operate the ground penetrating scanner and long range mineral scanner.</Scanning.description>
-  <Scanning.labelShort>Scan</Scanning.labelShort>
-  <Scanning.pawnLabel>Scanner</Scanning.pawnLabel>
-  <Scanning.gerundLabel>scanning</Scanning.gerundLabel>
-  <Scanning.verb>Scan at</Scanning.verb>
+  <Scanning.label>探査</Scanning.label>
+  <Scanning.description>地殻深部スキャナーと長距離鉱物探査スキャナーを操作します。</Scanning.description>
+  <Scanning.labelShort>探査</Scanning.labelShort>
+  <Scanning.pawnLabel>探査師</Scanning.pawnLabel>
+  <Scanning.gerundLabel>探査</Scanning.gerundLabel>
+  <Scanning.verb>探査</Scanning.verb>
 
 
 </LanguageData>
