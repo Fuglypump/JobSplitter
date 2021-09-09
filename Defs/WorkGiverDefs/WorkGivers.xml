@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
 	<!-- Nursing -->
 	
 	<WorkGiverDef>
@@ -33,63 +33,6 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 	
-	<WorkGiverDef>
-		<defName>JS_NurseFeedHumanlikes</defName>
-		<label>feed patients</label>
-		<giverClass>WorkGiver_FeedPatient</giverClass>
-		<workType>Nursing</workType>
-		<verb>feed</verb>
-		<gerund>feeding</gerund>
-		<priorityInType>60</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-		<feedHumanlikesOnly>true</feedHumanlikesOnly>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>JS_NurseFeedAnimals</defName>
-		<label>feed animals</label>
-		<giverClass>WorkGiver_FeedPatient</giverClass>
-		<workType>Nursing</workType>
-		<verb>feed</verb>
-		<gerund>feeding</gerund>
-		<priorityInType>30</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-		<feedAnimalsOnly>true</feedAnimalsOnly>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>JS_NurseVisitSickPawn</defName>
-		<label>visit sick people</label>
-		<giverClass>WorkGiver_VisitSickPawn</giverClass>
-		<workType>Nursing</workType>
-		<priorityInType>3</priorityInType>
-		<verb>visit</verb>
-		<gerund>visiting</gerund>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-	
-	<!-- Basic -->
-	
-	<WorkGiverDef>
-		<defName>JS_Refuel</defName>
-		<label>refuel fuelable buildings</label>
-		<giverClass>WorkGiver_Refuel</giverClass>
-		<workType>BasicWorker</workType>
-		<verb>refuel</verb>
-		<gerund>refueling</gerund>
-		<priorityInType>60</priorityInType>
-		<requiredCapacities>
-		  <li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-	
 	<!-- Butchering -->
 	
 	<WorkGiverDef>
@@ -103,23 +46,6 @@
 		<requiredCapacities>
 		  <li>Manipulation</li>
 		</requiredCapacities>
-	</WorkGiverDef>
-	
-	<WorkGiverDef>
-		<defName>JS_ButcherDoBillsButcherFlesh</defName>
-		<label>butcher creatures</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Butchering</workType>
-		<priorityInType>88</priorityInType>
-		<fixedBillGiverDefs>
-		  <li>TableButcher</li>
-		</fixedBillGiverDefs>
-		<verb>butcher</verb>
-		<gerund>butchering at</gerund>
-		<requiredCapacities>
-		  <li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 	
 	<!-- Repairing -->	
@@ -142,39 +68,11 @@
 	<!-- Demolishing -->	
 	
 	<WorkGiverDef>
-		<defName>JS_DemoRemoveRoofs</defName>
-		<label>remove roofs</label>
-		<giverClass>WorkGiver_RemoveRoof</giverClass>
-		<workType>Demolishing</workType>
-		<priorityInType>60</priorityInType>
-		<verb>remove roof</verb>
-		<gerund>removing roof</gerund>
-		<scanThings>false</scanThings>
-		<scanCells>true</scanCells>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-	
-	<WorkGiverDef>
-		<defName>JS_DemoDeconstruct</defName>
-		<label>deconstruct structures</label>
-		<giverClass>WorkGiver_Deconstruct</giverClass>
-		<workType>Demolishing</workType>
-		<priorityInType>20</priorityInType>
-		<verb>deconstruct</verb>
-		<gerund>deconstructing</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-	
-	<WorkGiverDef>
 		<defName>JS_DemoUninstall</defName>
 		<label>uninstall structures</label>
 		<giverClass>WorkGiver_Uninstall</giverClass>
 		<workType>Demolishing</workType>
-		<priorityInType>19</priorityInType>
+		<priorityInType>50</priorityInType>
 		<verb>uninstall</verb>
 		<gerund>uninstalling</gerund>
 		<requiredCapacities>
@@ -182,83 +80,22 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 	
-	<WorkGiverDef>
-		<defName>JS_DemoConstructRemoveFloors</defName>
-		<label>remove floors</label>
-		<giverClass>WorkGiver_ConstructRemoveFloor</giverClass>
-		<workType>Demolishing</workType>
-		<priorityInType>10</priorityInType>
-		<verb>remove floor</verb>
-		<gerund>removing floor</gerund>
-		<scanThings>false</scanThings>
-		<scanCells>true</scanCells>
-		<requiredCapacities>
-		  <li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-	
-	<!-- Supplying -->	
-
-	<WorkGiverDef>
-		<defName>JS_SupplyFrames</defName>
-		<label>supply resources to frames</label>
-		<giverClass>WorkGiver_ConstructDeliverResourcesToFrames</giverClass>
-		<workType>Supplying</workType>
-		<priorityInType>90</priorityInType>
-		<verb>supply resources</verb>
-		<gerund>Supplying resources to</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-		<nonColonistsCanDo>true</nonColonistsCanDo>
-		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>JS_SupplyBlueprints</defName>
-		<label>supply resources to blueprints</label>
-		<giverClass>WorkGiver_ConstructDeliverResourcesToBlueprints</giverClass>
-		<workType>Supplying</workType>
-		<priorityInType>80</priorityInType>
-		<verb>supply resources</verb>
-		<gerund>supplying resources to</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-		<nonColonistsCanDo>true</nonColonistsCanDo>
-		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
-	</WorkGiverDef>
+	<!-- Delivering -->	
 	
 	<WorkGiverDef>
-		<defName>JS_SupplyUninstall</defName>
-		<label>supply structures</label>
+		<defName>JS_DeliverUninstall</defName>
+		<label>uninstall structure</label>
 		<giverClass>WorkGiver_Uninstall</giverClass>
-		<workType>Construction</workType>
+		<workType>Delivering</workType>
 		<priorityInType>19</priorityInType>
-		<verb>supply</verb>
-		<gerund>supplying</gerund>
+		<verb>uninstall</verb>
+		<gerund>uninstalling</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
 		<prioritizeSustains>true</prioritizeSustains>
 		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
-	</WorkGiverDef>
-	
-	<!-- Mortifying -->	
-	
-	<WorkGiverDef>
-		<defName>JS_MortifyingHaulCorpses</defName>
-		<label>haul corpses</label>
-		<giverClass>WorkGiver_HaulCorpses</giverClass>
-		<workType>Mortifying</workType>
-		<verb>haul</verb>
-		<gerund>hauling</gerund>
-		<priorityInType>80</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
 	</WorkGiverDef>
 	
 </Defs>

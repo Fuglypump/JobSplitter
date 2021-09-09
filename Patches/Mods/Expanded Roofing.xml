@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Expanded Roofing -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Roofing</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "PerformRoofMaintenance"]/workType</xpath>
+      <value>
+        <workType>Repairing</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

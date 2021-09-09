@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Furniture Expanded - Power -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Power</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "VPE_DoBillsGasCrematorium"]/workType</xpath>
+			  <value>
+				<workType>Mortifying</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "VPE_BurnGasCrematorium"]/workType</xpath>
+			  <value>
+				<workType>Mortifying</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "VPE_DoBillsGasSmelter"]/workType</xpath>
+			  <value>
+				<workType>Smelting</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "VPE_DoBillsGasRefinery"]/workType</xpath>
+			  <value>
+				<workType>Refining</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "VPE_WorkAtGasExcavator"]/workType</xpath>
+			  <value>
+				<workType>Drilling</workType>
+			  </value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

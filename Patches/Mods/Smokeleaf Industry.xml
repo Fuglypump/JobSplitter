@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Smokeleaf Industry -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Smokeleaf Industry</li>
+      <li>Smokeleaf Industry Reborn</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "DoBillsCultivationBench"]/workType</xpath>
+			  <value>
+				<workType>Drugs</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "DoBillsAutoTrimmer"]/workType</xpath>
+			  <value>
+				<workType>Drugs</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "DoBillsProduceMedicinals"]/workType</xpath>
+			  <value>
+				<workType>Drugs</workType>
+			  </value>
+			</li>
+		</operations>
+	</match>
+  </Operation>
+</Patch>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Misc. Craftable Robots Addon -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Misc. Craftable Robots Addon</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_GardenerBot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Harvesting</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Brewing</workTypeDef>
+			<priority>4</priority>
+		  </li>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_CraftingBot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Drugs</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Fabricating</workTypeDef>
+			<priority>2</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Refining</workTypeDef>
+			<priority>3</priority>
+		  </li>
+		  <li>
+			<workTypeDef>StoneCutting</workTypeDef>
+			<priority>3</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Smelting</workTypeDef>
+			<priority>3</priority>
+		  </li>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_MiningBot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Drilling</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_ConstructionBot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Repairing</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+		 <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_ERBot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Surgeon</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

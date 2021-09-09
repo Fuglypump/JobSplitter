@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Rimatomics -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Rimatomics</li>
+	  <li>Dubs Rimatomics</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "LoadRailgunMagazine"]/workType</xpath>
+			  <value>
+				<workType>Rearming</workType>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>*/WorkGiverDef[defName = "LoadSilo"]/workType</xpath>
+			  <value>
+				<workType>Loading</workType>
+			  </value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

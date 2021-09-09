@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Hospitality -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Hospitality</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkTypeDef[defName = "Diplomat"]/naturalPriority</xpath>
+					<value>
+						<naturalPriority>1060</naturalPriority>
+					</value>
+				</li>
+				 <!-- Auto Seller -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Auto Seller</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/WorkGiverDef[defName = "ASBargain"]/workType</xpath>
+								<value>
+									<workType>Diplomat</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/WorkGiverDef[defName = "ASPawnBargain"]/workType</xpath>
+								<value>
+									<workType>Diplomat</workType>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>	
+	</Operation>
+</Patch>

@@ -14,4 +14,12 @@
 			<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BurnWeapon"]/requiredGiverWorkType</xpath>
+		<value>
+			<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -11,43 +11,13 @@
   <JS_NurseToBedToOperate.verb>take to operate</JS_NurseToBedToOperate.verb>
   <JS_NurseToBedToOperate.gerund>taking to operate</JS_NurseToBedToOperate.gerund>
 
-  <JS_NurseFeedHumanlikes.label>feed patients</JS_NurseFeedHumanlikes.label>
-  <JS_NurseFeedHumanlikes.verb>feed</JS_NurseFeedHumanlikes.verb>
-  <JS_NurseFeedHumanlikes.gerund>feeding</JS_NurseFeedHumanlikes.gerund>
-
-  <JS_NurseFeedAnimals.label>feed animals</JS_NurseFeedAnimals.label>
-  <JS_NurseFeedAnimals.verb>feed</JS_NurseFeedAnimals.verb>
-  <JS_NurseFeedAnimals.gerund>feeding</JS_NurseFeedAnimals.gerund>
-
-  <JS_NurseVisitSickPawn.label>visit sick people</JS_NurseVisitSickPawn.label>
-  <JS_NurseVisitSickPawn.verb>visit</JS_NurseVisitSickPawn.verb>
-  <JS_NurseVisitSickPawn.gerund>visiting</JS_NurseVisitSickPawn.gerund>
-
-
-  <!-- Feeding -->
-
-  <JS_FeederFeedHumanlikes.label>feed patients</JS_FeederFeedHumanlikes.label>
-  <JS_FeederFeedHumanlikes.verb>feed</JS_FeederFeedHumanlikes.verb>
-  <JS_FeederFeedHumanlikes.gerund>feeding</JS_FeederFeedHumanlikes.gerund>
-
-  <JS_FeederFeedAnimals.label>feed animals</JS_FeederFeedAnimals.label>
-  <JS_FeederFeedAnimals.verb>feed</JS_FeederFeedAnimals.verb>
-  <JS_FeederFeedAnimals.gerund>feeding</JS_FeederFeedAnimals.gerund>
-
 
   <!-- Butchering -->
 
-  <JS_ButcherDoBillsButcherFlesh.label>butcher creatures</JS_ButcherDoBillsButcherFlesh.label>
-  <JS_ButcherDoBillsButcherFlesh.verb>butcher</JS_ButcherDoBillsButcherFlesh.verb>
-  <JS_ButcherDoBillsButcherFlesh.gerund>butchering</JS_ButcherDoBillsButcherFlesh.gerund>
-  
   <JS_ButcherSlaughter.label>slaughter animals</JS_ButcherSlaughter.label>
   <JS_ButcherSlaughter.verb>slaughter</JS_ButcherSlaughter.verb>
   <JS_ButcherSlaughter.gerund>slaughtering</JS_ButcherSlaughter.gerund>
 
-  <JS_ButcherDoExecution.label>execute prisoners</JS_ButcherDoExecution.label>
-  <JS_ButcherDoExecution.verb>do execution on</JS_ButcherDoExecution.verb>
-  <JS_ButcherDoExecution.gerund>doing execution on</JS_ButcherDoExecution.gerund>
 
   <!-- Repairing -->
 
@@ -56,42 +26,18 @@
   <JS_RepairBuildRoofs.gerund>building roof</JS_RepairBuildRoofs.gerund>
 
 
-  <!-- Demolition -->
-
-  <JS_DemoRemoveRoofs.label>remove roofs</JS_DemoRemoveRoofs.label>
-  <JS_DemoRemoveRoofs.verb>remove roof</JS_DemoRemoveRoofs.verb>
-  <JS_DemoRemoveRoofs.gerund>removing roof</JS_DemoRemoveRoofs.gerund>
-
-  <JS_DemoDeconstruct.label>deconstruct structures</JS_DemoDeconstruct.label>
-  <JS_DemoDeconstruct.verb>deconstruct</JS_DemoDeconstruct.verb>
-  <JS_DemoDeconstruct.gerund>deconstructing</JS_DemoDeconstruct.gerund>
+  <!-- Demolishing -->
 
   <JS_DemoUninstall.label>uninstall structures</JS_DemoUninstall.label>
   <JS_DemoUninstall.verb>uninstall</JS_DemoUninstall.verb>
   <JS_DemoUninstall.gerund>uninstalling</JS_DemoUninstall.gerund>
 
-  <JS_DemoConstructRemoveFloors.label>remove floors</JS_DemoConstructRemoveFloors.label>
-  <JS_DemoConstructRemoveFloors.verb>remove floor</JS_DemoConstructRemoveFloors.verb>
-  <JS_DemoConstructRemoveFloors.gerund>removing floor</JS_DemoConstructRemoveFloors.gerund>
 
-  <!-- Preparing -->
+  <!-- Delivering -->
 
-  <JS_PrepareFrames.label>deliver resources to frames</JS_PrepareFrames.label>
-  <JS_PrepareFrames.verb>deliver resources</JS_PrepareFrames.verb>
-  <JS_PrepareFrames.gerund>delivering resources to</JS_PrepareFrames.gerund>
+  <JS_DeliverUninstall.label>uninstall structure</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>uninstall</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>uninstalling</JS_DeliverUninstall.gerund>
 
-  <JS_PrepareBlueprints.label>deliver resources to blueprints</JS_PrepareBlueprints.label>
-  <JS_PrepareBlueprints.verb>deliver resources</JS_PrepareBlueprints.verb>
-  <JS_PrepareBlueprints.gerund>delivering resources to</JS_PrepareBlueprints.gerund>
-  
-  <JS_PrepareUninstall.label>uninstall structures</JS_PrepareUninstall.label>
-  <JS_PrepareUninstall.verb>uninstall</JS_PrepareUninstall.verb>
-  <JS_PrepareUninstall.gerund>uninstalling</JS_PrepareUninstall.gerund>
-
-  <!-- Mortician -->
-
-  <JS_MorticianHaulCorpses.label>haul corpses</JS_MorticianHaulCorpses.label>
-  <JS_MorticianHaulCorpses.verb>haul</JS_MorticianHaulCorpses.verb>
-  <JS_MorticianHaulCorpses.gerund>hauling</JS_MorticianHaulCorpses.gerund>
 
 </LanguageData>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Nursing -->
@@ -7,28 +7,9 @@
   <JS_NurseRescue.verb>の救助</JS_NurseRescue.verb>
   <JS_NurseRescue.gerund>の救助をする</JS_NurseRescue.gerund>
 
-  <JS_NurseFeedHumanlikes.label>患者に食事を与える</JS_NurseFeedHumanlikes.label>
-  <JS_NurseFeedHumanlikes.verb>に食事を与える</JS_NurseFeedHumanlikes.verb>
-  <JS_NurseFeedHumanlikes.gerund>に食事を与える</JS_NurseFeedHumanlikes.gerund>
-
-  <JS_NurseFeedAnimals.label>動物にエサを与える</JS_NurseFeedAnimals.label>
-  <JS_NurseFeedAnimals.verb>にエサを与える</JS_NurseFeedAnimals.verb>
-  <JS_NurseFeedAnimals.gerund>にエサを与える</JS_NurseFeedAnimals.gerund>
-
   <JS_NurseToBedToOperate.label>手術をするため患者を\nベッドに運ぶ</JS_NurseToBedToOperate.label>
   <JS_NurseToBedToOperate.verb>を手術する</JS_NurseToBedToOperate.verb>
   <JS_NurseToBedToOperate.gerund>を手術する</JS_NurseToBedToOperate.gerund>
-
-  <JS_NurseVisitSickPawn.label>病状の容態を確認する</JS_NurseVisitSickPawn.label>
-  <JS_NurseVisitSickPawn.verb>を見舞う</JS_NurseVisitSickPawn.verb>
-  <JS_NurseVisitSickPawn.gerund>を見舞いする</JS_NurseVisitSickPawn.gerund>
-
-
-  <!-- Basic -->
-
-  <JS_Refuel.label>補給可能な設備に\n燃料を補給する</JS_Refuel.label>
-  <JS_Refuel.verb>を補給する</JS_Refuel.verb>
-  <JS_Refuel.gerund>を補給している</JS_Refuel.gerund>
 
 
   <!-- Butchering -->
@@ -36,14 +17,6 @@
   <JS_ButcherSlaughter.label>動物を屠殺</JS_ButcherSlaughter.label>
   <JS_ButcherSlaughter.verb>を屠殺</JS_ButcherSlaughter.verb>
   <JS_ButcherSlaughter.gerund>を屠殺する</JS_ButcherSlaughter.gerund>
-
-  <JS_ButcherDoExecution.label>囚人を処刑する</JS_ButcherDoExecution.label>
-  <JS_ButcherDoExecution.verb>を処刑する</JS_ButcherDoExecution.verb>
-  <JS_ButcherDoExecution.gerund>を処刑する</JS_ButcherDoExecution.gerund>
-
-  <JS_ButcherDoBillsButcherFlesh.label>肉をさばく</JS_ButcherDoBillsButcherFlesh.label>
-  <JS_ButcherDoBillsButcherFlesh.verb>でさばく</JS_ButcherDoBillsButcherFlesh.verb>
-  <JS_ButcherDoBillsButcherFlesh.gerund>で解体する</JS_ButcherDoBillsButcherFlesh.gerund>
 
 
   <!-- Repairing -->
@@ -53,45 +26,18 @@
   <JS_RepairBuildRoofs.gerund>を葺く</JS_RepairBuildRoofs.gerund>
 
 
-  <!-- Demolition -->
-
-  <JS_DemoRemoveRoofs.label>屋根を取り除く</JS_DemoRemoveRoofs.label>
-  <JS_DemoRemoveRoofs.verb>を取り除く</JS_DemoRemoveRoofs.verb>
-  <JS_DemoRemoveRoofs.gerund>を取り除く</JS_DemoRemoveRoofs.gerund>
-
-  <JS_DemoDeconstruct.label>解体する</JS_DemoDeconstruct.label>
-  <JS_DemoDeconstruct.verb>を解体</JS_DemoDeconstruct.verb>
-  <JS_DemoDeconstruct.gerund>を解体する</JS_DemoDeconstruct.gerund>
+  <!-- Demolishing -->
 
   <JS_DemoUninstall.label>アンインストール</JS_DemoUninstall.label>
   <JS_DemoUninstall.verb>をアンインストール</JS_DemoUninstall.verb>
   <JS_DemoUninstall.gerund>をアンインストールする</JS_DemoUninstall.gerund>
 
-  <JS_DemoConstructRemoveFloors.label>床を剥ぐ</JS_DemoConstructRemoveFloors.label>
-  <JS_DemoConstructRemoveFloors.verb>を剥ぐ</JS_DemoConstructRemoveFloors.verb>
-  <JS_DemoConstructRemoveFloors.gerund>を剥ぐ</JS_DemoConstructRemoveFloors.gerund>
 
+  <!-- Delivering -->
 
-  <!-- Supplying -->
-
-  <JS_SupplyFrames.label>材料を骨組みに運ぶ</JS_SupplyFrames.label>
-  <JS_SupplyFrames.verb>材料を届ける</JS_SupplyFrames.verb>
-  <JS_SupplyFrames.gerund>を従事する</JS_SupplyFrames.gerund>
-
-  <JS_SupplyBlueprints.label>設計に取り掛かる</JS_SupplyBlueprints.label>
-  <JS_SupplyBlueprints.verb>に取りかかる</JS_SupplyBlueprints.verb>
-  <JS_SupplyBlueprints.gerund>を従事する</JS_SupplyBlueprints.gerund>
-
-  <JS_SupplyUninstall.label>アンインストール</JS_SupplyUninstall.label>
-  <JS_SupplyUninstall.verb>をアンインストール</JS_SupplyUninstall.verb>
-  <JS_SupplyUninstall.gerund>をアンインストールする</JS_SupplyUninstall.gerund>
-
-
-  <!-- Mortifying -->
-
-  <JS_MortifyingHaulCorpses.label>運搬</JS_MortifyingHaulCorpses.label>
-  <JS_MortifyingHaulCorpses.verb>を運ぶ</JS_MortifyingHaulCorpses.verb>
-  <JS_MortifyingHaulCorpses.gerund>を運搬する</JS_MortifyingHaulCorpses.gerund>
+  <JS_DeliverUninstall.label>アンインストール</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>をアンインストール</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>をアンインストールする</JS_DeliverUninstall.gerund>
 
 
 </LanguageData>

@@ -7,36 +7,16 @@
   <JS_NurseRescue.verb>救援</JS_NurseRescue.verb>
   <JS_NurseRescue.gerund>救援</JS_NurseRescue.gerund>
 
-  <JS_NurseFeedHumanlikes.label>餵食病人</JS_NurseFeedHumanlikes.label>
-  <JS_NurseFeedHumanlikes.verb>餵食</JS_NurseFeedHumanlikes.verb>
-  <JS_NurseFeedHumanlikes.gerund>餵食</JS_NurseFeedHumanlikes.gerund>
-
-  <JS_NurseFeedAnimals.label>餵食動物</JS_NurseFeedAnimals.label>
-  <JS_NurseFeedAnimals.verb>餵食</JS_NurseFeedAnimals.verb>
-  <JS_NurseFeedAnimals.gerund>餵食</JS_NurseFeedAnimals.gerund>
-
   <JS_NurseToBedToOperate.label>把病人運至手術床上</JS_NurseToBedToOperate.label>
   <JS_NurseToBedToOperate.verb>運至手術床</JS_NurseToBedToOperate.verb>
   <JS_NurseToBedToOperate.gerund>運至手術床</JS_NurseToBedToOperate.gerund>
 
-  <JS_NurseVisitSickPawn.label>看望病人</JS_NurseVisitSickPawn.label>
-  <JS_NurseVisitSickPawn.verb>看望</JS_NurseVisitSickPawn.verb>
-  <JS_NurseVisitSickPawn.gerund>看望</JS_NurseVisitSickPawn.gerund>
-
 
   <!-- Butchering -->
-  
-  <JS_ButcherDoBillsButcherFlesh.label>butcher creatures</JS_ButcherDoBillsButcherFlesh.label>
-  <JS_ButcherDoBillsButcherFlesh.verb>butcher</JS_ButcherDoBillsButcherFlesh.verb>
-  <JS_ButcherDoBillsButcherFlesh.gerund>butchering</JS_ButcherDoBillsButcherFlesh.gerund>
 
   <JS_ButcherSlaughter.label>屠宰動物</JS_ButcherSlaughter.label>
   <JS_ButcherSlaughter.verb>屠宰</JS_ButcherSlaughter.verb>
   <JS_ButcherSlaughter.gerund>屠宰</JS_ButcherSlaughter.gerund>
-
-  <JS_ButcherDoExecution.label>處決囚犯</JS_ButcherDoExecution.label>
-  <JS_ButcherDoExecution.verb>處決</JS_ButcherDoExecution.verb>
-  <JS_ButcherDoExecution.gerund>處決</JS_ButcherDoExecution.gerund>
 
 
   <!-- Repairing -->
@@ -44,47 +24,20 @@
   <JS_RepairBuildRoofs.label>搭建屋頂</JS_RepairBuildRoofs.label>
   <JS_RepairBuildRoofs.verb>搭建屋頂</JS_RepairBuildRoofs.verb>
   <JS_RepairBuildRoofs.gerund>屋頂搭建</JS_RepairBuildRoofs.gerund>
-  
-  
-  <!-- Demolition -->
 
-  <JS_DemoRemoveRoofs.label>拆除屋頂</JS_DemoRemoveRoofs.label>
-  <JS_DemoRemoveRoofs.verb>拆除屋頂</JS_DemoRemoveRoofs.verb>
-  <JS_DemoRemoveRoofs.gerund>屋頂拆除</JS_DemoRemoveRoofs.gerund>
 
-  <JS_DemoDeconstruct.label>拆除</JS_DemoDeconstruct.label>
-  <JS_DemoDeconstruct.verb>拆除</JS_DemoDeconstruct.verb>
-  <JS_DemoDeconstruct.gerund>拆除</JS_DemoDeconstruct.gerund>
+  <!-- Demolishing -->
 
   <JS_DemoUninstall.label>打包</JS_DemoUninstall.label>
   <JS_DemoUninstall.verb>打包</JS_DemoUninstall.verb>
   <JS_DemoUninstall.gerund>打包</JS_DemoUninstall.gerund>
 
-  <JS_DemoConstructRemoveFloors.label>拆除地板</JS_DemoConstructRemoveFloors.label>
-  <JS_DemoConstructRemoveFloors.verb>拆除地板</JS_DemoConstructRemoveFloors.verb>
-  <JS_DemoConstructRemoveFloors.gerund>地板拆除</JS_DemoConstructRemoveFloors.gerund>
-  
-  
-  <!-- Supplying -->
 
-  <JS_SupplyFrames.label>搬運材料至框架</JS_SupplyFrames.label>
-  <JS_SupplyFrames.verb>搬運</JS_SupplyFrames.verb>
-  <JS_SupplyFrames.gerund>搬運</JS_SupplyFrames.gerund>
+  <!-- Delivering -->
 
-  <JS_SupplyBlueprints.label>搬運材料至藍圖</JS_SupplyBlueprints.label>
-  <JS_SupplyBlueprints.verb>搬運</JS_SupplyBlueprints.verb>
-  <JS_SupplyBlueprints.gerund>搬運</JS_SupplyBlueprints.gerund>
-  
-  <JS_SupplyUninstall.label>打包</JS_SupplyUninstall.label>
-  <JS_SupplyUninstall.verb>打包</JS_SupplyUninstall.verb>
-  <JS_SupplyUninstall.gerund>打包</JS_SupplyUninstall.gerund>
-  
-  
-  <!-- Mortifying -->
-
-  <JS_MortifyingHaulCorpses.label>運送屍體</JS_MortifyingHaulCorpses.label>
-  <JS_MortifyingHaulCorpses.verb>運送</JS_MortifyingHaulCorpses.verb>
-  <JS_MortifyingHaulCorpses.gerund>運送</JS_MortifyingHaulCorpses.gerund>
+  <JS_DeliverUninstall.label>打包</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>打包</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>打包</JS_DeliverUninstall.gerund>
 
 
 </LanguageData>

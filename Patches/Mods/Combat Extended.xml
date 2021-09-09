@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Combat Extended -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "ReloadTurrets"]/workType</xpath>
+      <value>
+        <workType>Rearming</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

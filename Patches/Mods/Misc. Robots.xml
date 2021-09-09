@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Misc. Robots -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Misc. Robots</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+      <operations>
+		<li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "DoBillAIRobotRepairAtStation"]/workType</xpath>
+		  <value>
+			<workType>Repairing</workType>
+		  </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_Hauler"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Loading</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Delivering</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Rearming</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "AIRobot_Cleaner"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Rearming</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>*/WorkGiverDef[defName = "ExtractSkull"]/workType</xpath>
+			<value>
+				<workType>Mortifying</workType>
+			</value>
+		</match>
+	</Operation>		
+</Patch>

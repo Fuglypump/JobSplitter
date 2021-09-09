@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Vanilla Factions Expanded - Medieval -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "ConstructDigTerrain"]/workType</xpath>
+					<value>
+						<workType>Demolishing</workType>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "ConstructFillTerrain"]/workType</xpath>
+					<value>
+						<workType>Demolishing</workType>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

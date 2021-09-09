@@ -45,16 +45,7 @@
 			</value>
 		</Operation>
 		
-		<!-- Patch handling to 1049 because negotiate is 1050 and i like this order better -->
-		
-		<Operation Class="PatchOperationReplace">
-			<xpath>*/WorkTypeDef[defName = "Handling"]/naturalPriority</xpath>
-				<value>
-					<naturalPriority>1049</naturalPriority>
-				</value>
-		</Operation>
-		
-		<!-- Patch vanilla construction to make it into building -->
+		<!-- Rename Construction to Building -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "Construction"]/labelShort</xpath>
@@ -90,9 +81,8 @@
 				<verb>Build</verb>
 			</value>
 		</Operation>
-
 		
-		<!-- Patch vanilla growing to make it into sowing -->
+		<!-- Rename Growing to Sowing -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "Growing"]/labelShort</xpath>
@@ -129,14 +119,7 @@
 			</value>
 		</Operation>
 		
-		<Operation Class="PatchOperationReplace">
-			<xpath>*/WorkTypeDef[defName = "Growing"]/naturalPriority</xpath>
-				<value>
-					<naturalPriority>705</naturalPriority>
-				</value>
-		</Operation>
-		
-		<!-- Patch vanilla plant cut to make it into Cut -->
+		<!-- Relabel PlantCutting to Cut -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "PlantCutting"]/labelShort</xpath>
@@ -145,6 +128,8 @@
 			</value>
 		</Operation>
 		
+		<!-- Reorder PlantCutting ahead of mining -->
+		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "PlantCutting"]/naturalPriority</xpath>
 				<value>
@@ -152,7 +137,7 @@
 				</value>
 		</Operation>
 		
-		<!-- Patch vanilla Bed rest to make it into Rest -->
+		<!-- Relabel PatientBedRest to Rest -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "PatientBedRest"]/labelShort</xpath>
@@ -161,7 +146,7 @@
 			</value>
 		</Operation>
 		
-		<!-- Patch vanilla Research to make it into Tech -->
+		<!-- Relabel Research to Tech -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "Research"]/labelShort</xpath>
@@ -170,14 +155,7 @@
 			</value>
 		</Operation>
 		
-		<Operation Class="PatchOperationReplace">
-			<xpath>*/WorkTypeDef[defName = "Research"]/gerundLabel</xpath>
-			<value>
-				<gerundLabel>Research technology</gerundLabel>
-			</value>
-		</Operation>
-		
-		<!-- Patch vanilla Firefight to make it into Fire -->
+		<!-- Relabel Firefighter to Fire -->
 		
 		<Operation Class="PatchOperationReplace">
 			<xpath>*/WorkTypeDef[defName = "Firefighter"]/labelShort</xpath>
