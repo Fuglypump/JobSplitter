@@ -15,7 +15,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "MeatBlendTwenty"]/requiredGiverWorkType</xpath>
+				<xpath>/Defs/RecipeDef[defName = "MeatblendTwenty"]/requiredGiverWorkType</xpath>
 				<value>
 					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
 				</value>
