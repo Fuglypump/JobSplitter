@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>倒れた同盟者を救助して\nベッドに運ぶ</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>の救助</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>の救助をする</JS_NurseRescue.gerund>
+
+  <JS_NurseFeedHumanlikes.label>患者に食事を与える</JS_NurseFeedHumanlikes.label>
+  <JS_NurseFeedHumanlikes.verb>に食事を与える</JS_NurseFeedHumanlikes.verb>
+  <JS_NurseFeedHumanlikes.gerund>に食事を与える</JS_NurseFeedHumanlikes.gerund>
+
+  <JS_NurseFeedAnimals.label>動物にエサを与える</JS_NurseFeedAnimals.label>
+  <JS_NurseFeedAnimals.verb>にエサを与える</JS_NurseFeedAnimals.verb>
+  <JS_NurseFeedAnimals.gerund>にエサを与える</JS_NurseFeedAnimals.gerund>
+
+  <JS_NurseToBedToOperate.label>手術をするため患者を\nベッドに運ぶ</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>を手術する</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>を手術する</JS_NurseToBedToOperate.gerund>
+
+  <JS_NurseVisitSickPawn.label>病状の容態を確認する</JS_NurseVisitSickPawn.label>
+  <JS_NurseVisitSickPawn.verb>を見舞う</JS_NurseVisitSickPawn.verb>
+  <JS_NurseVisitSickPawn.gerund>を見舞いする</JS_NurseVisitSickPawn.gerund>
+
+
+  <!-- Feeding -->
+
+  <JS_FeederFeedHumanlikes.label>患者に食事を運ぶ</JS_FeederFeedHumanlikes.label>
+  <JS_FeederFeedHumanlikes.verb>に食事を運ぶ</JS_FeederFeedHumanlikes.verb>
+  <JS_FeederFeedHumanlikes.gerund>に食事を運ぶ</JS_FeederFeedHumanlikes.gerund>
+
+  <JS_FeederFeedAnimals.label>動物に給餌する</JS_FeederFeedAnimals.label>
+  <JS_FeederFeedAnimals.verb>を給餌する</JS_FeederFeedAnimals.verb>
+  <JS_FeederFeedAnimals.gerund>を給餌する</JS_FeederFeedAnimals.gerund>
+
+
+  <!-- Butcher -->
+  
+  <JS_ButcherSlaughter.label>動物を屠殺</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>を屠殺</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>を屠殺する</JS_ButcherSlaughter.gerund>
+
+  <JS_ButcherDoExecution.label>囚人を処刑する</JS_ButcherDoExecution.label>
+  <JS_ButcherDoExecution.verb>を処刑する</JS_ButcherDoExecution.verb>
+  <JS_ButcherDoExecution.gerund>を処刑する</JS_ButcherDoExecution.gerund>
+  
+  
+  <!-- Mortician -->
+  
+  <JS_MorticianHaulCorpses.label>運搬</JS_MorticianHaulCorpses.label>
+  <JS_MorticianHaulCorpses.verb>を運ぶ</JS_MorticianHaulCorpses.verb>
+  <JS_MorticianHaulCorpses.gerund>を運搬する</JS_MorticianHaulCorpses.gerund>
+
+
+  <!-- Preparing -->
+
+  <JS_PrepareFrames.label>材料を骨組みに運ぶ</JS_PrepareFrames.label>
+  <JS_PrepareFrames.verb>材料を届ける</JS_PrepareFrames.verb>
+  <JS_PrepareFrames.gerund>を従事する</JS_PrepareFrames.gerund>
+
+  <JS_PrepareBlueprints.label>設計に取り掛かる</JS_PrepareBlueprints.label>
+  <JS_PrepareBlueprints.verb>に取りかかる</JS_PrepareBlueprints.verb>
+  <JS_PrepareBlueprints.gerund>を従事する</JS_PrepareBlueprints.gerund>
+
+
+</LanguageData>
