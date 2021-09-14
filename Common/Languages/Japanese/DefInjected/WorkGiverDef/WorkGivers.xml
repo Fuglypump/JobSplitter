@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>倒れた同盟者を救助して\nベッドに運ぶ</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>の救助</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>の救助をする</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>手術をするため患者を\nベッドに運ぶ</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>を手術する</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>を手術する</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>動物を屠殺</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>を屠殺</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>を屠殺する</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>屋根をふく</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>を葺く</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>を葺く</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>アンインストール</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>をアンインストール</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>をアンインストールする</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>アンインストール</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>をアンインストール</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>をアンインストールする</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

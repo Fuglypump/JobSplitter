@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 1305 Surgeon -->
+
+  <Surgeon.label>手术</Surgeon.label>
+  <Surgeon.description>为人类或动物做手术。</Surgeon.description>
+  <Surgeon.labelShort>手术</Surgeon.labelShort>
+  <Surgeon.pawnLabel>主刀医生</Surgeon.pawnLabel>
+  <Surgeon.gerundLabel>手术中</Surgeon.gerundLabel>
+  <Surgeon.verb>手术</Surgeon.verb>
+
+
+  <!-- 1295 Nursing -->
+
+  <Nursing.label>护理</Nursing.label>
+  <Nursing.description>帮助医生照顾、喂食并搬运病人。</Nursing.description>
+  <Nursing.labelShort>护理</Nursing.labelShort>
+  <Nursing.pawnLabel>护士</Nursing.pawnLabel>
+  <Nursing.gerundLabel>护理中</Nursing.gerundLabel>
+  <Nursing.verb>护理</Nursing.verb>
+
+
+  <!-- 1135 Rearming -->
+
+  <Rearming.label>重置陷阱</Rearming.label>
+  <Rearming.description>重置已经被触发的陷阱。</Rearming.description>
+  <Rearming.labelShort>重置陷阱</Rearming.labelShort>
+  <Rearming.pawnLabel>陷阱重置人</Rearming.pawnLabel>
+  <Rearming.gerundLabel>重置陷阱中</Rearming.gerundLabel>
+  <Rearming.verb>重置</Rearming.verb>
+
+
+  <!-- 1049 Training -->
+
+  <Training.label>训练</Training.label>
+  <Training.description>训练已被驯化的动物。</Training.description>
+  <Training.labelShort>训练</Training.labelShort>
+  <Training.pawnLabel>训练员</Training.pawnLabel>
+  <Training.gerundLabel>训练中</Training.gerundLabel>
+  <Training.verb>训练</Training.verb>
+
+
+  <!-- 1048 Taming -->
+
+  <Taming.label>驯兽</Taming.label>
+  <Taming.description>驯化野生动物。</Taming.description>
+  <Taming.labelShort>驯服</Taming.labelShort>
+  <Taming.pawnLabel>驯兽师</Taming.pawnLabel>
+  <Taming.gerundLabel>驯服中</Taming.gerundLabel>
+  <Taming.verb>驯服</Taming.verb>
+
+
+  <!-- 999 Butchering -->
+
+  <Butchering.label>屠宰</Butchering.label>
+  <Butchering.description>屠宰尸体并制作饲料。</Butchering.description>
+  <Butchering.labelShort>屠宰</Butchering.labelShort>
+  <Butchering.pawnLabel>屠夫</Butchering.pawnLabel>
+  <Butchering.gerundLabel>屠宰中</Butchering.gerundLabel>
+  <Butchering.verb>屠宰</Butchering.verb>
+
+
+  <!-- 998 Brewing -->
+
+  <Brewing.label>酿造</Brewing.label>
+  <Brewing.description>用啤酒花酿造麦芽汁，并将其填入发酵桶中。</Brewing.description>
+  <Brewing.labelShort>酿造</Brewing.labelShort>
+  <Brewing.pawnLabel>酿酒师</Brewing.pawnLabel>
+  <Brewing.gerundLabel>酿造中</Brewing.gerundLabel>
+  <Brewing.verb>酿造</Brewing.verb>
+
+
+  <!-- 899 Demolishing -->
+
+  <Demolishing.label>拆除</Demolishing.label>
+  <Demolishing.description>拆除或卸载建筑和物品。</Demolishing.description>
+  <Demolishing.labelShort>拆除</Demolishing.labelShort>
+  <Demolishing.pawnLabel>拆迁队</Demolishing.pawnLabel>
+  <Demolishing.gerundLabel>拆迁中</Demolishing.gerundLabel>
+  <Demolishing.verb>拆除</Demolishing.verb>
+
+
+  <!-- 898 Repairing -->
+
+  <Repairing.label>修理</Repairing.label>
+  <Repairing.description>修理坏掉的建筑或物品。</Repairing.description>
+  <Repairing.labelShort>修理</Repairing.labelShort>
+  <Repairing.pawnLabel>修理工</Repairing.pawnLabel>
+  <Repairing.gerundLabel>修理中</Repairing.gerundLabel>
+  <Repairing.verb>修理</Repairing.verb>
+
+
+  <!-- 710 Harvesting -->
+
+  <Harvesting.label>收获</Harvesting.label>
+  <Harvesting.description>收获成熟的农作物。</Harvesting.description>
+  <Harvesting.labelShort>收获</Harvesting.labelShort>
+  <Harvesting.pawnLabel>收获者</Harvesting.pawnLabel>
+  <Harvesting.gerundLabel>收获中</Harvesting.gerundLabel>
+  <Harvesting.verb>收获</Harvesting.verb>
+
+
+  <!-- 595 Drilling -->
+
+  <Drilling.label>钻探</Drilling.label>
+  <Drilling.description>使用深钻井钻探资源。</Drilling.description>
+  <Drilling.labelShort>钻探</Drilling.labelShort>
+  <Drilling.pawnLabel>深井矿工</Drilling.pawnLabel>
+  <Drilling.gerundLabel>钻探中</Drilling.gerundLabel>
+  <Drilling.verb>钻探</Drilling.verb>
+
+
+  <!-- 480 Fabricating -->
+
+  <Fabricating.label>组装</Fabricating.label>
+  <Fabricating.description>在零件装配台上组装零件。</Fabricating.description>
+  <Fabricating.labelShort>组装。</Fabricating.labelShort>
+  <Fabricating.pawnLabel>工匠</Fabricating.pawnLabel>
+  <Fabricating.gerundLabel>组装中</Fabricating.gerundLabel>
+  <Fabricating.verb>组装</Fabricating.verb>
+
+
+  <!-- 420 Drug Production -->
+
+  <Drugs.label>制药</Drugs.label>
+  <Drugs.description>制造药物。</Drugs.description>
+  <Drugs.labelShort>制药</Drugs.labelShort>
+  <Drugs.pawnLabel>药剂师</Drugs.pawnLabel>
+  <Drugs.gerundLabel>制药中</Drugs.gerundLabel>
+  <Drugs.verb>制药</Drugs.verb>
+
+
+  <!-- 415 Refine -->
+
+  <Refining.label>精炼</Refining.label>
+  <Refining.description>在精炼设备上将原材料转化为化合燃料</Refining.description>
+  <Refining.labelShort>精炼</Refining.labelShort>
+  <Refining.pawnLabel>精炼工</Refining.pawnLabel>
+  <Refining.gerundLabel>精炼中</Refining.gerundLabel>
+  <Refining.verb>精炼</Refining.verb>
+
+
+  <!-- 410 StoneCutting -->
+
+  <StoneCutting.label>切割石砖</StoneCutting.label>
+  <StoneCutting.description>将石块切成砖块。</StoneCutting.description>
+  <StoneCutting.labelShort>切割石砖</StoneCutting.labelShort>
+  <StoneCutting.pawnLabel>切石工</StoneCutting.pawnLabel>
+  <StoneCutting.gerundLabel>切割石砖中</StoneCutting.gerundLabel>
+  <StoneCutting.verb>切割石砖</StoneCutting.verb>
+
+
+  <!-- 405 Smelting -->
+
+  <Smelting.label>熔炼</Smelting.label>
+  <Smelting.description>从各种物品中提取可用金属。</Smelting.description>
+  <Smelting.labelShort>熔炼</Smelting.labelShort>
+  <Smelting.pawnLabel>熔炼工</Smelting.pawnLabel>
+  <Smelting.gerundLabel>熔炼中</Smelting.gerundLabel>
+  <Smelting.verb>熔炼</Smelting.verb>
+
+
+  <!-- 303 Loading -->
+
+  <Loading.label>装卸</Loading.label>
+  <Loading.description>为商队和运输仓装卸货物。</Loading.description>
+  <Loading.labelShort>装卸</Loading.labelShort>
+  <Loading.pawnLabel>搬运工</Loading.pawnLabel>
+  <Loading.gerundLabel>装卸</Loading.gerundLabel>
+  <Loading.verb>装卸</Loading.verb>
+
+
+  <!-- 302 Mortifying -->
+
+  <Mortifying.label>殡仪</Mortifying.label>
+  <Mortifying.description>焚化或埋葬尸体。</Mortifying.description>
+  <Mortifying.labelShort>殡仪</Mortifying.labelShort>
+  <Mortifying.pawnLabel>殡仪员</Mortifying.pawnLabel>
+  <Mortifying.gerundLabel>超度</Mortifying.gerundLabel>
+  <Mortifying.verb>超度</Mortifying.verb>
+
+
+  <!-- 301 Delivering -->
+
+  <Delivering.label>准备</Delivering.label>
+  <Delivering.description>为商队和运输仓装卸货物。</Delivering.description>
+  <Delivering.labelShort>装卸</Delivering.labelShort>
+  <Delivering.pawnLabel>搬运工</Delivering.pawnLabel>
+  <Delivering.gerundLabel>装卸</Delivering.gerundLabel>
+  <Delivering.verb>装卸</Delivering.verb>
+
+
+  <!-- 99 Scanning -->
+
+  <Scanning.label>Scan</Scanning.label>
+  <Scanning.description>Operate the ground penetrating scanner and long range mineral scanner.</Scanning.description>
+  <Scanning.labelShort>Scan</Scanning.labelShort>
+  <Scanning.pawnLabel>Scanner</Scanning.pawnLabel>
+  <Scanning.gerundLabel>scanning</Scanning.gerundLabel>
+  <Scanning.verb>Scan at</Scanning.verb>
+
+
+</LanguageData>

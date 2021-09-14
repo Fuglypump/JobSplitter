@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 1305 Surgeon -->
+
+  <Surgeon.label>手術</Surgeon.label>
+  <Surgeon.description>手術医はヒューマノイドや動物に手術を施します。</Surgeon.description>
+  <Surgeon.labelShort>手術</Surgeon.labelShort>
+  <Surgeon.pawnLabel>手術医</Surgeon.pawnLabel>
+  <Surgeon.gerundLabel>手術</Surgeon.gerundLabel>
+  <Surgeon.verb>処置</Surgeon.verb>
+
+
+  <!-- 1295 Nursing -->
+
+  <Nursing.label>看護</Nursing.label>
+  <Nursing.description>看護師は患者への給仕や容態の確認、患者の移動によって医師を支援します。</Nursing.description>
+  <Nursing.labelShort>看護師</Nursing.labelShort>
+  <Nursing.pawnLabel>看護師</Nursing.pawnLabel>
+  <Nursing.gerundLabel>看護</Nursing.gerundLabel>
+  <Nursing.verb>看護</Nursing.verb>
+
+
+  <!-- 1135 Rearming -->
+
+  <Rearming.label>罠師</Rearming.label>
+  <Rearming.description>罠師は使用済の罠を仕掛け直して再設置します。</Rearming.description>
+  <Rearming.labelShort>罠師</Rearming.labelShort>
+  <Rearming.pawnLabel>罠師</Rearming.pawnLabel>
+  <Rearming.gerundLabel>再設置</Rearming.gerundLabel>
+  <Rearming.verb>再設置</Rearming.verb>
+
+
+  <!-- 1049 Training -->
+
+  <Training.label>訓練</Training.label>
+  <Training.description>訓練師は調教済の家畜を訓練します。</Training.description>
+  <Training.labelShort>訓練</Training.labelShort>
+  <Training.pawnLabel>訓練師</Training.pawnLabel>
+  <Training.gerundLabel>訓練</Training.gerundLabel>
+  <Training.verb>訓練</Training.verb>
+
+
+  <!-- 1048 Taming -->
+
+  <Taming.label>調教</Taming.label>
+  <Taming.description>調教師は野生の動物を飼い慣らします。</Taming.description>
+  <Taming.labelShort>調教</Taming.labelShort>
+  <Taming.pawnLabel>調教師</Taming.pawnLabel>
+  <Taming.gerundLabel>調教</Taming.gerundLabel>
+  <Taming.verb>調教</Taming.verb>
+
+
+  <!-- 999 Butchering -->
+
+  <Butchering.label>屠殺</Butchering.label>
+  <Butchering.description>肉屋は解体して精肉したりペットフードを作成します。</Butchering.description>
+  <Butchering.labelShort>屠殺</Butchering.labelShort>
+  <Butchering.pawnLabel>肉屋</Butchering.pawnLabel>
+  <Butchering.gerundLabel>屠殺</Butchering.gerundLabel>
+  <Butchering.verb>屠殺</Butchering.verb>
+
+
+  <!-- 998 Brewing -->
+
+  <Brewing.label>醸造</Brewing.label>
+  <Brewing.description>醸造者はホップから麦汁を作り、樽を満たしてお酒を造り空にします。</Brewing.description>
+  <Brewing.labelShort>醸造</Brewing.labelShort>
+  <Brewing.pawnLabel>醸造者</Brewing.pawnLabel>
+  <Brewing.gerundLabel>醸造</Brewing.gerundLabel>
+  <Brewing.verb>醸造</Brewing.verb>
+
+
+  <!-- 899 Demolishing -->
+
+  <Demolishing.label>解体</Demolishing.label>
+  <Demolishing.description>解体屋は建物や物品を取り外したり解体します。</Demolishing.description>
+  <Demolishing.labelShort>解体</Demolishing.labelShort>
+  <Demolishing.pawnLabel>解体屋</Demolishing.pawnLabel>
+  <Demolishing.gerundLabel>解体</Demolishing.gerundLabel>
+  <Demolishing.verb>解体</Demolishing.verb>
+
+
+  <!-- 898 Repairing -->
+
+  <Repairing.label>修理</Repairing.label>
+  <Repairing.description>修理屋は損傷を受けた建物や物品を修理します。</Repairing.description>
+  <Repairing.labelShort>修理</Repairing.labelShort>
+  <Repairing.pawnLabel>修理屋</Repairing.pawnLabel>
+  <Repairing.gerundLabel>修理</Repairing.gerundLabel>
+  <Repairing.verb>修理</Repairing.verb>
+
+
+  <!-- 710 Harvesting -->
+
+  <Harvesting.label>収穫</Harvesting.label>
+  <Harvesting.description>収穫者は作物を収穫します。</Harvesting.description>
+  <Harvesting.labelShort>収穫</Harvesting.labelShort>
+  <Harvesting.pawnLabel>収穫者</Harvesting.pawnLabel>
+  <Harvesting.gerundLabel>収穫</Harvesting.gerundLabel>
+  <Harvesting.verb>収穫</Harvesting.verb>
+
+
+  <!-- 595 Drilling -->
+
+  <Drilling.label>掘削</Drilling.label>
+  <Drilling.description>鉱員は掘削ドリルを使用して資源を採掘します。</Drilling.description>
+  <Drilling.labelShort>掘削</Drilling.labelShort>
+  <Drilling.pawnLabel>鉱員</Drilling.pawnLabel>
+  <Drilling.gerundLabel>掘削</Drilling.gerundLabel>
+  <Drilling.verb>掘削</Drilling.verb>
+
+
+  <!-- 480 Fabricating -->
+
+  <Fabricating.label>組立</Fabricating.label>
+  <Fabricating.description>組立工はコンポーネント組立台で組立を行います。</Fabricating.description>
+  <Fabricating.labelShort>組立</Fabricating.labelShort>
+  <Fabricating.pawnLabel>組立工</Fabricating.pawnLabel>
+  <Fabricating.gerundLabel>組立</Fabricating.gerundLabel>
+  <Fabricating.verb>組立</Fabricating.verb>
+
+
+  <!-- 420 Drug Production -->
+
+  <Drugs.label>調薬</Drugs.label>
+  <Drugs.description>薬剤師は医薬品やドラッグを作成します。</Drugs.description>
+  <Drugs.labelShort>調薬</Drugs.labelShort>
+  <Drugs.pawnLabel>薬剤師</Drugs.pawnLabel>
+  <Drugs.gerundLabel>調薬</Drugs.gerundLabel>
+  <Drugs.verb>調薬</Drugs.verb>
+
+
+  <!-- 415 Refine -->
+
+  <Refining.label>精製</Refining.label>
+  <Refining.description>科学者は製油施設で化学物質を液化燃料に変えます。</Refining.description>
+  <Refining.labelShort>精製</Refining.labelShort>
+  <Refining.pawnLabel>科学者</Refining.pawnLabel>
+  <Refining.gerundLabel>精製</Refining.gerundLabel>
+  <Refining.verb>精製</Refining.verb>
+
+
+  <!-- 410 StoneCutting -->
+
+  <StoneCutting.label>石切り</StoneCutting.label>
+  <StoneCutting.description>石工は岩の塊を石材ブロックに切り出します。</StoneCutting.description>
+  <StoneCutting.labelShort>石切り</StoneCutting.labelShort>
+  <StoneCutting.pawnLabel>石工</StoneCutting.pawnLabel>
+  <StoneCutting.gerundLabel>石切り</StoneCutting.gerundLabel>
+  <StoneCutting.verb>石切り</StoneCutting.verb>
+
+
+  <!-- 405 Smelting -->
+
+  <Smelting.label>製錬</Smelting.label>
+  <Smelting.description>製錬工は岩の塊やその他の鉄くずなどから使用可能な金属を抽出します。</Smelting.description>
+  <Smelting.labelShort>製錬</Smelting.labelShort>
+  <Smelting.pawnLabel>製錬工</Smelting.pawnLabel>
+  <Smelting.gerundLabel>金属抽出</Smelting.gerundLabel>
+  <Smelting.verb>製錬</Smelting.verb>
+
+
+  <!-- 303 Loading -->
+
+  <Loading.label>荷積</Loading.label>
+  <Loading.description>作業者は輸送用ポッドやキャラバンの積み降ろしを行います。</Loading.description>
+  <Loading.labelShort>荷積</Loading.labelShort>
+  <Loading.pawnLabel>作業者</Loading.pawnLabel>
+  <Loading.gerundLabel>荷積み</Loading.gerundLabel>
+  <Loading.verb>荷積</Loading.verb>
+
+
+  <!-- 302 Mortifying -->
+
+  <Mortifying.label>葬儀</Mortifying.label>
+  <Mortifying.description>葬儀屋は埋葬したり死体を焼却したりします。</Mortifying.description>
+  <Mortifying.labelShort>埋葬</Mortifying.labelShort>
+  <Mortifying.pawnLabel>葬儀屋</Mortifying.pawnLabel>
+  <Mortifying.gerundLabel>埋葬</Mortifying.gerundLabel>
+  <Mortifying.verb>埋葬</Mortifying.verb>
+
+
+  <!-- 301 Delivering -->
+
+  <Delivering.label>配送</Delivering.label>
+  <Delivering.description>配達人は青写真と未完成の建物へ建築材料を運びます。</Delivering.description>
+  <Delivering.labelShort>配送</Delivering.labelShort>
+  <Delivering.pawnLabel>配達人</Delivering.pawnLabel>
+  <Delivering.gerundLabel>配送</Delivering.gerundLabel>
+  <Delivering.verb>配送</Delivering.verb>
+
+
+  <!-- 99 Scanning -->
+
+  <Scanning.label>探査</Scanning.label>
+  <Scanning.description>地殻深部スキャナーと長距離鉱物探査スキャナーを操作します。</Scanning.description>
+  <Scanning.labelShort>探査</Scanning.labelShort>
+  <Scanning.pawnLabel>探査師</Scanning.pawnLabel>
+  <Scanning.gerundLabel>探査</Scanning.gerundLabel>
+  <Scanning.verb>探査</Scanning.verb>
+
+
+</LanguageData>

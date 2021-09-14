@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>救援倒地的殖民者</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>救援</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>救援</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>把病人运至手术床上</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>运至手术床</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>运至手术床</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>宰杀动物</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>宰杀</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>宰杀</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>建造屋顶</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>建造屋顶</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>建造屋顶</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>卸载建筑</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>卸载</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>卸载</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>卸载建筑</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>卸载</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>卸载</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

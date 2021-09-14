@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 1305 Surgeon -->
+
+  <Surgeon.label>手術</Surgeon.label>
+  <Surgeon.description>為人類或動物進行手術。</Surgeon.description>
+  <Surgeon.labelShort>主刀醫生</Surgeon.labelShort>
+  <Surgeon.pawnLabel>主刀醫生</Surgeon.pawnLabel>
+  <Surgeon.gerundLabel>手術</Surgeon.gerundLabel>
+  <Surgeon.verb>手術</Surgeon.verb>
+
+
+  <!-- 1295 Nursing -->
+
+  <Nursing.label>護理</Nursing.label>
+  <Nursing.description>護士會協助醫生照顧、餵食和把病患運至手術床上。</Nursing.description>
+  <Nursing.labelShort>護士</Nursing.labelShort>
+  <Nursing.pawnLabel>護士</Nursing.pawnLabel>
+  <Nursing.gerundLabel>護理</Nursing.gerundLabel>
+  <Nursing.verb>照顧</Nursing.verb>
+
+
+  <!-- 1135 Rearming -->
+
+  <Rearming.label>重置陷阱</Rearming.label>
+  <Rearming.description>陷阱重置員會重置已經被觸發的陷阱。</Rearming.description>
+  <Rearming.labelShort>陷阱重置員</Rearming.labelShort>
+  <Rearming.pawnLabel>陷阱重置員</Rearming.pawnLabel>
+  <Rearming.gerundLabel>重置陷阱</Rearming.gerundLabel>
+  <Rearming.verb>重置</Rearming.verb>
+
+
+  <!-- 1049 Training -->
+
+  <Training.label>訓練</Training.label>
+  <Training.description>訓練員負責訓練已被馴化的動物。</Training.description>
+  <Training.labelShort>訓練員</Training.labelShort>
+  <Training.pawnLabel>訓練員</Training.pawnLabel>
+  <Training.gerundLabel>訓練</Training.gerundLabel>
+  <Training.verb>訓練</Training.verb>
+
+
+  <!-- 1048 Taming -->
+
+  <Taming.label>馴獸</Taming.label>
+  <Taming.description>馴獸師主要是馴化野生動物。</Taming.description>
+  <Taming.labelShort>馴獸師</Taming.labelShort>
+  <Taming.pawnLabel>馴獸師</Taming.pawnLabel>
+  <Taming.gerundLabel>馴獸</Taming.gerundLabel>
+  <Taming.verb>馴獸</Taming.verb>
+
+
+  <!-- 999 Butchering -->
+
+  <Butchering.label>屠宰</Butchering.label>
+  <Butchering.description>屠夫專門屠宰屍體和製作飼料。</Butchering.description>
+  <Butchering.labelShort>屠夫</Butchering.labelShort>
+  <Butchering.pawnLabel>屠夫</Butchering.pawnLabel>
+  <Butchering.gerundLabel>屠宰</Butchering.gerundLabel>
+  <Butchering.verb>屠宰</Butchering.verb>
+
+
+  <!-- 998 Brewing -->
+
+  <Brewing.label>釀造</Brewing.label>
+  <Brewing.description>釀酒師會用啤酒花釀造麥汁，並將其填入釀酒桶中。</Brewing.description>
+  <Brewing.labelShort>釀酒師</Brewing.labelShort>
+  <Brewing.pawnLabel>釀酒師</Brewing.pawnLabel>
+  <Brewing.gerundLabel>釀造</Brewing.gerundLabel>
+  <Brewing.verb>釀造</Brewing.verb>
+
+
+  <!-- 899 Demolishing -->
+
+  <Demolishing.label>拆除</Demolishing.label>
+  <Demolishing.description>拆遷工人專門負責拆卸建築和物品。</Demolishing.description>
+  <Demolishing.labelShort>拆遷工人</Demolishing.labelShort>
+  <Demolishing.pawnLabel>拆遷工人</Demolishing.pawnLabel>
+  <Demolishing.gerundLabel>拆遷</Demolishing.gerundLabel>
+  <Demolishing.verb>拆除</Demolishing.verb>
+
+
+  <!-- 898 Repairing -->
+
+  <Repairing.label>修理</Repairing.label>
+  <Repairing.description>修理工負責修理壞掉的建築或物品。</Repairing.description>
+  <Repairing.labelShort>修理工</Repairing.labelShort>
+  <Repairing.pawnLabel>修理工</Repairing.pawnLabel>
+  <Repairing.gerundLabel>修理</Repairing.gerundLabel>
+  <Repairing.verb>修理</Repairing.verb>
+
+
+  <!-- 710 Harvesting -->
+
+  <Harvesting.label>收穫</Harvesting.label>
+  <Harvesting.description>收穫者負責收穫成熟的農作物。</Harvesting.description>
+  <Harvesting.labelShort>收穫者</Harvesting.labelShort>
+  <Harvesting.pawnLabel>收穫者</Harvesting.pawnLabel>
+  <Harvesting.gerundLabel>收穫</Harvesting.gerundLabel>
+  <Harvesting.verb>收穫</Harvesting.verb>
+
+
+  <!-- 595 Drilling -->
+
+  <Drilling.label>鑽探</Drilling.label>
+  <Drilling.description>深井礦工會使用採掘機鑽探資源。</Drilling.description>
+  <Drilling.labelShort>深井礦工</Drilling.labelShort>
+  <Drilling.pawnLabel>深井礦工</Drilling.pawnLabel>
+  <Drilling.gerundLabel>鑽探</Drilling.gerundLabel>
+  <Drilling.verb>鑽探</Drilling.verb>
+
+
+  <!-- 480 Fabricating -->
+
+  <Fabricating.label>組裝</Fabricating.label>
+  <Fabricating.description>組裝技工會在電子零件生產台上組裝零件。</Fabricating.description>
+  <Fabricating.labelShort>組裝技工</Fabricating.labelShort>
+  <Fabricating.pawnLabel>組裝技工</Fabricating.pawnLabel>
+  <Fabricating.gerundLabel>組裝</Fabricating.gerundLabel>
+  <Fabricating.verb>組裝</Fabricating.verb>
+
+
+  <!-- 420 Drug Production -->
+
+  <Drugs.label>製藥</Drugs.label>
+  <Drugs.description>藥劑師負責製造藥物。</Drugs.description>
+  <Drugs.labelShort>藥劑師</Drugs.labelShort>
+  <Drugs.pawnLabel>藥劑師</Drugs.pawnLabel>
+  <Drugs.gerundLabel>製藥</Drugs.gerundLabel>
+  <Drugs.verb>製藥</Drugs.verb>
+
+
+  <!-- 415 Refine -->
+
+  <Refining.label>精煉</Refining.label>
+  <Refining.description>精煉工是在精煉設備上將原材料轉化為化合燃料。</Refining.description>
+  <Refining.labelShort>精煉工</Refining.labelShort>
+  <Refining.pawnLabel>精煉工</Refining.pawnLabel>
+  <Refining.gerundLabel>精煉</Refining.gerundLabel>
+  <Refining.verb>精煉</Refining.verb>
+
+
+  <!-- 410 StoneCutting -->
+
+  <StoneCutting.label>石材加工</StoneCutting.label>
+  <StoneCutting.description>切石工會將石塊切成可用的磚塊。</StoneCutting.description>
+  <StoneCutting.labelShort>切石工</StoneCutting.labelShort>
+  <StoneCutting.pawnLabel>切石工</StoneCutting.pawnLabel>
+  <StoneCutting.gerundLabel>石材加工</StoneCutting.gerundLabel>
+  <StoneCutting.verb>石材加工</StoneCutting.verb>
+
+
+  <!-- 405 Smelting -->
+
+  <Smelting.label>熔煉</Smelting.label>
+  <Smelting.description>熔煉工會從各種物品中提煉可用金屬。</Smelting.description>
+  <Smelting.labelShort>熔煉工</Smelting.labelShort>
+  <Smelting.pawnLabel>熔煉工</Smelting.pawnLabel>
+  <Smelting.gerundLabel>熔煉</Smelting.gerundLabel>
+  <Smelting.verb>熔煉</Smelting.verb>
+
+
+  <!-- 303 Loading -->
+
+  <Loading.label>裝卸</Loading.label>
+  <Loading.description>卸貨工人會為商隊和運輸倉裝卸貨物。</Loading.description>
+  <Loading.labelShort>卸貨工人</Loading.labelShort>
+  <Loading.pawnLabel>卸貨工人</Loading.pawnLabel>
+  <Loading.gerundLabel>裝卸</Loading.gerundLabel>
+  <Loading.verb>裝卸於</Loading.verb>
+
+
+  <!-- 302 Mortifying -->
+
+  <Mortifying.label>殯儀</Mortifying.label>
+  <Mortifying.description>殯儀員專門負責焚化或埋葬屍體。</Mortifying.description>
+  <Mortifying.labelShort>殯儀員</Mortifying.labelShort>
+  <Mortifying.pawnLabel>殯儀員</Mortifying.pawnLabel>
+  <Mortifying.gerundLabel>殯儀</Mortifying.gerundLabel>
+  <Mortifying.verb>殯儀</Mortifying.verb>
+
+
+  <!-- 301 Delivering -->
+
+  <Delivering.label>搬運</Delivering.label>
+  <Delivering.description>苦力會把建築材料運載至藍圖或工程處。</Delivering.description>
+  <Delivering.labelShort>苦力</Delivering.labelShort>
+  <Delivering.pawnLabel>苦力</Delivering.pawnLabel>
+  <Delivering.gerundLabel>搬運</Delivering.gerundLabel>
+  <Delivering.verb>搬運</Delivering.verb>
+
+
+  <!-- Scanning -->
+
+  <Scanning.label>Scan</Scanning.label>
+  <Scanning.description>Operate the ground penetrating scanner and long range mineral scanner.</Scanning.description>
+  <Scanning.labelShort>Scan</Scanning.labelShort>
+  <Scanning.pawnLabel>Scanner</Scanning.pawnLabel>
+  <Scanning.gerundLabel>scanning</Scanning.gerundLabel>
+  <Scanning.verb>Scan at</Scanning.verb>
+
+
+</LanguageData>

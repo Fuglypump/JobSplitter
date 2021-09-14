@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+		<!-- Replace Tooltips (English only) -->
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Doctor"]/description</xpath>
+			<value>
+				<description>Treat the sick, bring them food and cheer them up. Doctors will care for both colonists and prisoners.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Handling"]/description</xpath>
+			<value>
+				<description>Harvest resources from and slaughter animals.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Cooking"]/description</xpath>
+			<value>
+				<description>Prepare meals.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/description</xpath>
+			<value>
+				<description>Build things that you've designated.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Mining"]/description</xpath>
+			<value>
+				<description>Mining and digging.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Crafting"]/description</xpath>
+			<value>
+				<description>Do general low-skilled labor at work stations.</description>
+			</value>
+		</Operation>
+		
+		<!-- Rename Construction to Building -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/labelShort</xpath>
+			<value>
+				<labelShort>Build</labelShort>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/pawnLabel</xpath>
+			<value>
+				<pawnLabel>Builder</pawnLabel>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/gerundLabel</xpath>
+			<value>
+				<gerundLabel>Building</gerundLabel>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/description</xpath>
+			<value>
+				<description>Build buildings.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Construction"]/verb</xpath>
+			<value>
+				<verb>Build</verb>
+			</value>
+		</Operation>
+		
+		<!-- Rename Growing to Sowing -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Growing"]/labelShort</xpath>
+			<value>
+				<labelShort>Sow</labelShort>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Growing"]/pawnLabel</xpath>
+			<value>
+				<pawnLabel>Sower</pawnLabel>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Growing"]/gerundLabel</xpath>
+			<value>
+				<gerundLabel>Sowing</gerundLabel>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Growing"]/description</xpath>
+			<value>
+				<description>Sow crops.</description>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Growing"]/verb</xpath>
+			<value>
+				<verb>Sow</verb>
+			</value>
+		</Operation>
+		
+		<!-- Relabel PlantCutting to Cut -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "PlantCutting"]/labelShort</xpath>
+			<value>
+				<labelShort>Cut</labelShort>
+			</value>
+		</Operation>
+		
+		<!-- Reorder PlantCutting ahead of mining -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "PlantCutting"]/naturalPriority</xpath>
+				<value>
+					<naturalPriority>695</naturalPriority>
+				</value>
+		</Operation>
+		
+		<!-- Relabel PatientBedRest to Rest -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "PatientBedRest"]/labelShort</xpath>
+			<value>
+				<labelShort>Rest</labelShort>
+			</value>
+		</Operation>
+		
+		<!-- Relabel Research to Tech -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Research"]/labelShort</xpath>
+			<value>
+				<labelShort>Tech</labelShort>
+			</value>
+		</Operation>
+		
+		<!-- Relabel Firefighter to Fire -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "Firefighter"]/labelShort</xpath>
+			<value>
+				<labelShort>Fire</labelShort>
+			</value>
+		</Operation>
+		
+</Patch>

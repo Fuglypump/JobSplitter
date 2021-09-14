@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BurnApparel"]/requiredGiverWorkType</xpath>
+		<value>
+			<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BurnDrugs"]/requiredGiverWorkType</xpath>
+		<value>
+			<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BurnWeapon"]/requiredGiverWorkType</xpath>
+		<value>
+			<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+		</value>
+	</Operation>
+	
+</Patch>

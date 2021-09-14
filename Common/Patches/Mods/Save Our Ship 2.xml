@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Save Our Ship 2 -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Save Our Ship 2</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "LoadTorpedoTube"]/workType</xpath>
+      <value>
+        <workType>Loading</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

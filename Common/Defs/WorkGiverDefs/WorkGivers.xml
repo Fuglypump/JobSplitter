@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Nursing -->
+	
+	<WorkGiverDef>
+		<defName>JS_NurseRescue</defName>
+		<label>rescue downed allies to bed</label>
+		<giverClass>WorkGiver_RescueDowned</giverClass>
+		<workType>Nursing</workType>
+		<verb>rescue</verb>
+		<gerund>rescuing</gerund>
+		<priorityInType>90</priorityInType>
+		<directOrderable>false</directOrderable>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<emergency>true</emergency>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>JS_NurseToBedToOperate</defName>
+		<label>take patients to bed for operations</label>
+		<giverClass>WorkGiver_TakeToBedToOperate</giverClass>
+		<workType>Nursing</workType>
+		<priorityInType>70</priorityInType>
+		<verb>take to operate</verb>
+		<gerund>taking to operate</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<!-- Butchering -->
+	
+	<WorkGiverDef>
+		<defName>JS_ButcherSlaughter</defName>
+		<label>slaughter animals</label>
+		<giverClass>WorkGiver_Slaughter</giverClass>
+		<workType>Butchering</workType>
+		<verb>slaughter</verb>
+		<gerund>slaughtering</gerund>
+		<priorityInType>90</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<!-- Repairing -->	
+	
+	<WorkGiverDef>
+		<defName>JS_RepairBuildRoofs</defName>
+		<label>build roofs</label>
+		<giverClass>WorkGiver_BuildRoof</giverClass>
+		<workType>Repairing</workType>
+		<priorityInType>70</priorityInType>
+		<verb>build roof</verb>
+		<gerund>building roof</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<!-- Demolishing -->	
+	
+	<WorkGiverDef>
+		<defName>JS_DemoUninstall</defName>
+		<label>uninstall structures</label>
+		<giverClass>WorkGiver_Uninstall</giverClass>
+		<workType>Demolishing</workType>
+		<priorityInType>50</priorityInType>
+		<verb>uninstall</verb>
+		<gerund>uninstalling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+	<!-- Delivering -->	
+	
+	<WorkGiverDef>
+		<defName>JS_DeliverUninstall</defName>
+		<label>uninstall structure</label>
+		<giverClass>WorkGiver_Uninstall</giverClass>
+		<workType>Delivering</workType>
+		<priorityInType>19</priorityInType>
+		<verb>uninstall</verb>
+		<gerund>uninstalling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<nonColonistsCanDo>true</nonColonistsCanDo>
+		<prioritizeSustains>true</prioritizeSustains>
+		<equivalenceGroup>AssistInConstruction</equivalenceGroup>
+	</WorkGiverDef>
+	
+</Defs>

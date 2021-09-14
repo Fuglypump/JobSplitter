@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>rescue downed allies to bed</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>rescue</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>rescuing</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>take patients to bed for operations</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>take to operate</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>taking to operate</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>slaughter animals</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>slaughter</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>slaughtering</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>build roofs</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>build roof</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>building roof</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>uninstall structures</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>uninstall</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>uninstalling</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>uninstall structure</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>uninstall</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>uninstalling</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

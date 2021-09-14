@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Furniture Expanded - Security -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Security</li>
+    </mods>
+	
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "VFES_ConstructRearmTrap"]/workType</xpath>
+				<value>
+					<workType>Repairing</workType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "VFES_RearmTrap"]/workType</xpath>
+				<value>
+					<workType>Rearming</workType>
+				</value>
+			</li>
+		</operations>
+	</match>
+  </Operation>
+</Patch>

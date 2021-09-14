@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Meat Blend -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Meat Blend</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "MeatBlend5"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "MeatblendTwenty"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "MeatBlend50"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "MeatBlend75"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "MeatBlend100"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>
