@@ -1,11 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	
-	<!-- Shorten vanilla worktype labels -->
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
 	
 	<Firefighter.labelShort>Fire</Firefighter.labelShort>
+	<Patient.labelShort>Patient</Patient.labelShort>
+	<Doctor.labelShort>Doctor</Doctor.labelShort>
 	<PatientBedRest.labelShort>Rest</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>Basic</BasicWorker.labelShort>
+	<Warden.labelShort>Warden</Warden.labelShort>
+	<Handling.labelShort>Handle</Handling.labelShort>
+	<Cooking.labelShort>Cook</Cooking.labelShort>
+	<Hunting.labelShort>Hunt</Hunting.labelShort>
 	<PlantCutting.labelShort>Cut</PlantCutting.labelShort>
+	<Mining.labelShort>Mine</Mining.labelShort>
+	<Smithing.labelShort>Smith</Smithing.labelShort>
+	<Tailoring.labelShort>Tailor</Tailoring.labelShort>
+	<Art.labelShort>Art</Art.labelShort>
+	<Crafting.labelShort>Craft</Crafting.labelShort>
+	<Hauling.labelShort>Haul</Hauling.labelShort>
+	<Cleaning.labelShort>Clean</Cleaning.labelShort>
 	<Research.labelShort>Tech</Research.labelShort>
 	
 	<!-- Adjust vanilla worktype descriptions -->
