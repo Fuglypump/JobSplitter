@@ -11,7 +11,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/HediffDef[defName = "WTHaddon_CraftModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
 					<value>
-						<li>Fabricatiing</li>
+						<li>Fabricating</li>
 						<li>Drugs</li>
 						<li>Refining</li>
 						<li>StoneCutting</li>
