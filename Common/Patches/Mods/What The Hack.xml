@@ -9,33 +9,9 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[defName = "WTHaddon_CraftModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
+					<xpath>/Defs/HediffDef[defName = "WTH_GrowingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
 					<value>
-						<li>Fabricatiing</li>
-						<li>Drugs</li>
-						<li>Refining</li>
-						<li>StoneCutting</li>
-						<li>Smelting</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[defName = "WTHaddon_MiningModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
-					<value>
-						<li>Drilling</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[defName = "WTHaddon_NursingArm"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
-					<value>
-						<li>Nursing</li>
-						<li>Surgeon</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[defName = "WTHaddon_MaintainingArm"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
-					<value>
-						<li>Repairing</li>
-						<li>Demolishing</li>
+						<li>Harvesting</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
