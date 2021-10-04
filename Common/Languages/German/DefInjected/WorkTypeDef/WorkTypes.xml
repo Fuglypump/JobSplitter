@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
+	
+	<Firefighter.labelShort>Feuerwehr</Firefighter.labelShort>
+	<Patient.labelShort>Patient</Patient.labelShort>
+	<Doctor.labelShort>Arzt</Doctor.labelShort>
+	<PatientBedRest.labelShort>Bettruhe</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>Hilfsarbeit</BasicWorker.labelShort>
+	<Warden.labelShort>Aufsehen</Warden.labelShort>
+	<Handling.labelShort>Tierpflege</Handling.labelShort>
+	<Cooking.labelShort>Kochen</Cooking.labelShort>
+	<Hunting.labelShort>Jagen</Hunting.labelShort>
+	<PlantCutting.labelShort>Waldarbeit</PlantCutting.labelShort>
+	<Mining.labelShort>Bergbau</Mining.labelShort>
+	<Smithing.labelShort>Schmieden</Smithing.labelShort>
+	<Tailoring.labelShort>Schneidern</Tailoring.labelShort>
+	<Art.labelShort>Kunst</Art.labelShort>
+	<Crafting.labelShort>Handwerk</Crafting.labelShort>
+	<Hauling.labelShort>Transport</Hauling.labelShort>
+	<Cleaning.labelShort>Reinigen</Cleaning.labelShort>
+	<Research.labelShort>Forschen</Research.labelShort>
+	
+	<!-- Adjust vanilla worktype descriptions -->
+	
+	<Doctor.description>Ärzte behandeln die Kranken. Sie kümmern sich sowohl um Kolonisten als auch Gefangene.</Doctor.description>
+	<Handling.description>Tierpfleger können Tiere melken, scheren und schlachten.</Handling.description>
+	<Cooking.description>Köche bereiten Mahlzeiten zu.</Cooking.description>
+	<Mining.description>Bergarbeiter bauen Gestein ab.</Mining.description>
+	<Crafting.description>Handwerker führen Aufgaben an diversen Arbeitsstationen aus, die nur wenig Expertise erfordern.</Crafting.description>
+
+	<!-- Rename Growing to Sowing -->
+	
+	<Growing.label>Aussäen</Growing.label>
+	<Growing.description>Nutzpflanzen aussäen.</Growing.description>
+	<Growing.labelShort>Aussäen</Growing.labelShort>
+	<Growing.pawnLabel>Aussäer</Growing.pawnLabel>
+	<Growing.gerundLabel>Aussäer</Growing.gerundLabel>
+	<Growing.verb>aussäen</Growing.verb>
+	
+	<!-- Rename Construction to Building -->
+	
+	<Construction.label>Bauen</Construction.label>
+	<Construction.description>Baut Dinge wie von dir geplant.</Construction.description>
+	<Construction.labelShort>Bauen</Construction.labelShort>
+	<Construction.pawnLabel>Bauarbeiter</Construction.pawnLabel>
+	<Construction.gerundLabel>Bauarbeiter</Construction.gerundLabel>
+	<Construction.verb>bauen</Construction.verb>
+
+	<!-- 1305 Surgeon -->
+
+	<Surgeon.label>Operieren</Surgeon.label>
+	<Surgeon.description>Operiert Menschen und Tiere.</Surgeon.description>
+	<Surgeon.labelShort>Chirurg</Surgeon.labelShort>
+	<Surgeon.pawnLabel>Chirurg</Surgeon.pawnLabel>
+	<Surgeon.gerundLabel>Chirurg</Surgeon.gerundLabel>
+	<Surgeon.verb>operieren</Surgeon.verb>
+
+
+	<!-- 1295 Nursing -->
+
+	<Nursing.label>Pflegen</Nursing.label>
+	<Nursing.description>Assistiert Ärzten in dem Patienten gefüttert, besucht und aufgemuntert werden.</Nursing.description>
+	<Nursing.labelShort>Pflegen</Nursing.labelShort>
+	<Nursing.pawnLabel>Pfleger</Nursing.pawnLabel>
+	<Nursing.gerundLabel>Pfleger</Nursing.gerundLabel>
+	<Nursing.verb>pflegen</Nursing.verb>
+
+
+	<!-- 1135 Rearming -->
+
+	<Rearming.label>Auffüllen</Rearming.label>
+	<Rearming.description>Lädt Geschütze nach und füllt Brennstoffe nach.</Rearming.description>
+	<Rearming.labelShort>Auffüllen</Rearming.labelShort>
+	<Rearming.pawnLabel>Auffüller</Rearming.pawnLabel>
+	<Rearming.gerundLabel>Auffüller</Rearming.gerundLabel>
+	<Rearming.verb>auffüllen</Rearming.verb>
+
+
+	<!-- 1049 Training -->
+
+	<Training.label>Trainieren</Training.label>
+	<Training.description>Trainiert gezähmte Tiere.</Training.description>
+	<Training.labelShort>Trainieren</Training.labelShort>
+	<Training.pawnLabel>Trainer</Training.pawnLabel>
+	<Training.gerundLabel>Trainer</Training.gerundLabel>
+	<Training.verb>trainieren</Training.verb>
+
+
+	<!-- 1048 Taming -->
+
+	<Taming.label>Zähmen</Taming.label>
+	<Taming.description>Zähmt wilde Tiere.</Taming.description>
+	<Taming.labelShort>Zähmen</Taming.labelShort>
+	<Taming.pawnLabel>Zähmer</Taming.pawnLabel>
+	<Taming.gerundLabel>Zähmer</Taming.gerundLabel>
+	<Taming.verb>zähmen</Taming.verb>
+
+
+	<!-- 999 Butchering -->
+
+	<Butchering.label>Schlachten</Butchering.label>
+	<Butchering.description>Schlachtet Tiere und erstellt Trockenfutter an der Schlachtbank.</Butchering.description>
+	<Butchering.labelShort>Schlachten</Butchering.labelShort>
+	<Butchering.pawnLabel>Schlachter</Butchering.pawnLabel>
+	<Butchering.gerundLabel>Schlachter</Butchering.gerundLabel>
+	<Butchering.verb>schlachten</Butchering.verb>
+
+
+	<!-- 998 Brewing -->
+
+	<Brewing.label>Brauen</Brewing.label>
+	<Brewing.description>Erstellt die Anstellwürze aus Hopfen (hier Bierwürze genannt), füllt und leert den Gärbottich.</Brewing.description>
+	<Brewing.labelShort>Brauen</Brewing.labelShort>
+	<Brewing.pawnLabel>Brauer</Brewing.pawnLabel>
+	<Brewing.gerundLabel>Brauer</Brewing.gerundLabel>
+	<Brewing.verb>brauen</Brewing.verb>
+
+
+	<!-- 899 Demolishing -->
+
+	<Demolishing.label>Abreißen</Demolishing.label>
+	<Demolishing.description>Deinstalliert oder zerlegt Gebäude und Objekte.</Demolishing.description>
+	<Demolishing.labelShort>Abreißen</Demolishing.labelShort>
+	<Demolishing.pawnLabel>Demonteur</Demolishing.pawnLabel>
+	<Demolishing.gerundLabel>Demonteur</Demolishing.gerundLabel>
+	<Demolishing.verb>abreißen</Demolishing.verb>
+
+
+	<!-- 898 Repairing -->
+
+	<Repairing.label>Reparieren</Repairing.label>
+	<Repairing.description>repariert beschädigte oder zerfallene Gebäude und Objekte.</Repairing.description>
+	<Repairing.labelShort>Reparieren</Repairing.labelShort>
+	<Repairing.pawnLabel>Reparateur</Repairing.pawnLabel>
+	<Repairing.gerundLabel>Reparateur</Repairing.gerundLabel>
+	<Repairing.verb>reparieren</Repairing.verb>
+
+
+	<!-- 710 Harvesting -->
+
+	<Harvesting.label>Ernten</Harvesting.label>
+	<Harvesting.description>Erntet ausgewachsene Nutzpflanzen.</Harvesting.description>
+	<Harvesting.labelShort>Ernten</Harvesting.labelShort>
+	<Harvesting.pawnLabel>Erntearbeiter</Harvesting.pawnLabel>
+	<Harvesting.gerundLabel>Erntearbeiter</Harvesting.gerundLabel>
+	<Harvesting.verb>ernten</Harvesting.verb>
+
+
+	<!-- 595 Drilling -->
+
+	<Drilling.label>Bohren</Drilling.label>
+	<Drilling.description>Bohren für Ressourcen mit Tiefenbohrern.</Drilling.description>
+	<Drilling.labelShort>Bohren</Drilling.labelShort>
+	<Drilling.pawnLabel>Bohrer</Drilling.pawnLabel>
+	<Drilling.gerundLabel>Bohrer</Drilling.gerundLabel>
+	<Drilling.verb>bohren</Drilling.verb>
+
+
+	<!-- 480 Fabricating -->
+
+	<Fabricating.label>Fabrizieren</Fabricating.label>
+	<Fabricating.description>Fabriziere Dinge an einem Fabrikationstisch.</Fabricating.description>
+	<Fabricating.labelShort>Fabrizieren</Fabricating.labelShort>
+	<Fabricating.pawnLabel>Fabrikateur</Fabricating.pawnLabel>
+	<Fabricating.gerundLabel>Fabrikateur</Fabricating.gerundLabel>
+	<Fabricating.verb>fabrizieren an</Fabricating.verb>
+
+
+	<!-- 420 Drug Production -->
+
+	<Drugs.label>Drogen</Drugs.label>
+	<Drugs.description>Synthetisiere Drogen an einem Drogenlabor.</Drugs.description>
+	<Drugs.labelShort>Drogen</Drugs.labelShort>
+	<Drugs.pawnLabel>Chemiker</Drugs.pawnLabel>
+	<Drugs.gerundLabel>Chemiker</Drugs.gerundLabel>
+	<Drugs.verb>synthetisiere an</Drugs.verb>
+
+
+	<!-- 415 Refine -->
+
+	<Refining.label>Raffinieren</Refining.label>
+	<Refining.description>Raffiniert biologisches Material, wie Holz und Pflanzen, zu Kraftstoff.</Refining.description>
+	<Refining.labelShort>Raffinieren</Refining.labelShort>
+	<Refining.pawnLabel>Veredler</Refining.pawnLabel>
+	<Refining.gerundLabel>Veredler</Refining.gerundLabel>
+	<Refining.verb>Raffiniere an</Refining.verb>
+
+
+	<!-- 410 StoneCutting -->
+
+	<StoneCutting.label>Steinmetz</StoneCutting.label>
+	<StoneCutting.description>Schneide Steine an einer Steinmetzwerkbank.</StoneCutting.description>
+	<StoneCutting.labelShort>Steinmetz</StoneCutting.labelShort>
+	<StoneCutting.pawnLabel>Steinmetz</StoneCutting.pawnLabel>
+	<StoneCutting.gerundLabel>Steinmetz</StoneCutting.gerundLabel>
+	<StoneCutting.verb>Steine schneiden</StoneCutting.verb>
+
+
+	<!-- 405 Smelting -->
+
+	<Smelting.label>Schmelzen</Smelting.label>
+	<Smelting.description>Extrahiert nutzbares Metall aus Metallschrott und anderen gemischten Metallgegenständen.</Smelting.description>
+	<Smelting.labelShort>Schmelzen</Smelting.labelShort>
+	<Smelting.pawnLabel>Schmelzer</Smelting.pawnLabel>
+	<Smelting.gerundLabel>Schmelzer</Smelting.gerundLabel>
+	<Smelting.verb>Schmelzen</Smelting.verb>
+
+
+	<!-- 303 Loading -->
+
+	<Loading.label>Laden</Loading.label>
+	<Loading.description>Be- und entlädt Transportkapseln und Karawanen.</Loading.description>
+	<Loading.labelShort>Laden</Loading.labelShort>
+	<Loading.pawnLabel>Lader</Loading.pawnLabel>
+	<Loading.gerundLabel>Lader</Loading.gerundLabel>
+	<Loading.verb>laden</Loading.verb>
+
+
+	<!-- 302 Mortifying -->
+
+	<Mortifying.label>Bestatten</Mortifying.label>
+	<Mortifying.description>Äschert Leichen ein oder begräbt diese. Verbrennt auch Gegenstände.</Mortifying.description>
+	<Mortifying.labelShort>Bestatten</Mortifying.labelShort>
+	<Mortifying.pawnLabel>Leichenbestatter</Mortifying.pawnLabel>
+	<Mortifying.gerundLabel>Leichenbestatter</Mortifying.gerundLabel>
+	<Mortifying.verb>bestatten</Mortifying.verb>
+
+
+	<!-- 301 Delivering -->
+
+	<Delivering.label>Beliefern</Delivering.label>
+	<Delivering.description>Liefert Baumaterial zu Blaupausen und unfertigen Gebäuden.</Delivering.description>
+	<Delivering.labelShort>Beliefern</Delivering.labelShort>
+	<Delivering.pawnLabel>Lieferant</Delivering.pawnLabel>
+	<Delivering.gerundLabel>Lieferant</Delivering.gerundLabel>
+	<Delivering.verb>beliefern</Delivering.verb>
+
+
+	<!-- Scanning -->
+
+	<Scanning.label>Scannen</Scanning.label>
+	<Scanning.description>Bedient den Tiefenscanner und den Langstreckenscanner.</Scanning.description>
+	<Scanning.labelShort>Scannen</Scanning.labelShort>
+	<Scanning.pawnLabel>Scanner</Scanning.pawnLabel>
+	<Scanning.gerundLabel>Scanner</Scanning.gerundLabel>
+	<Scanning.verb>scannen an</Scanning.verb>
+
+
+</LanguageData>

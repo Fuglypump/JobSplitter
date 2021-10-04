@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>Zu Fall gebrachte Verbündete ins Bett bringen</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>retten</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>Rettung von</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>bringt Patienten zur Operation ins Bett</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>vorbereiten zur OP</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>Vorbereitung zur OP von</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>Tiere schlachten</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>schlachten</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>Schlachten von</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>Dächer errichten</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>überdachen</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>Errichtung des Daches im</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>Strukturen demontieren</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>demontieren</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>Demontage von</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>Strukturen demontieren</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>demontieren</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>Demontage von</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>
