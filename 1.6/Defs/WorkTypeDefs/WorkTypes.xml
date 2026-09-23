@@ -18,6 +18,8 @@
 		</relevantSkills>
 		<workTags>
 			<li>Caring</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	<!-- 1300 Doctor -->
@@ -34,9 +36,13 @@
 		<requireCapableColonist>true</requireCapableColonist>
 		<workTags>
 			<li>Caring</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	<!-- 1200 PatientBedRest -->
+	<!-- 1180 Teaching -->
+	<!-- 1175 Childcare -->
 	<!-- 1150 BasicWorker -->
 	<!-- 1135 Rearming -->
 	<WorkTypeDef>
@@ -49,7 +55,30 @@
 		<naturalPriority>1135</naturalPriority>
 		<alwaysStartActive>true</alwaysStartActive>
 		<requireCapableColonist>true</requireCapableColonist>
+		<workTags>
+			<li>Commoner</li>
+			<li>AllWork</li>
+		</workTags>
 	</WorkTypeDef>
+	<!-- 1105 Recruiting -->
+	<WorkTypeDef>
+		<defName>Recruiting</defName>
+		<labelShort>Recruit</labelShort>
+		<pawnLabel>Recruiter</pawnLabel>
+		<gerundLabel>Recruiting</gerundLabel>
+		<description>Chat with, recruit and enslave prisoners.</description>
+		<verb>Handle</verb>
+		<naturalPriority>1105</naturalPriority>
+		<requireCapableColonist>true</requireCapableColonist>
+		<disabledForSlaves>true</disabledForSlaves>
+		<relevantSkills>
+			<li>Social</li>
+		</relevantSkills>
+		<workTags>
+			<li>Social</li>
+			<li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
 	<!-- 1100 Warden -->
 	<!-- 1060 Negotiating (hospitality) -->
 	<!-- 1050 Handling -->
@@ -68,6 +97,8 @@
 		</relevantSkills>
 		<workTags>
 			<li>Animals</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>	
 	<!-- 1048 Taming -->
@@ -86,6 +117,8 @@
 		</relevantSkills>
 		<workTags>
 			<li>Animals</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	<!-- 1000 Cooking -->
@@ -95,7 +128,7 @@
 		<labelShort>Butcher</labelShort>
 		<pawnLabel>Butcherer</pawnLabel>
 		<gerundLabel>Butchering</gerundLabel>
-		<description>Butcher meat and create kibble at a butchering table.</description>
+		<description>Slaughter animals, butcher meat and create kibble at a butchering table.</description>
 		<verb>Butcher</verb>
 		<naturalPriority>999</naturalPriority>
 		<alwaysStartActive>true</alwaysStartActive>
@@ -106,6 +139,8 @@
 	    <workTags>
 			<li>Cooking</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
     	</workTags>
 	</WorkTypeDef>
   	<!-- 998 Brewing -->
@@ -125,6 +160,8 @@
 		<workTags>
 			<li>Cooking</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	<!-- 950 Hunting -->
@@ -146,6 +183,7 @@
 		<workTags>
 			<li>ManualSkilled</li>
 			<li>Commoner</li>
+			<li>Constructing</li>
 			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
@@ -166,6 +204,7 @@
 		<workTags>
 			<li>ManualSkilled</li>
 			<li>Commoner</li>
+			<li>Constructing</li>
 			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
@@ -188,6 +227,8 @@
 		<workTags>
 			<li>ManualSkilled</li>
 			<li>PlantWork</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -208,6 +249,8 @@
 		<workTags>
 			<li>ManualSkilled</li>
 			<li>Mining</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 
@@ -229,6 +272,8 @@
 		<workTags>
 			<li>Crafting</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -236,7 +281,7 @@
 	
 	<WorkTypeDef>
 		<defName>Drugs</defName>
-		<labelShort>Drug</labelShort>
+		<labelShort>Drugs</labelShort>
 		<pawnLabel>Chemist</pawnLabel>
 		<gerundLabel>Drug Production</gerundLabel>
 		<description>Synthesize drugs at a drug lab.</description>
@@ -250,6 +295,8 @@
 		<workTags>
 			<li>Crafting</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -265,9 +312,14 @@
 		<naturalPriority>415</naturalPriority>
 		<alwaysStartActive>false</alwaysStartActive>
 		<requireCapableColonist>true</requireCapableColonist>
+		<relevantSkills>
+			<li>Crafting</li>
+		</relevantSkills>
 		<workTags>
 			<li>Crafting</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -289,6 +341,8 @@
 		<workTags>
 			<li>Crafting</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -299,7 +353,7 @@
 		<labelShort>Smelt</labelShort>
 		<pawnLabel>Smelter</pawnLabel>
 		<gerundLabel>Extract metal from item</gerundLabel>
-		<description>Extracts usable metal from slag chunks and other mixed metal items.</description>
+		<description>Extract usable metal from slag chunks and other mixed metal items.</description>
 		<verb>Smelt</verb>
 		<naturalPriority>405</naturalPriority>
 		<alwaysStartActive>true</alwaysStartActive>
@@ -310,6 +364,8 @@
 		<workTags>
 			<li>Crafting</li>
 			<li>ManualSkilled</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -328,6 +384,8 @@
 		<workTags>
 			<li>Hauling</li>
 			<li>ManualDumb</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -338,7 +396,7 @@
 		<labelShort>Mortify</labelShort>
 		<pawnLabel>Mortician</pawnLabel>
 		<gerundLabel>Mortifying</gerundLabel>
-		<description>cremate or bury dead bodies and destroy items.</description>
+		<description>Cremate or bury dead bodies and destroy items.</description>
 		<verb>Mortify</verb>
 		<naturalPriority>302</naturalPriority>
 		<alwaysStartActive>true</alwaysStartActive>
@@ -346,6 +404,8 @@
 		<workTags>
 			<li>Hauling</li>
 			<li>ManualDumb</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -364,6 +424,8 @@
 		<workTags>
 			<li>Hauling</li>
 			<li>ManualDumb</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 	
@@ -382,6 +444,8 @@
 		</relevantSkills>
 		<workTags>
 			<li>Intellectual</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
 		</workTags>
 	</WorkTypeDef>
 

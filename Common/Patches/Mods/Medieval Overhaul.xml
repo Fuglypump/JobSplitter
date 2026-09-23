@@ -9,25 +9,11 @@
 	<match Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/WorkGiverDef[defName = "DankPyon_DoBillsFurnace"]/workType</xpath>
+				<xpath>/Defs/WorkGiverDef[defName = "DankPyon_RefuelCustom"]/workType</xpath>
 				<value>
-					<workType>Smelting</workType>
+					<workType>Rearming</workType>
 				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/WorkGiverDef[defName = "DankPyon_DoBillsButcherFlesh"]/workType</xpath>
-				<value>
-					<workType>Butchering</workType>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/WorkGiverDef[defName = "DankPyon_DoBillsStonecut"]/workType</xpath>
-				<value>
-					<workType>StoneCutting</workType>
-				</value>
-			</li>
+			</li>	
 		</operations>
 	</match>	
   </Operation>

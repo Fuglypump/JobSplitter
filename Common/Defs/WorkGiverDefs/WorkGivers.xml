@@ -42,7 +42,7 @@
 		<workType>Butchering</workType>
 		<verb>slaughter</verb>
 		<gerund>slaughtering</gerund>
-		<priorityInType>90</priorityInType>
+		<priorityInType>95</priorityInType>
 		<requiredCapacities>
 		  <li>Manipulation</li>
 		</requiredCapacities>

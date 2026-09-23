@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>нести сбитых союзников в кровать</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>нести в кровать</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>переноска в кровать</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>отводить пациентов к кровати для операции</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>отводить на операцию</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>отведение на операцию</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>забивать животных</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>забивать</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>забой</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>строить крыши</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>строить крышу</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>строительство крыши</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>демонтировать сооружения</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>демонтировать</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>демонтаж</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>демонтировать сооружение</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>демонтировать</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>демонтаж</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

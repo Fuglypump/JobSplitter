@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Fruit Blend -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fruit Blend</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "FruitBlend5"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "FruitblendTwenty"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "FruitBlend50"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "FruitBlend75"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "FruitBlend100"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

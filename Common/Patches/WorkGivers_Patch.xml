@@ -57,6 +57,13 @@
 					<workType>Rearming</workType>
 				</value>
 			</li>
+			<!-- Recruiting -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "ChatWithPrisoner"]/workType</xpath>
+				<value>
+					<workType>Recruiting</workType>
+				</value>
+			</li>
 			
 			<!-- Handling -->
 			<li Class="PatchOperationReplace">
@@ -120,7 +127,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>*/WorkGiverDef[defName = "BuildRoofs"]/priorityInType</xpath>
 				<value>
-					<priorityInType>70</priorityInType>
+					<priorityInType>100</priorityInType>
 				</value>
 			</li>
 			
@@ -153,18 +160,6 @@
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuilding"]/workType</xpath>
-				<value>
-					<workType>Repairing</workType>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/WorkGiverDef[defName = "ConstructSmoothFloors"]/workType</xpath>
-				<value>
-					<workType>Repairing</workType>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/WorkGiverDef[defName = "ConstructSmoothWalls"]/workType</xpath>
 				<value>
 					<workType>Repairing</workType>
 				</value>
