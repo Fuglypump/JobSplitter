@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Omni Core Drill -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Omni Core Drill</li>
+	  <li>Omni Core Drill (Continued)</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "DoBillsCoreMine"]/workType</xpath>
+      <value>
+        <workType>Drilling</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

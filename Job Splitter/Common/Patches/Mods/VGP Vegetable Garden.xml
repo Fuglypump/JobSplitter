@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- VGP Vegetable Garden -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>*/WorkGiverDef[defName = "DoBillsHaulBambooCampfire"]/workType</xpath>
+			<value>
+				<workType>Mortifying</workType>
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Refactored Work Priorities -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Refactored Work Priorities</li>
+	  <li>Refactored Work Priorities (Continued)</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "HarvestYieldingPlants"]/workType</xpath>
+      <value>
+        <workType>Harvesting</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

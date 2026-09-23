@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Vanilla Animals Expanded — Caves -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Caves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "VAE_DestroyCocoons"]/workType</xpath>
+					<value>
+						<workType>Mortifying</workType>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
