@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Misc. Bees'n'Honey -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Misc. Bees'n'Honey</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "GetHoney"]/workType</xpath>
+      <value>
+        <workType>Harvesting</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

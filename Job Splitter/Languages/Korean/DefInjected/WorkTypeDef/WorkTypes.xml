@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
+	
+	<Firefighter.labelShort>소방</Firefighter.labelShort>
+	<Patient.labelShort>환자</Patient.labelShort>
+	<Doctor.labelShort>의료</Doctor.labelShort>
+	<PatientBedRest.labelShort>안정</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>기초</BasicWorker.labelShort>
+	<Warden.labelShort>간수</Warden.labelShort>
+	<Handling.labelShort>조련</Handling.labelShort>
+	<Cooking.labelShort>요리</Cooking.labelShort>
+	<Hunting.labelShort>사냥</Hunting.labelShort>
+	<PlantCutting.labelShort>벌목</PlantCutting.labelShort>
+	<Mining.labelShort>채굴</Mining.labelShort>
+	<Smithing.labelShort>제련</Smithing.labelShort>
+	<Tailoring.labelShort>재봉</Tailoring.labelShort>
+	<Art.labelShort>예술</Art.labelShort>
+	<Crafting.labelShort>제작</Crafting.labelShort>
+	<Hauling.labelShort>운반</Hauling.labelShort>
+	<Cleaning.labelShort>청소</Cleaning.labelShort>
+	<Research.labelShort>연구</Research.labelShort>
+	
+	<!-- Adjust vanilla worktype descriptions -->
+	
+	<Doctor.description>환자를 치료하고 음식을 가져다주며 기운을 북돋우고 지정된 수술을 수행합니다. 의사는 정착민과 죄수 모두를 돌봅니다.</Doctor.description>
+	<Handling.description>동물을 길들이고 훈련하며 동물 자원을 수확하고 도축합니다.</Handling.description>
+	<Cooking.description>식사를 준비하고 고기를 해체합니다.</Cooking.description>
+	<Mining.description>채굴하고 굴착합니다.</Mining.description>
+	<Crafting.description>작업대에서 일반적인 저숙련 작업을 수행합니다. 석재 가공, 제련 등이 포함됩니다.</Crafting.description>
+
+	<!-- Rename Growing to Sowing -->
+	
+	<Growing.label>재배</Growing.label>
+	<Growing.description>씨앗을 심고 작물을 수확하며 야생 식물을 채집합니다.</Growing.description>
+	<Growing.labelShort>파종</Growing.labelShort>
+	<Growing.pawnLabel>재배자</Growing.pawnLabel>
+	<Growing.gerundLabel>재배</Growing.gerundLabel>
+	<Growing.verb>재배</Growing.verb>
+	
+	<!-- Rename Construction to Building -->
+	
+	<Construction.label>건설</Construction.label>
+	<Construction.description>지정한 건물을 건설하고 손상되거나 고장 난 건물을 수리합니다.</Construction.description>
+	<Construction.labelShort>건설</Construction.labelShort>
+	<Construction.pawnLabel>건설자</Construction.pawnLabel>
+	<Construction.gerundLabel>건설</Construction.gerundLabel>
+	<Construction.verb>건설</Construction.verb>
+
+	<!-- 1305 Surgeon -->
+
+	<Surgeon.label>수술</Surgeon.label>
+	<Surgeon.description>인간형과 동물에게 수술을 수행합니다.</Surgeon.description>
+	<Surgeon.labelShort>외과</Surgeon.labelShort>
+	<Surgeon.pawnLabel>외과의</Surgeon.pawnLabel>
+	<Surgeon.gerundLabel>수술</Surgeon.gerundLabel>
+	<Surgeon.verb>수술</Surgeon.verb>
+
+
+	<!-- 1295 Nursing -->
+
+	<Nursing.label>간호</Nursing.label>
+	<Nursing.description>환자에게 음식을 먹이고 방문하며 이동시켜 의사를 돕습니다.</Nursing.description>
+	<Nursing.labelShort>간호</Nursing.labelShort>
+	<Nursing.pawnLabel>간호사</Nursing.pawnLabel>
+	<Nursing.gerundLabel>간호</Nursing.gerundLabel>
+	<Nursing.verb>간호</Nursing.verb>
+
+
+	<!-- 1135 Rearming -->
+
+	<Rearming.label>재무장</Rearming.label>
+	<Rearming.description>포탑을 재무장하고 연료가 필요한 건물에 연료를 보급합니다.</Rearming.description>
+	<Rearming.labelShort>재무장</Rearming.labelShort>
+	<Rearming.pawnLabel>재무장 담당자</Rearming.pawnLabel>
+	<Rearming.gerundLabel>재무장</Rearming.gerundLabel>
+	<Rearming.verb>재무장</Rearming.verb>
+
+  <!-- 1180 Teaching -->
+
+  <Teaching.label>교육</Teaching.label>
+  <Teaching.description>학교 책상에서 아이들을 가르쳐 기술과 지적 발달을 향상시킵니다.</Teaching.description>
+  <Teaching.labelShort>교육</Teaching.labelShort>
+  <Teaching.pawnLabel>교사</Teaching.pawnLabel>
+  <Teaching.gerundLabel>교육 중</Teaching.gerundLabel>
+  <Teaching.verb>가르치기</Teaching.verb>
+
+  <!-- 1105 Recruiting -->
+
+  <Recruiting.label>모집</Recruiting.label>
+  <Recruiting.description>죄수와 대화하고 모집하거나 노예로 만듭니다.</Recruiting.description>
+  <Recruiting.labelShort>모집</Recruiting.labelShort>
+  <Recruiting.pawnLabel>모집 담당자</Recruiting.pawnLabel>
+  <Recruiting.gerundLabel>모집</Recruiting.gerundLabel>
+  <Recruiting.verb>관리</Recruiting.verb>
+
+  <!-- 1049 Training -->
+
+	<Training.label>훈련</Training.label>
+	<Training.description>길들인 동물을 훈련합니다.</Training.description>
+	<Training.labelShort>훈련</Training.labelShort>
+	<Training.pawnLabel>조련사</Training.pawnLabel>
+	<Training.gerundLabel>훈련</Training.gerundLabel>
+	<Training.verb>훈련</Training.verb>
+
+
+	<!-- 1048 Taming -->
+
+	<Taming.label>길들이기</Taming.label>
+	<Taming.description>야생 동물을 길들입니다.</Taming.description>
+	<Taming.labelShort>길들이기</Taming.labelShort>
+	<Taming.pawnLabel>조련사</Taming.pawnLabel>
+	<Taming.gerundLabel>길들이기</Taming.gerundLabel>
+	<Taming.verb>길들이기</Taming.verb>
+
+
+	<!-- 999 Butchering -->
+
+	<Butchering.label>도축</Butchering.label>
+	<Butchering.description>동물을 도축하고 고기를 해체하며 도축대에서 사료를 만듭니다.</Butchering.description>
+	<Butchering.labelShort>도축</Butchering.labelShort>
+	<Butchering.pawnLabel>도축업자</Butchering.pawnLabel>
+	<Butchering.gerundLabel>도축</Butchering.gerundLabel>
+	<Butchering.verb>도축</Butchering.verb>
+
+
+	<!-- 998 Brewing -->
+
+	<Brewing.label>양조</Brewing.label>
+	<Brewing.description>홉으로 발효 전 단계의 재료를 만들고 발효통을 채우거나 비웁니다.</Brewing.description>
+	<Brewing.labelShort>양조</Brewing.labelShort>
+	<Brewing.pawnLabel>양조자</Brewing.pawnLabel>
+	<Brewing.gerundLabel>양조</Brewing.gerundLabel>
+	<Brewing.verb>양조</Brewing.verb>
+
+
+	<!-- 899 Demolishing -->
+
+	<Demolishing.label>철거</Demolishing.label>
+	<Demolishing.description>건물과 물체를 철거하거나 해체합니다.</Demolishing.description>
+	<Demolishing.labelShort>철거</Demolishing.labelShort>
+	<Demolishing.pawnLabel>철거 작업자</Demolishing.pawnLabel>
+	<Demolishing.gerundLabel>철거</Demolishing.gerundLabel>
+	<Demolishing.verb>철거</Demolishing.verb>
+
+
+	<!-- 898 Repairing -->
+
+	<Repairing.label>수리</Repairing.label>
+	<Repairing.description>손상되거나 고장 난 건물과 물체를 수리합니다.</Repairing.description>
+	<Repairing.labelShort>수리</Repairing.labelShort>
+	<Repairing.pawnLabel>수리공</Repairing.pawnLabel>
+	<Repairing.gerundLabel>수리</Repairing.gerundLabel>
+	<Repairing.verb>수리</Repairing.verb>
+
+
+	<!-- 710 Harvesting -->
+
+	<Harvesting.label>수확</Harvesting.label>
+	<Harvesting.description>다 자란 작물을 수확합니다.</Harvesting.description>
+	<Harvesting.labelShort>수확</Harvesting.labelShort>
+	<Harvesting.pawnLabel>수확자</Harvesting.pawnLabel>
+	<Harvesting.gerundLabel>수확</Harvesting.gerundLabel>
+	<Harvesting.verb>수확</Harvesting.verb>
+
+
+	<!-- 595 Drilling -->
+
+	<Drilling.label>시추</Drilling.label>
+	<Drilling.description>심층 굴착기를 사용해 자원을 시추합니다.</Drilling.description>
+	<Drilling.labelShort>시추</Drilling.labelShort>
+	<Drilling.pawnLabel>시추공</Drilling.pawnLabel>
+	<Drilling.gerundLabel>시추</Drilling.gerundLabel>
+	<Drilling.verb>시추</Drilling.verb>
+
+
+	<!-- 480 Fabricating -->
+
+	<Fabricating.label>제작</Fabricating.label>
+	<Fabricating.description>제작 작업대에서 물건을 제작합니다.</Fabricating.description>
+	<Fabricating.labelShort>제작</Fabricating.labelShort>
+	<Fabricating.pawnLabel>제작자</Fabricating.pawnLabel>
+	<Fabricating.gerundLabel>제작</Fabricating.gerundLabel>
+	<Fabricating.verb>제작</Fabricating.verb>
+
+
+	<!-- 420 Drug Production -->
+
+	<Drugs.label>약물 생산</Drugs.label>
+	<Drugs.description>약물 실험실에서 약물을 합성합니다.</Drugs.description>
+	<Drugs.labelShort>약물</Drugs.labelShort>
+	<Drugs.pawnLabel>화학자</Drugs.pawnLabel>
+	<Drugs.gerundLabel>약물 생산</Drugs.gerundLabel>
+	<Drugs.verb>합성</Drugs.verb>
+
+
+	<!-- 415 Refine -->
+
+	<Refining.label>정제</Refining.label>
+	<Refining.description>정제소에서 재료를 화학물질로 정제합니다.</Refining.description>
+	<Refining.labelShort>정제</Refining.labelShort>
+	<Refining.pawnLabel>정제공</Refining.pawnLabel>
+	<Refining.gerundLabel>정제</Refining.gerundLabel>
+	<Refining.verb>정제</Refining.verb>
+
+
+	<!-- 410 StoneCutting -->
+
+	<StoneCutting.label>석재 가공</StoneCutting.label>
+	<StoneCutting.description>석재 가공대에서 돌을 석재 블록으로 가공합니다.</StoneCutting.description>
+	<StoneCutting.labelShort>석재</StoneCutting.labelShort>
+	<StoneCutting.pawnLabel>석공</StoneCutting.pawnLabel>
+	<StoneCutting.gerundLabel>석재 가공</StoneCutting.gerundLabel>
+	<StoneCutting.verb>석재 가공</StoneCutting.verb>
+
+
+	<!-- 405 Smelting -->
+
+	<Smelting.label>제련</Smelting.label>
+	<Smelting.description>슬래그 덩어리와 기타 혼합 금속 물체에서 사용할 수 있는 금속을 추출합니다.</Smelting.description>
+	<Smelting.labelShort>제련</Smelting.labelShort>
+	<Smelting.pawnLabel>제련공</Smelting.pawnLabel>
+	<Smelting.gerundLabel>금속 추출</Smelting.gerundLabel>
+	<Smelting.verb>제련</Smelting.verb>
+
+
+	<!-- 303 Loading -->
+
+	<Loading.label>적재</Loading.label>
+	<Loading.description>수송 포드와 캐러밴을 싣고 내립니다.</Loading.description>
+	<Loading.labelShort>적재</Loading.labelShort>
+	<Loading.pawnLabel>적재 담당자</Loading.pawnLabel>
+	<Loading.gerundLabel>적재</Loading.gerundLabel>
+	<Loading.verb>적재</Loading.verb>
+
+
+	<!-- 302 Mortifying -->
+
+	<Mortifying.label>시신 처리</Mortifying.label>
+	<Mortifying.description>시신을 화장하거나 매장하고 물건을 파괴합니다.</Mortifying.description>
+	<Mortifying.labelShort>시신 처리</Mortifying.labelShort>
+	<Mortifying.pawnLabel>시신 처리자</Mortifying.pawnLabel>
+	<Mortifying.gerundLabel>시신 처리</Mortifying.gerundLabel>
+	<Mortifying.verb>처리</Mortifying.verb>
+
+
+	<!-- 301 Delivering -->
+
+	<Delivering.label>배달</Delivering.label>
+	<Delivering.description>건설 재료를 청사진과 미완성 건물에 배달합니다.</Delivering.description>
+	<Delivering.labelShort>배달</Delivering.labelShort>
+	<Delivering.pawnLabel>배달원</Delivering.pawnLabel>
+	<Delivering.gerundLabel>배달</Delivering.gerundLabel>
+	<Delivering.verb>배달</Delivering.verb>
+
+
+	<!-- Scanning -->
+
+	<Scanning.label>스캔</Scanning.label>
+	<Scanning.description>지하 투과 스캐너와 장거리 광물 스캐너를 작동합니다.</Scanning.description>
+	<Scanning.labelShort>스캔</Scanning.labelShort>
+	<Scanning.pawnLabel>스캐너</Scanning.pawnLabel>
+	<Scanning.gerundLabel>스캔</Scanning.gerundLabel>
+	<Scanning.verb>스캔</Scanning.verb>
+
+
+</LanguageData>

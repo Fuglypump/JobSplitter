@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>쓰러진 동료를 구조해 침대로 옮기기</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>구조</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>구조 중</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>수술을 위해 환자를 침대로 옮기기</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>수술을 위해 옮기기</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>수술을 위해 옮기는 중</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>동물 도축</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>도축</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>도축 중</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>지붕 건설</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>지붕 건설</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>지붕 건설 중</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>구조물 철거</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>철거</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>철거 중</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>구조물 철거</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>철거</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>철거 중</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

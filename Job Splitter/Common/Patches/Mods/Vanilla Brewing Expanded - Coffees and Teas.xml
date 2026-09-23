@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Brewing Expanded - Coffees and Teas -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Brewing Expanded - Coffees and Teas</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VBE_DoBillsEspressoMachine"]/workType</xpath>
+				<value>
+					<workType>Brewing</workType>
+				</value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

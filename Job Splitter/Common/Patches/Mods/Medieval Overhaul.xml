@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Medieval Overhaul -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "DankPyon_RefuelCustom"]/workType</xpath>
+				<value>
+					<workType>Rearming</workType>
+				</value>
+			</li>	
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

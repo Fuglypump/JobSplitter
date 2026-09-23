@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Butchering Spot -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Butchering Spot</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "DoBillsButcherFleshSpot"]/workType</xpath>
+      <value>
+        <workType>Butchering</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>

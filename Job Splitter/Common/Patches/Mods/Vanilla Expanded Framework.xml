@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Expanded Framework -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Expanded Framework</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Use Conditional to prevent game-breaking launch errors -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/WorkGiverDef[defName = "VEF_RefuelSecondary"]/workType</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/WorkGiverDef[defName = "VEF_RefuelSecondary"]/workType</xpath>
+            <value>
+              <workType>Rearming</workType>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

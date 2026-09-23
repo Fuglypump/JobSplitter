@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Hauling Bot -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Hauling Bot</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "HaulingRobot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Loading</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Delivering</workTypeDef>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<workTypeDef>Rearming</workTypeDef>
+			<priority>2</priority>
+		  </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

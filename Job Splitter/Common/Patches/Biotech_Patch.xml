@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		  <operations>
+			<!-- Adds Teaching WorkType -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>					
+					<WorkTypeDef>
+						<defName>Teaching</defName>
+						<labelShort>Teach</labelShort>
+						<pawnLabel>Teacher</pawnLabel>
+						<gerundLabel>Teaching</gerundLabel>
+						<description>Teach children at school desks to increase their skills and intellectual development.</description>
+						<verb>Teach</verb>
+						<alwaysStartActive>true</alwaysStartActive>
+						<requireCapableColonist>true</requireCapableColonist>
+						<naturalPriority>1180</naturalPriority>
+						<relevantSkills>
+							<li>Social</li>
+						</relevantSkills>
+						<workTags>
+							<li>Social</li>
+							<li>Caring</li>
+							<li>AllWork</li>
+						</workTags>
+					</WorkTypeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+				<value>
+					<workType>Teaching</workType>
+				</value>
+			</li>
+			<!-- Adds Hauling mechs to charging station to Rearming  -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>					
+					<WorkGiverDef>
+						<defName>HaulMechsToCharger</defName>
+						<label>haul mechs to charger</label>
+						<giverClass>WorkGiver_HaulMechToCharger</giverClass>
+						<workType>Rearming</workType>
+						<verb>haul</verb>
+						<gerund>hauling</gerund>
+						<priorityInType>90</priorityInType>
+						<requiredCapacities>
+						  <li>Manipulation</li>
+						</requiredCapacities>
+						<canBeDoneByMechs>false</canBeDoneByMechs>
+					</WorkGiverDef>
+				</value>
+			</li>
+			<!-- Replaces WorkTypes for WorkGiverDefs-->
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "FeedHemogen"]/workType</xpath>
+				<value>
+					<workType>Nursing</workType>
+				</value>
+			</li>
+			<!-- Adds WorkTypes to Mechanoids -->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Tunneler"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Drilling</li>
+					<li>Demolishing</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Lifter"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Rearming</li>
+					<li>Loading</li>
+					<li>Delivering</li>
+					<li>Mortifying</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Constructoid"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Repairing</li>
+					<li>Demolishing</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Fabricor"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Fabricating</li>
+					<li>Drugs</li>
+					<li>Refining</li>
+					<li>StoneCutting</li>
+					<li>Smelting</li>
+					<li>Butchering</li>
+					<li>Brewing</li>
+					<li>Scanning</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Agrihand"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Harvesting</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mech_Paramedic"]/race/mechEnabledWorkTypes</xpath>
+				<value>
+					<li>Surgeon</li>
+					<li>Nursing</li>
+				</value>
+			</li>
+			<!-- Adds WorkTypes to lifeStageWorkSettings to Humans -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings</xpath>
+				<value>
+					<Surgeon>10</Surgeon>
+					<Nursing>10</Nursing>
+					<Teaching>7</Teaching>
+					<Recruiting>10</Recruiting>
+					<Rearming>3</Rearming>
+					<Training>7</Training>
+					<Taming>7</Taming>
+					<Butchering>7</Butchering>
+					<Brewing>7</Brewing>
+					<Demolishing>10</Demolishing>
+					<Repairing>10</Repairing>
+					<Harvesting>7</Harvesting>
+					<Drilling>7</Drilling>
+					<Fabricating>10</Fabricating>
+					<Drugs>10</Drugs>
+					<Refining>7</Refining>
+					<StoneCutting>7</StoneCutting>
+					<Smelting>7</Smelting>
+					<Loading>3</Loading>
+					<Mortifying>3</Mortifying>
+					<Delivering>3</Delivering>
+					<Scanning>13</Scanning>
+				</value>
+			</li>
+		  </operations>
+		</match>
+	</Operation>		
+</Patch>

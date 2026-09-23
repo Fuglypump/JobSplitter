@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Medic Robot -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medic Robot</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "MedicRobot"]/robotWorkTypes</xpath>
+          <value>
+		  <li>
+			<workTypeDef>Surgeon</workTypeDef>
+			<priority>1</priority>
+		  </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

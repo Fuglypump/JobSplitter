@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- What the hack?! -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>What the hack?!</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName = "WTH_GrowingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
+					<value>
+						<li>Harvesting</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName = "WTH_HaulingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes</xpath>
+					<value>
+						<li>Rearming</li>
+						<li>Loading</li>
+						<li>Mortifying</li>
+						<li>Delivering</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

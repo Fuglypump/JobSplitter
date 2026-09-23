@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Ceramics -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ceramics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "UnloadKiln"]/workType</xpath>
+					<value>
+						<workType>Crafting</workType>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "LoadKiln"]/workType</xpath>
+					<value>
+						<workType>Crafting</workType>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
