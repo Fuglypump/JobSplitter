@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+		
+		<!-- Reorder PlantCutting ahead of mining -->
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>*/WorkTypeDef[defName = "PlantCutting"]/naturalPriority</xpath>
+				<value>
+					<naturalPriority>695</naturalPriority>
+				</value>
+		</Operation>
+		
+</Patch>

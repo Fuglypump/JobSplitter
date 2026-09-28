@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Combat Extended: XML Extensions OFF defaults Rearming ON. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadTurrets"]/workType</xpath>
+          <value>
+            <workType>Rearming</workType>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadAutoLoader"]/workType</xpath>
+          <value>
+            <workType>Rearming</workType>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>What the hack - A little expansion</li>
+	  <li>What the hack - A little expansion (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTHaddon_MiningModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedMiningModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechMiningModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BasicLaborModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BasicCraftingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BasicCraftingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BasicCraftingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BasicCraftingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDemolishing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Demolishing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_BuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDemolishing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedBuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Demolishing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedBuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDemolishing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechBuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Demolishing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechBuildingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AssemblyModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedAssemblyModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechAssemblyModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableScanning</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ResearchModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Scanning"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableScanning</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedResearchModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Scanning"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableScanning</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechResearchModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Scanning"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_CookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_CookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedCookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedCookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechCookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechCookingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_MedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_MedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedMedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedMedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechMedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechMedicalModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_AdvancedGrowingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[defName = "WTH_ArchotechGrowingModule"]/modExtensions/li[@Class = "WhatTheHack.DefModExtension_Hediff_WorkModule"]/workTypes/li[. = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

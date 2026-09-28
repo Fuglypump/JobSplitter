@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<!-- Acid Chamber -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Acid Chamber</li>
+		<li>Acid Chamber (Continued)</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		<li Class="PatchOperationReplace">
+			<xpath>*/RecipeDef[defName = "Dissolve"]/requiredGiverWorkType</xpath>
+			<value><requiredGiverWorkType>Mortifying</requiredGiverWorkType></value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/RecipeDef[defName = "BulkDissolve"]/requiredGiverWorkType</xpath>
+			<value><requiredGiverWorkType>Mortifying</requiredGiverWorkType></value>
+		</li>
+		<li Class="PatchOperationReplace">
+		<xpath>*/WorkGiverDef[defName = "DoBillsAcidChamber"]/workType</xpath>
+			<value><workType>Mortifying</workType></value>
+		</li>
+		</operations>
+	</match>
+</Operation>
+
+	
+</Patch>

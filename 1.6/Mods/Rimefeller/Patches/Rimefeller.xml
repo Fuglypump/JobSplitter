@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Rimefeller -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Rimefeller</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "SuperviseDrilling"]/workType</xpath>
+				<value>
+					<workType>Drilling</workType>
+				</value>
+			</li>
+		</operations>
+	</match>	
+  </Operation>
+</Patch>

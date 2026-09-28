@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Surgeon -->	
+	<Operation Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Biotech">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableSurgeon</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Surgeon"]</xpath>
+				<value>
+					<visible>{enableSurgeon}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Nursing -->	
+	<Operation Class="XmlExtensions.UseSetting" MayRequire="Ludeon.RimWorld.Biotech">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableNursing</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Nursing"]</xpath>
+				<value>
+					<visible>{enableNursing}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Teaching / Childcare -->
+	<Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableNursingBabies</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableTeaching</key>
+				<defaultValue>true</defaultValue>
+				<!-- Babies ON + Teaching ON = Childcare becomes Teaching -->
+				<caseTrue>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/WorkTypeDef[defName="Teaching"]</xpath>
+						<value>
+							<visible>false</visible>
+						</value>
+					</li>
+				</caseTrue>
+				<!-- Babies ON + Teaching OFF = Hide Teaching -->
+				<caseFalse>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/WorkTypeDef[defName="Teaching"]</xpath>
+						<value>
+							<visible>false</visible>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+		</caseTrue>
+		<caseFalse>	
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableTeaching</key>
+				<defaultValue>true</defaultValue>
+				<!-- Babies OFF + Teaching ON = separate Teaching WorkType -->
+				<caseTrue>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/WorkTypeDef[defName="Teaching"]</xpath>
+						<value>
+							<visible>true</visible>
+						</value>
+					</li>
+				</caseTrue>
+				<!-- Babies OFF + Teaching OFF = normal Childcare -->
+				<caseFalse>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/WorkTypeDef[defName="Teaching"]</xpath>
+						<value>
+							<visible>false</visible>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+		</caseFalse>
+	</Operation>
+	
+	<!-- Rearming -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRearming</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Rearming"]</xpath>
+				<value>
+					<visible>{enableRearming}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Recruiting -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRecruiting</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Recruiting"]</xpath>
+				<value>
+					<visible>{enableRecruiting}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Training -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableTraining</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Training"]</xpath>
+				<value>
+					<visible>{enableTraining}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Taming -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableTaming</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Taming"]</xpath>
+				<value>
+					<visible>{enableTaming}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Butchering -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableButchering</key>
+		<defaultValue>true</defaultValue>
+
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Butchering"]</xpath>
+				<value>
+					<visible>{enableButchering}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Brewing -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableBrewing</key>
+		<defaultValue>false</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Brewing"]</xpath>
+				<value>
+					<visible>{enableBrewing}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Repairing -->
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRepairing</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Repairing"]</xpath>
+				<value>
+					<visible>{enableRepairing}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Demolishing -->
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableDemolishing</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Demolishing"]</xpath>
+				<value>
+					<visible>{enableDemolishing}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Harvesting -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableHarvesting</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Harvesting"]</xpath>
+				<value>
+					<visible>{enableHarvesting}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Drilling -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableDrilling</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Drilling"]</xpath>
+				<value>
+					<visible>{enableDrilling}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Fabricating -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableFabricating</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Fabricating"]</xpath>
+				<value>
+					<visible>{enableFabricating}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Drugs -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableDrugs</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Drugs"]</xpath>
+				<value>
+					<visible>{enableDrugs}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Refining -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRefining</key>
+		<defaultValue>false</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Refining"]</xpath>
+				<value>
+					<visible>{enableRefining}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Stonecutting -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableStonecutting</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Stonecutting"]</xpath>
+				<value>
+					<visible>{enableStonecutting}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Smelting -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableSmelting</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Smelting"]</xpath>
+				<value>
+					<visible>{enableSmelting}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Loading -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableLoading</key>
+		<defaultValue>false</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Loading"]</xpath>
+				<value>
+					<visible>{enableLoading}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Mortifying -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableMortifying</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Mortifying"]</xpath>
+				<value>
+					<visible>{enableMortifying}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Delivering -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableDelivering</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Delivering"]</xpath>
+				<value>
+					<visible>{enableDelivering}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+	
+	<!-- Scanning -->	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableScanning</key>
+		<defaultValue>true</defaultValue>
+		<apply>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkTypeDef[defName="Scanning"]</xpath>
+				<value>
+					<visible>{enableScanning}</visible>
+				</value>
+			</li>
+		</apply>
+	</Operation>
+		
+</Patch>

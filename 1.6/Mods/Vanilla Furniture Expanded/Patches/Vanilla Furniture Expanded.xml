@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Vanilla Furniture Expanded -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/WorkGiverDef[defName = "DoBillsHaulStone_Campfire"]/workType</xpath>
+				  <value>
+					<workType>Mortifying</workType>
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

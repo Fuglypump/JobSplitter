@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Furniture Expanded - Security -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Security</li>
+    </mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRearming</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "VFES_RearmTrap"]/workType</xpath>
+				<value>
+					<workType>Rearming</workType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "VFES_RearmTrap"]/workType</xpath>
+				<value>
+					<workType>Hauling</workType>
+				</value>
+			</li>
+		</caseFalse>
+	</match>
+  </Operation>
+</Patch>

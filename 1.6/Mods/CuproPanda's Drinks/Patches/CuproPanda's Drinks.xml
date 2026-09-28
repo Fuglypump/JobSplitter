@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Cupro's Drinks - Core</li>
+	  <li>CuproPanda's Drinks</li>
+    </mods>
+	<match Class="PatchOperationReplace"><xpath>/Defs/WorkGiverDef[defName = "CPD_DoBillsDrinksTable"]/workType</xpath>
+		<value>
+			<workType>Cooking</workType>
+		</value>
+	</match>
+	</Operation>
+</Patch>

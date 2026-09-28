@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		
+	<!-- Handling -->
+	
+	<WorkGiverDef>
+		<defName>JS_EmptyEggBox</defName>
+		<label>empty egg box</label>
+		<giverClass>WorkGiver_EmptyEggBox</giverClass>
+		<workType>Handling</workType>
+		<verb>empty</verb>
+		<gerund>emptying</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+</Defs>

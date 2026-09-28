@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Rimatomics -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimatomics</li>
+			<li>Dubs Rimatomics</li>
+		</mods>
+		<match Class="XmlExtensions.OptionalPatch">
+			<modId>Fuglypump.JobSplitter</modId>
+			<key>enableRearming</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "LoadRailgunMagazine"]/workType</xpath>
+					<value>
+						<workType>Rearming</workType>
+					</value>
+				</li>
+			</caseTrue>
+			<caseFalse>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "LoadRailgunMagazine"]/workType</xpath>
+					<value>
+						<workType>Hauling</workType>
+					</value>
+				</li>
+			</caseFalse>
+		</match>
+	</Operation>
+</Patch>

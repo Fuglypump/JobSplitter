@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>Fuglypump_JobSplitter</defName>
+		<modId>Fuglypump.JobSplitter</modId>
+		<label>Job Splitter</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(187,0,0)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>For any changed settings to take effect the game must be restarted.</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+				<tKey>JobSplitterModWarning</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Worktype Settings</label>
+				<defaultState>Closed</defaultState>
+				<anchor>Left</anchor>
+				<tKey>JobSplitterWorktypeSettingsTitle</tKey>
+
+				<settings>
+				
+					<!-- Surgeon Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableSurgeon</key>
+						<label>Surgeon</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterSurgeonWorktypeTitle</tKey>
+						<tooltip>Moves surgery related tasks to their own worktype.</tooltip>
+						<tKeyTip>JobSplitterSurgeonWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Nursing Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableNursing</key>
+						<label>Nursing</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterNursingWorktypeTitle</tKey>
+						<tooltip>Moves feeding, visiting and moving patients to their own worktype.</tooltip>
+						<tKeyTip>JobSplitterNursingWorktypeTooltip</tKeyTip>	
+					</li>
+					
+					<!-- Nursing: Prisoners -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableNursingPrisoners</key>
+						<label>Nurses care for prisoners</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterNursingPrisonersTitle</tKey>
+						<tooltip>Moves feeding prisoners to the Nursing worktype.</tooltip>
+						<tKeyTip>JobSplitterNursingPrisonersTooltip</tKeyTip>
+					</li>			
+					
+					<!-- Nursing: Babies -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableNursingBabies</key>
+						<label>Nurses care for babies.</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterNursingBabiesTitle</tKey>
+						<tooltip>Moves all baby related tasks to the Nursing worktype.</tooltip>
+						<tKeyTip>JobSplitterNursingBabiesTooltip</tKeyTip>
+					</li>			
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Teaching Worktype -->
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.SetColor"/>
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+						<key>enableTeaching</key>
+						<label>Teaching Children</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterTeachingWorktypeTitle</tKey>
+						<tooltip>Moves teaching children to its own worktype.</tooltip>
+						<tKeyTip>JobSplitterNursingBabiesTooltip</tKeyTip>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.SetColor"/>
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Rearming Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableRearming</key>
+						<label>Rearming and Refueling</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterRearmingWorktypeTitle</tKey>
+						<tooltip>Moves rearming traps and refueling buildings to their own worktype.</tooltip>
+						<tKeyTip>JobSplitterRearmingWorktypeTooltip</tKeyTip>
+					</li>
+					
+					<!-- Rearming: Recharge -->
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.SetColor"/>
+					<li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+						<key>enableRearmingRecharge</key>
+						<label>Recharging mechanoids</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterRearmingRechargeTitle</tKey>
+						<tooltip>Adds hauling mechanoids to charging stations to the Rearming Worktype. (Haulers will still perform this task)</tooltip>
+						<tKeyTip>JobSplitterRearmingRechargeTooltip</tKeyTip>
+					</li>			
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Recruiting Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableRecruiting</key>
+						<label>Recruiting prisoners</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterRecruitingWorktypeTitle</tKey>
+						<tooltip>Moves chatting with prisoners to its own worktype. (Will also convert and enslave prisoners if Ideology is enabled)</tooltip>
+						<tKeyTip>JobSplitterRecruitingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Training Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableTraining</key>
+						<label>Training animals</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterTrainingWorktypeTitle</tKey>
+						<tooltip>Moves training animals to its own worktype.</tooltip>
+						<tKeyTip>JobSplitterTrainingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Taming Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableTaming</key>
+						<label>Taming animals</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterTamingWorktypeTitle</tKey>
+						<tooltip>Moves taming animals to its own worktype.</tooltip>
+						<tKeyTip>JobSplitterTamingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Butchering Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableButchering</key>
+						<label>Butchering corpses</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterButcheringWorktypeTitle</tKey>
+						<tooltip>Moves butchering related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterButcheringWorktypeTooltip</tKeyTip>
+					</li>
+
+					<!-- Butchering: Slaughter -->			
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableButcheringSlaughter</key>
+						<label>Butchers slaughter animals</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterButcheringSlaughterTitle</tKey>
+						<tooltip>Adds slaughtering animals to the Butchering Worktype. (Handlers will still perform this task)</tooltip>
+						<tKeyTip>JobSplitterButcheringSlaughterTooltip</tKeyTip>
+					</li>
+
+					<!-- Butchering: Execution -->			
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableButcheringExecution</key>
+						<label>Butchers execute prisoners</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterButcheringExecutionTitle</tKey>
+						<tooltip>Adds prisoner execution to the Butchering Worktype. (Wardens will still perform this task)</tooltip>
+						<tKeyTip>JobSplitterButcheringExecutionTooltip</tKeyTip>
+					</li>
+
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Brewing Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableBrewing</key>
+						<label>Brewing</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterBrewingWorktypeTitle</tKey>
+						<tooltip>Moves brewing related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterBrewingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Repairing Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableRepairing</key>
+						<label>Repairing</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterRepairingWorktypeTitle</tKey>
+						<tooltip>Moves repairing related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterRepairingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Demolishing Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableDemolishing</key>
+						<label>Demolishing</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterDemolishingWorktypeTitle</tKey>
+						<tooltip>Moves demolition related tasks to their own Worktype. (Construct will still build roofs and deconstruct things underneath blueprints)</tooltip>
+						<tKeyTip>JobSplitterDemolishingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Harvesting Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableHarvesting</key>
+						<label>Harvesting</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterHarvestingWorktypeTitle</tKey>
+						<tooltip>Moves plant harvesting related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterHarvestingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Drilling Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableDrilling</key>
+						<label>Drilling</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterDrillingWorktypeTitle</tKey>
+						<tooltip>Moves drilling related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterDrillingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Fabricating Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableFabricating</key>
+						<label>Fabrication</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterFabricatingWorktypeTitle</tKey>
+						<tooltip>Moves fabrication bench related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterFabricatingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Drugs Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableDrugs</key>
+						<label>Drug Production</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterDrugsWorktypeTitle</tKey>
+						<tooltip>Moves drug lab related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterDrugsWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Refining Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableRefining</key>
+						<label>Refining</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterRefiningWorktypeTitle</tKey>
+						<tooltip>Moves chemical refining tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterRefiningWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Stonecutting Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableStonecutting</key>
+						<label>Stonecutting</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterStonecuttingWorktypeTitle</tKey>
+						<tooltip>Moves stonecutting tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterStonecuttingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Smelting Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableSmelting</key>
+						<label>Smelting</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterSmeltingWorktypeTitle</tKey>
+						<tooltip>Moves smelting tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterSmeltingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Loading Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableLoading</key>
+						<label>Loading</label>
+						<defaultValue>false</defaultValue>
+						<tKey>JobSplitterLoadingWorktypeTitle</tKey>
+						<tooltip>Moves caravan loading related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterLoadingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Mortifying Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableMortifying</key>
+						<label>Mortifying</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterMortifyingWorktypeTitle</tKey>
+						<tooltip>Moves corpse and cremation related tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterMortifyingWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Delivering Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableDelivering</key>
+						<label>Delivering</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterDeliveringWorktypeTitle</tKey>
+						<tooltip>Moves delivering materials to blueprints tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterDeliveringWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+					<!-- Scanning Worktype -->
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>enableScanning</key>
+						<label>Scanning</label>
+						<defaultValue>true</defaultValue>
+						<tKey>JobSplitterScanningWorktypeTitle</tKey>
+						<tooltip>Moves scanning tasks to their own Worktype.</tooltip>
+						<tKeyTip>JobSplitterScanningWorktypeTooltip</tKeyTip>
+					</li>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+				</settings>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine">
+				<spacing>12</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Additional Settings</label>
+				<defaultState>Closed</defaultState>
+				<anchor>Left</anchor>
+				<tKey>JobSplitterAdditionalSettingsTitle</tKey>
+				<settings>
+					<li Class="XmlExtensions.Setting.SetColor"/>
+					<li Class="XmlExtensions.Setting.Text">
+						<text>More settings coming soon.</text>
+						<font>Medium</font>
+						<anchor>Middle</anchor>
+					</li>
+					<!-- Future non-worktype settings go here -->
+
+				</settings>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>

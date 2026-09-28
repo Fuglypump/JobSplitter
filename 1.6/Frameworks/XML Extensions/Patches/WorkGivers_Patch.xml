@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- Surgeon -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableSurgeon</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsMedicalHumanOperation"]/workType</xpath>
+						<value>
+							<workType>Surgeon</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsMedicalAnimalOperation"]/workType</xpath>
+						<value>
+							<workType>Surgeon</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "TakeToBedToOperate"]/workType</xpath>
+						<value>
+							<workType>Surgeon</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsMedicalHumanOperation"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsMedicalAnimalOperation"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "TakeToBedToOperate"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Nursing and/or Teaching -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableNursing</key>
+				<defaultValue>true</defaultValue>
+				<!-- Nursing ON -->
+				<caseTrue>			
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedHumanlikes"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedAnimals"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "VisitSickPawn"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+						<xpath>*/WorkGiverDef[defName = "FeedHemogen"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+						<xpath>*/WorkGiverDef[defName = "FeedHemogen"]/priorityInType</xpath>
+						<value>
+							<priorityInType>80</priorityInType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_NurseRescue</defName>
+								<label>rescue downed allies to bed</label>
+								<giverClass>WorkGiver_RescueDowned</giverClass>
+								<workType>Nursing</workType>
+								<verb>rescue</verb>
+								<gerund>rescuing</gerund>
+								<priorityInType>95</priorityInType>
+								<directOrderable>false</directOrderable>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<emergency>true</emergency>
+								<prioritizeSustains>true</prioritizeSustains>
+							</WorkGiverDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_NurseToBedToOperate</defName>
+								<label>take patients to bed for operations</label>
+								<giverClass>WorkGiver_TakeToBedToOperate</giverClass>
+								<workType>Nursing</workType>
+								<priorityInType>90</priorityInType>
+								<verb>take to operate</verb>
+								<gerund>taking to operate</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<prioritizeSustains>true</prioritizeSustains>
+							</WorkGiverDef>
+						</value>
+					</li>
+					<!-- Optional: Nursing Prisoners -->
+					<li Class="XmlExtensions.OptionalPatch">
+						<modId>Fuglypump.JobSplitter</modId>
+						<key>enableNursingPrisoners</key>
+						<defaultValue>false</defaultValue>
+						<!-- Optional: Nursing Prisoners ON -->
+						<caseTrue>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "FeedPrisoner"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "DeliverFoodToPrisoner"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+								<xpath>*/WorkGiverDef[defName = "DeliverHemogenToPrisoner"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef>
+										<defName>JS_NurseTakePrisonerToBed</defName>
+										<label>take prisoners to bed</label>
+										<giverClass>WorkGiver_Warden_TakeToBed</giverClass>
+										<workType>Nursing</workType>
+										<verb>take to bed</verb>
+										<gerund>taking to bed</gerund>
+										<priorityInType>85</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+									</WorkGiverDef>
+								</value>
+							</li>
+						</caseTrue>
+						<!-- Optional: Nursing Prisoners OFF -->
+						<caseFalse>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "FeedPrisoner"]/workType</xpath>
+								<value>
+									<workType>Warden</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "DeliverFoodToPrisoner"]/workType</xpath>
+								<value>
+									<workType>Warden</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+								<xpath>*/WorkGiverDef[defName = "DeliverHemogenToPrisoner"]/workType</xpath>
+								<value>
+									<workType>Warden</workType>
+								</value>
+							</li>
+						</caseFalse>
+					</li>
+					<!-- Optional: Nursing Babies -->
+					<li Class="XmlExtensions.OptionalPatch">
+						<modId>Fuglypump.JobSplitter</modId>
+						<key>enableNursingBabies</key>
+						<defaultValue>false</defaultValue>
+						<!-- Nursing Babies ON -->
+						<caseTrue>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BringBabyToSafety"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BringBabyToSafety"]/priorityInType</xpath>
+								<value>
+									<priorityInType>94</priorityInType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BreastfeedBaby"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "PlayWithBaby"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BottleFeedBaby"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "CarryToBreastfeed"]/workType</xpath>
+								<value>
+									<workType>Nursing</workType>
+								</value>
+							</li>
+							<li Class="XmlExtensions.OptionalPatch">
+								<modId>Fuglypump.JobSplitter</modId>
+								<key>enableTeaching</key>
+								<defaultValue>true</defaultValue>
+								<!-- Nursing Babies ON + Teaching ON = Rename Childcare into Teaching -->
+								<caseTrue>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+										<value>
+											<workType>Childcare</workType>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/labelShort</xpath>
+										<value>
+											<labelShort>Teach</labelShort>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/pawnLabel</xpath>
+										<value>
+											<pawnLabel>Teacher</pawnLabel>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/gerundLabel</xpath>
+										<value>
+											<gerundLabel>Teaching</gerundLabel>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/description</xpath>
+										<value>
+											<description>Teach children at school desks to increase their skills and intellectual development.</description>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/verb</xpath>
+										<value>
+											<verb>Teach</verb>
+										</value>
+									</li>
+								</caseTrue>
+								<!-- Nursing Babies ON + Teaching OFF = Reset Childcare back to normal -->
+								<caseFalse>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+										<value>
+											<workType>Childcare</workType>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/labelShort</xpath>
+										<value>
+											<labelShort>Childcare</labelShort>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/pawnLabel</xpath>
+										<value>
+											<pawnLabel>Childcarer</pawnLabel>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/gerundLabel</xpath>
+										<value>
+											<gerundLabel>caring</gerundLabel>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/description</xpath>
+										<value>
+											<description>Care for a baby or child of the colony.</description>
+										</value>
+									</li>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkTypeDef[defName = "Childcare"]/verb</xpath>
+										<value>
+											<verb>Care</verb>
+										</value>
+									</li>
+								</caseFalse>
+							</li>
+						</caseTrue>
+						<!-- Nursing Babies OFF -->
+						<caseFalse>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BringBabyToSafety"]/workType</xpath>
+								<value>
+									<workType>Childcare</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BreastfeedBaby"]/workType</xpath>
+								<value>
+									<workType>Childcare</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "PlayWithBaby"]/workType</xpath>
+								<value>
+									<workType>Childcare</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "BottleFeedBaby"]/workType</xpath>
+								<value>
+									<workType>Childcare</workType>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/WorkGiverDef[defName = "CarryToBreastfeed"]/workType</xpath>
+								<value>
+									<workType>Childcare</workType>
+								</value>
+							</li>
+							<li Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+								<modId>Fuglypump.JobSplitter</modId>
+								<key>enableTeaching</key>
+								<defaultValue>true</defaultValue>
+								<!-- Nursing Babies OFF + Teaching ON = Move ChildcarerTeach to Teaching worktype -->
+								<caseTrue>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+										<value>
+											<workType>Teaching</workType>
+										</value>
+									</li>
+								</caseTrue>
+								<!-- Nursing Babies OFF + Teaching OFF =  Reset ChildcarerTeach back to Childcare -->
+								<caseFalse>
+									<li Class="PatchOperationReplace">
+										<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+										<value>
+											<workType>Childcare</workType>
+										</value>
+									</li>
+								</caseFalse>
+							</li>
+						</caseFalse>
+					</li>
+				</caseTrue>
+				<!-- Nursing OFF -->
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedHumanlikes"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedAnimals"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "VisitSickPawn"]/workType</xpath>
+						<value>
+							<workType>Doctor</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Rearming -->		
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableRearming</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>			
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RearmTurrets"]/workType</xpath>
+						<value>
+							<workType>Rearming</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Refuel"]/workType</xpath>
+						<value>
+							<workType>Rearming</workType>
+						</value>
+					</li>
+					<!-- Optional: Recharge Mechs -->
+					<li Class="XmlExtensions.OptionalPatch">
+						<modId>Fuglypump.JobSplitter</modId>
+						<key>enableRearmingRecharge</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef MayRequire="Ludeon.RimWorld.Biotech">
+										<defName>JS_HaulMechsToCharger</defName>
+										<label>haul mechs to charger</label>
+										<giverClass>WorkGiver_HaulMechToCharger</giverClass>
+										<workType>Rearming</workType>
+										<verb>haul</verb>
+										<gerund>hauling</gerund>
+										<priorityInType>90</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+										<canBeDoneByMechs>false</canBeDoneByMechs>
+									</WorkGiverDef>
+								</value>
+							</li>
+						</caseTrue>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RearmTurrets"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Refuel"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Recruiting -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableRecruiting</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ChatWithPrisoner"]/workType</xpath>
+						<value>
+							<workType>Recruiting</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ChatWithPrisoner"]/workType</xpath>
+						<value>
+							<workType>Warden</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Training -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableTraining</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Train"]/workType</xpath>
+						<value>
+							<workType>Training</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Train"]/workType</xpath>
+						<value>
+							<workType>Handling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Taming -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableTaming</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Tame"]/workType</xpath>
+						<value>
+							<workType>Taming</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Tame"]/workType</xpath>
+						<value>
+							<workType>Handling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Butchering -->	
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableButchering</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsButcherFlesh"]/workType</xpath>
+						<value>
+							<workType>Butchering</workType>
+						</value>
+					</li>
+					<!-- Optional Slaughtering -->
+					<li Class="XmlExtensions.OptionalPatch">
+						<modId>Fuglypump.JobSplitter</modId>
+						<key>enableButcheringSlaughter</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef>
+										<defName>JS_ButcherSlaughter</defName>
+										<label>slaughter animals</label>
+										<giverClass>WorkGiver_Slaughter</giverClass>
+										<workType>Butchering</workType>
+										<verb>slaughter</verb>
+										<gerund>slaughtering</gerund>
+										<priorityInType>95</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+									</WorkGiverDef>
+								</value>
+							</li>
+						</caseTrue>
+					</li>
+					<!-- Optional Execution -->
+					<li Class="XmlExtensions.OptionalPatch">
+						<modId>Fuglypump.JobSplitter</modId>
+						<key>enableButcheringExecution</key>
+						<defaultValue>false</defaultValue>
+						<caseTrue>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef>
+										<defName>JS_ButcherExecution</defName>
+										<label>execute prisoners</label>
+										<giverClass>WorkGiver_Warden_DoExecution</giverClass>
+										<workType>Butchering</workType>
+										<verb>execute</verb>
+										<gerund>executing</gerund>
+										<priorityInType>100</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+									</WorkGiverDef>
+								</value>
+							</li>
+						</caseTrue>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsButcherFlesh"]/workType</xpath>
+						<value>
+							<workType>Cooking</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Brewing -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableBrewing</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsBrew"]/workType</xpath>
+						<value>
+							<workType>Brewing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "TakeBeerOutOfFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Brewing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FillFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Brewing</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsBrew"]/workType</xpath>
+						<value>
+							<workType>Cooking</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "TakeBeerOutOfFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FillFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Repairing -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableRepairing</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Repair"]/workType</xpath>
+						<value>
+							<workType>Repairing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuilding"]/workType</xpath>
+						<value>
+							<workType>Repairing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_RepairBuildRoofs</defName>
+								<label>build roofs</label>
+								<giverClass>WorkGiver_BuildRoof</giverClass>
+								<workType>Repairing</workType>
+								<priorityInType>70</priorityInType>
+								<verb>build roof</verb>
+								<gerund>building roof</gerund>
+								<scanThings>false</scanThings>
+								<scanCells>true</scanCells>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+							</WorkGiverDef>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Repair"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuilding"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+					<!-- Raises the priority of building roofs if Repair is disabled  -->
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "BuildRoofs"]/priorityInType</xpath>
+						<value>
+							<priorityInType>115</priorityInType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Demolishing -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableDemolishing</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Deconstruct"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RemoveRoofs"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFloors"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFoundations"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_DemoUninstall</defName>
+								<label>uninstall structures</label>
+								<giverClass>WorkGiver_Uninstall</giverClass>
+								<workType>Demolishing</workType>
+								<priorityInType>50</priorityInType>
+								<verb>uninstall</verb>
+								<gerund>uninstalling</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+							</WorkGiverDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+							<defName>JS_DemoDeconstructForBlueprint</defName>
+							<label>deconstruct structures for blueprints</label>
+							<giverClass>WorkGiver_DeconstructForBlueprint</giverClass>
+							<workType>Demolishing</workType>
+							<priorityInType>85</priorityInType>
+							<verb>deconstruct</verb>
+							<gerund>deconstructing</gerund>
+							<requiredCapacities>
+							  <li>Manipulation</li>
+							</requiredCapacities>
+						  </WorkGiverDef>
+						</value>
+					</li>
+					<!-- Lowers the priority of uninstall for Construction if Demolishing is enabled -->
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Uninstall"]/priorityInType</xpath>
+						<value>
+							<priorityInType>75</priorityInType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Deconstruct"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RemoveRoofs"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFloors"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFoundations"]/workType</xpath>
+						<value>
+							<workType>Construction</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Harvesting -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableHarvesting</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GrowerHarvest"]/workType</xpath>
+						<value>
+							<workType>Harvesting</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GrowerHarvest"]/workType</xpath>
+						<value>
+							<workType>Growing</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Drilling -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableDrilling</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Drill"]/workType</xpath>
+						<value>
+							<workType>Drilling</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Drill"]/workType</xpath>
+						<value>
+							<workType>Mining</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Fabricating -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableFabricating</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsFabricationBench"]/workType</xpath>
+						<value>
+							<workType>Fabricating</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsFabricationBench"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Drugs -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableDrugs</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsProduceDrugs"]/workType</xpath>
+						<value>
+							<workType>Drugs</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsProduceDrugs"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Refining -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableRefining</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsRefinery"]/workType</xpath>
+						<value>
+							<workType>Refining</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsRefinery"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Stonecutting -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableStonecutting</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsStonecut"]/workType</xpath>
+						<value>
+							<workType>Stonecutting</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsStonecut"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Smelting -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableSmelting</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsSmelter"]/workType</xpath>
+						<value>
+							<workType>Smelting</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsSmelter"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+			
+			<!-- Loading -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableLoading</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "UnloadCarriers"]/workType</xpath>
+						<value>
+							<workType>Loading</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LoadTransporters"]/workType</xpath>
+						<value>
+							<workType>Loading</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HelpGatheringItemsForCaravan"]/workType</xpath>
+						<value>
+							<workType>Loading</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "UnloadCarriers"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LoadTransporters"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HelpGatheringItemsForCaravan"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+
+			<!-- Mortifying -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableMortifying</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Strip"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsCremate"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsHaulCampfire"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HaulCorpses"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ExtractSkull"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Strip"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsCremate"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsHaulCampfire"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HaulCorpses"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ExtractSkull"]/workType</xpath>
+						<value>
+							<workType>BasicWorker</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+					
+			<!-- Delivering -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableDelivering</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToFrames"]/workType</xpath>
+						<value>
+							<workType>Delivering</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToBlueprints"]/workType</xpath>
+						<value>
+							<workType>Delivering</workType>
+						</value>
+					</li>
+						<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_DeliverUninstall</defName>
+								<label>uninstall structure</label>
+								<giverClass>WorkGiver_Uninstall</giverClass>
+								<workType>Delivering</workType>
+								<priorityInType>19</priorityInType>
+								<verb>uninstall</verb>
+								<gerund>uninstalling</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<nonColonistsCanDo>true</nonColonistsCanDo>
+								<prioritizeSustains>true</prioritizeSustains>
+								<equivalenceGroup>AssistInConstruction</equivalenceGroup>
+							</WorkGiverDef>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToFrames"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToBlueprints"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>		
+			
+			<!-- Scanning -->
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>Fuglypump.JobSplitter</modId>
+				<key>enableScanning</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LongRangeScan"]/workType</xpath>
+						<value>
+							<workType>Scanning</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GroundPenetratingScan"]/workType</xpath>
+						<value>
+							<workType>Scanning</workType>
+						</value>
+					</li>
+				</caseTrue>
+				<caseFalse>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LongRangeScan"]/workType</xpath>
+						<value>
+							<workType>Research</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GroundPenetratingScan"]/workType</xpath>
+						<value>
+							<workType>Research</workType>
+						</value>
+					</li>
+				</caseFalse>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

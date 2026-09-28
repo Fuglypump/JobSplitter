@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Dubs Rimkit -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dubs Rimkit</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>*/WorkGiverDef[defName = "FixBrokenDownBuildingWithKit"]/workType</xpath>
+      <value>
+        <workType>Repairing</workType>
+      </value>
+    </match>
+  </Operation>
+</Patch>
