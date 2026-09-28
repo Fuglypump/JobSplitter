@@ -3,7 +3,7 @@
 	
 	<!-- Shorten (and capitalize) vanilla worktype labels -->
 	
-	<Firefighter.labelShort>Fire</Firefighter.labelShort>
+	<Firefighter.labelShort>Firefight</Firefighter.labelShort>
 	<Patient.labelShort>Patient</Patient.labelShort>
 	<Doctor.labelShort>Doctor</Doctor.labelShort>
 	<PatientBedRest.labelShort>Rest</PatientBedRest.labelShort>
@@ -12,7 +12,9 @@
 	<Handling.labelShort>Handle</Handling.labelShort>
 	<Cooking.labelShort>Cook</Cooking.labelShort>
 	<Hunting.labelShort>Hunt</Hunting.labelShort>
-	<PlantCutting.labelShort>Cut</PlantCutting.labelShort>
+	<Construction.labelShort>Construct</Construction.labelShort>
+	<Growing.labelShort>Grow</Growing.labelShort>
+	<PlantCutting.labelShort>Cut Plants</PlantCutting.labelShort>
 	<Mining.labelShort>Mine</Mining.labelShort>
 	<Smithing.labelShort>Smith</Smithing.labelShort>
 	<Tailoring.labelShort>Tailor</Tailoring.labelShort>
@@ -20,7 +22,7 @@
 	<Crafting.labelShort>Craft</Crafting.labelShort>
 	<Hauling.labelShort>Haul</Hauling.labelShort>
 	<Cleaning.labelShort>Clean</Cleaning.labelShort>
-	<Research.labelShort>Tech</Research.labelShort>
+	<Research.labelShort>Research</Research.labelShort>
 	
 	<!-- Adjust vanilla worktype descriptions -->
 	
@@ -29,25 +31,9 @@
 	<Cooking.description>Prepare meals.</Cooking.description>
 	<Mining.description>Mining and digging.</Mining.description>
 	<Crafting.description>Do general low-skilled labor at work stations.</Crafting.description>
-
-	<!-- Rename Growing to Sowing -->
+	<Growing.description>Plant seeds.</Growing.description>
 	
-	<Growing.label>Sow</Growing.label>
-	<Growing.description>Sow crops.</Growing.description>
-	<Growing.labelShort>Sow</Growing.labelShort>
-	<Growing.pawnLabel>Sower</Growing.pawnLabel>
-	<Growing.gerundLabel>Sowing</Growing.gerundLabel>
-	<Growing.verb>Sow</Growing.verb>
 	
-	<!-- Rename Construction to Building -->
-	
-	<Construction.label>Build</Construction.label>
-	<Construction.description>Build things that you've designated.</Construction.description>
-	<Construction.labelShort>Build</Construction.labelShort>
-	<Construction.pawnLabel>Builder</Construction.pawnLabel>
-	<Construction.gerundLabel>Building</Construction.gerundLabel>
-	<Construction.verb>Build</Construction.verb>
-
 	<!-- 1305 Surgeon -->
 
 	<Surgeon.label>Surgeon</Surgeon.label>
@@ -71,7 +57,7 @@
 	<!-- 1135 Rearming -->
 
 	<Rearming.label>Rearm</Rearming.label>
-	\1Rearm and refuel objects and haul mechs to charging stations.\2
+	<Rearming.description>Rearm and refuel objects and haul mechs to charging stations.</Rearming.description>
 	<Rearming.labelShort>Rearm</Rearming.labelShort>
 	<Rearming.pawnLabel>Rearmer</Rearming.pawnLabel>
 	<Rearming.gerundLabel>Rearming</Rearming.gerundLabel>
@@ -137,9 +123,9 @@
 
 	<!-- 899 Demolishing -->
 
-	<Demolishing.label>Demo</Demolishing.label>
+	<Demolishing.label>Demolish</Demolishing.label>
 	<Demolishing.description>Uninstall or deconstruct buildings/objects.</Demolishing.description>
-	<Demolishing.labelShort>Demo</Demolishing.labelShort>
+	<Demolishing.labelShort>Demolish</Demolishing.labelShort>
 	<Demolishing.pawnLabel>Demolitionist</Demolishing.pawnLabel>
 	<Demolishing.gerundLabel>Demolishing</Demolishing.gerundLabel>
 	<Demolishing.verb>Demolish</Demolishing.verb>
@@ -187,7 +173,7 @@
 
 	<!-- 420 Drug Production -->
 
-	<Drugs.label>Drug</Drugs.label>
+	<Drugs.label>Drugs</Drugs.label>
 	<Drugs.description>Synthesize drugs at a drug lab.</Drugs.description>
 	<Drugs.labelShort>Drugs</Drugs.labelShort>
 	<Drugs.pawnLabel>Chemist</Drugs.pawnLabel>

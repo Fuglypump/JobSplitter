@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Misc. Robots++</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableLoading</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_II"]/robotWorkTypes/li[workTypeDef = "Loading"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_II"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDelivering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_II"]/robotWorkTypes/li[workTypeDef = "Delivering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableLoading</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_III"]/robotWorkTypes/li[workTypeDef = "Loading"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_III"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDelivering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_III"]/robotWorkTypes/li[workTypeDef = "Delivering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableLoading</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_IV"]/robotWorkTypes/li[workTypeDef = "Loading"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_IV"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDelivering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_IV"]/robotWorkTypes/li[workTypeDef = "Delivering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableLoading</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_V"]/robotWorkTypes/li[workTypeDef = "Loading"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_V"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDelivering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Hauler_V"]/robotWorkTypes/li[workTypeDef = "Delivering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Cleaner_II"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Cleaner_III"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Cleaner_IV"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "AIRobot_Cleaner_V"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_I"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_I"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_II"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_II"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_III"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_III"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_IV"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_IV"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_V"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Builder_V"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_I"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_I"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_I"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_I"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_I"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_II"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_II"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_II"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_II"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_II"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_III"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_III"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_III"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_III"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_III"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_IV"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_IV"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_IV"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_IV"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_IV"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_V"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_V"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_V"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_V"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Crafter_V"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_I"]/robotWorkTypes/li[workTypeDef = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_II"]/robotWorkTypes/li[workTypeDef = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_III"]/robotWorkTypes/li[workTypeDef = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_III"]/robotWorkTypes/li[workTypeDef = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_IV"]/robotWorkTypes/li[workTypeDef = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_IV"]/robotWorkTypes/li[workTypeDef = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_V"]/robotWorkTypes/li[workTypeDef = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableNursing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_ER_V"]/robotWorkTypes/li[workTypeDef = "Nursing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_I"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_I"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_I"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_II"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_II"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_II"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_III"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_III"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_III"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_IV"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_IV"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_IV"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_V"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_V"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Kitchen_V"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSurgeon</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Surgeon"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableLoading</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Loading"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableHarvesting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Harvesting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrugs</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Drugs"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRefining</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Refining"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableFabricating</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Fabricating"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableButchering</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Butchering"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDrilling</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Drilling"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRepairing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Repairing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableDemolishing</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Demolishing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableSmelting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Smelting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableStonecutting</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Stonecutting"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableBrewing</key>
+          <defaultValue>false</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Brewing"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableRearming</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Rearming"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+        <li Class="XmlExtensions.OptionalPatch">
+          <modId>Fuglypump.JobSplitter</modId>
+          <key>enableMortifying</key>
+          <defaultValue>true</defaultValue>
+          <caseFalse>
+            <li Class="PatchOperationRemove">
+              <xpath>*/ThingDef[defName = "RPP_Bot_Omni_V"]/robotWorkTypes/li[workTypeDef = "Mortifying"]</xpath>
+            </li>
+          </caseFalse>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

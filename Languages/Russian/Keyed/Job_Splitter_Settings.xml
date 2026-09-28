@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>Чтобы изменённые настройки вступили в силу, игру необходимо перезапустить.</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>Настройки типов работ</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>Хирургия</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>Уход</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>Уход за заключёнными</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>Уход за младенцами</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>Обучение детей</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>Перезарядка и заправка</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>Зарядка механоидов</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>Вербовка заключённых</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>Дрессировка животных</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>Приручение животных</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>Разделка туш</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>Убой животных</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>Казнь заключённых</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>Пивоварение</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>Ремонт</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>Демонтаж</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>Сбор урожая</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>Бурение</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>Производство</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>Производство наркотиков</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>Переработка</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>Обработка камня</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>Плавка</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>Погрузка</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>Утилизация</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>Доставка</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>Сканирование</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>Дополнительные настройки</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>Переносит связанные с хирургией задачи в отдельный тип работы.</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>Переносит кормление, посещение и перемещение пациентов в отдельный тип работы.</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>Переносит кормление заключённых в тип работы «Уход».</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>Переносит все задачи, связанные с младенцами, в тип работы «Уход».</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>Переносит обучение детей в отдельный тип работы.</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>Переносит перезарядку ловушек и заправку зданий в отдельный тип работы.</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>Добавляет доставку грузовыми механоидными роботами к зарядным станциям в тип работы «Перезарядка». (Грузчики по-прежнему будут выполнять эту задачу)</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>Переносит разговоры с заключёнными в отдельный тип работы. (Также позволяет обращать заключённых и обращать их в рабство, если включена Идеология)</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>Переносит дрессировку животных в отдельный тип работы.</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>Переносит приручение животных в отдельный тип работы.</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>Переносит связанные с разделкой задачи в отдельный тип работы.</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>Добавляет убой животных в тип работы «Разделка». (Укротители по-прежнему будут выполнять эту задачу)</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>Добавляет казнь заключённых в тип работы «Разделка». (Смотрители по-прежнему будут выполнять эту задачу)</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>Переносит связанные с пивоварением задачи в отдельный тип работы.</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>Переносит связанные с ремонтом задачи в отдельный тип работы.</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>Переносит связанные с демонтажом задачи в отдельный тип работы. (Строители по-прежнему будут строить крыши и демонтировать объекты под чертежами)</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>Переносит связанные со сбором урожая задачи в отдельный тип работы.</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>Переносит связанные с бурением задачи в отдельный тип работы.</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>Переносит связанные с производственным станком задачи в отдельный тип работы.</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>Переносит связанные с лабораторией наркотиков задачи в отдельный тип работы.</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>Переносит химическую переработку в отдельный тип работы.</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>Переносит обработку камня в отдельный тип работы.</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>Переносит плавку в отдельный тип работы.</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>Переносит погрузку караванов в отдельный тип работы.</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>Переносит связанные с трупами и кремацией задачи в отдельный тип работы.</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>Переносит доставку материалов к чертежам в отдельный тип работы.</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>Переносит сканирование в отдельный тип работы.</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>

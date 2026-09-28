@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Dubs Rimkit -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dubs Rimkit</li>
+    </mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableRepairing</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+			<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuildingWithKit"]/workType</xpath>
+				<value>
+					<workType>Repairing</workType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+			<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuildingWithKit"]/workType</xpath>
+				<value>
+					<workType>Construction</workType>
+				</value>
+			</li>
+		</caseFalse>
+	</match>
+  </Operation>
+</Patch>

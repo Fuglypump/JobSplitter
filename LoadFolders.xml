@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+  <v1.6>
+    <li>1.6</li>
+    <li>1.6/Mods/Acid Chamber</li>
+    <li>1.6/Mods/Combat Extended</li>
+    <li>1.6/Mods/CuproPanda's Drinks</li>
+    <li>1.6/Mods/Dubs Bad Hygiene</li>
+    <li>1.6/Mods/Dubs Rimkit</li>
+    <li>1.6/Mods/Expanded Roofing</li>
+    <li>1.6/Mods/Fluffy Breakdowns</li>
+    <li>1.6/Mods/Fruit Blend</li>
+    <li>1.6/Mods/Harvest Organs Post Mortem</li>
+    <li>1.6/Mods/Meat Blend</li>
+    <li>1.6/Mods/Medieval Overhaul</li>
+    <li>1.6/Mods/Misc. Bees'n'Honey</li>
+    <li>1.6/Mods/Misc. Craftable Robots Addon</li>
+    <li>1.6/Mods/Misc. Craftable Robots</li>
+    <li>1.6/Mods/Misc. Robots++</li>
+    <li>1.6/Mods/Misc. Robots</li>
+    <li>1.6/Mods/Omni Core Drill</li>
+    <li>1.6/Mods/Refactored Work Priorities</li>
+    <li>1.6/Mods/Rimatomics</li>
+    <li>1.6/Mods/Rimefeller</li>
+    <li>1.6/Mods/Save Our Ship 2</li>
+    <li>1.6/Mods/Smokeleaf Industry</li>
+    <li>1.6/Mods/VGP Garden Drinks UF</li>
+    <li>1.6/Mods/VGP Vegetable Garden</li>
+	<li>1.6/Mods/Vanilla Expanded Framework</li>
+    <li>1.6/Mods/Vanilla Brewing Expanded - Coffees and Teas</li>
+    <li>1.6/Mods/Vanilla Brewing Expanded</li>
+    <li>1.6/Mods/Vanilla Furniture Expanded - Security</li>
+    <li>1.6/Mods/Vanilla Furniture Expanded</li>
+    <li>1.6/Mods/Vanilla Plants Expanded - More Plants</li>
+    <li>1.6/Mods/Veggie Mix</li>
+    <li>1.6/Mods/What The Hack</li>
+    <li>1.6/Mods/What the Hack - A little expansion</li>
+	<li IfModActive="imranfish.xmlextensions">1.6/Frameworks/XML Extensions</li>
+  </v1.6>
+</loadFolders>

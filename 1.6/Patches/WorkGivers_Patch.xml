@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "DoBillsMedicalHumanOperation"]/workType</xpath>
+				<value>
+					<workType>Surgeon</workType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "DoBillsMedicalAnimalOperation"]/workType</xpath>
+				<value>
+					<workType>Surgeon</workType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/WorkGiverDef[defName = "TakeToBedToOperate"]/workType</xpath>
+				<value>
+					<workType>Surgeon</workType>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedHumanlikes"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoctorFeedAnimals"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "VisitSickPawn"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+						<xpath>*/WorkGiverDef[defName = "FeedHemogen"]/workType</xpath>
+						<value>
+							<workType>Nursing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+						<xpath>*/WorkGiverDef[defName = "FeedHemogen"]/priorityInType</xpath>
+						<value>
+							<priorityInType>80</priorityInType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_NurseRescue</defName>
+								<label>rescue downed allies to bed</label>
+								<giverClass>WorkGiver_RescueDowned</giverClass>
+								<workType>Nursing</workType>
+								<verb>rescue</verb>
+								<gerund>rescuing</gerund>
+								<priorityInType>95</priorityInType>
+								<directOrderable>false</directOrderable>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<emergency>true</emergency>
+								<prioritizeSustains>true</prioritizeSustains>
+							</WorkGiverDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_NurseToBedToOperate</defName>
+								<label>take patients to bed for operations</label>
+								<giverClass>WorkGiver_TakeToBedToOperate</giverClass>
+								<workType>Nursing</workType>
+								<priorityInType>90</priorityInType>
+								<verb>take to operate</verb>
+								<gerund>taking to operate</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<prioritizeSustains>true</prioritizeSustains>
+							</WorkGiverDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RearmTurrets"]/workType</xpath>
+						<value>
+							<workType>Rearming</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Refuel"]/workType</xpath>
+						<value>
+							<workType>Rearming</workType>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef MayRequire="Ludeon.RimWorld.Biotech">
+										<defName>JS_HaulMechsToCharger</defName>
+										<label>haul mechs to charger</label>
+										<giverClass>WorkGiver_HaulMechToCharger</giverClass>
+										<workType>Rearming</workType>
+										<verb>haul</verb>
+										<gerund>hauling</gerund>
+										<priorityInType>90</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+										<canBeDoneByMechs>false</canBeDoneByMechs>
+									</WorkGiverDef>
+								</value>
+							</li>
+						
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>*/WorkGiverDef[defName = "ChildcarerTeach"]/workType</xpath>
+				<value>
+					<workType>Teaching</workType>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ChatWithPrisoner"]/workType</xpath>
+						<value>
+							<workType>Recruiting</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Train"]/workType</xpath>
+						<value>
+							<workType>Training</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Tame"]/workType</xpath>
+						<value>
+							<workType>Taming</workType>
+						</value>
+					</li>
+					
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsButcherFlesh"]/workType</xpath>
+						<value>
+							<workType>Butchering</workType>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<WorkGiverDef>
+										<defName>JS_ButcherSlaughter</defName>
+										<label>slaughter animals</label>
+										<giverClass>WorkGiver_Slaughter</giverClass>
+										<workType>Butchering</workType>
+										<verb>slaughter</verb>
+										<gerund>slaughtering</gerund>
+										<priorityInType>95</priorityInType>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+									</WorkGiverDef>
+								</value>
+							</li>
+						
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsBrew"]/workType</xpath>
+						<value>
+							<workType>Cooking</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "TakeBeerOutOfFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FillFermentingBarrel"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Repair"]/workType</xpath>
+						<value>
+							<workType>Repairing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "FixBrokenDownBuilding"]/workType</xpath>
+						<value>
+							<workType>Repairing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_RepairBuildRoofs</defName>
+								<label>build roofs</label>
+								<giverClass>WorkGiver_BuildRoof</giverClass>
+								<workType>Repairing</workType>
+								<priorityInType>70</priorityInType>
+								<verb>build roof</verb>
+								<gerund>building roof</gerund>
+								<scanThings>false</scanThings>
+								<scanCells>true</scanCells>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+							</WorkGiverDef>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Deconstruct"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "RemoveRoofs"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFloors"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ConstructRemoveFoundations"]/workType</xpath>
+						<value>
+							<workType>Demolishing</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_DemoUninstall</defName>
+								<label>uninstall structures</label>
+								<giverClass>WorkGiver_Uninstall</giverClass>
+								<workType>Demolishing</workType>
+								<priorityInType>50</priorityInType>
+								<verb>uninstall</verb>
+								<gerund>uninstalling</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+							</WorkGiverDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+							<defName>JS_DemoDeconstructForBlueprint</defName>
+							<label>deconstruct structures for blueprints</label>
+							<giverClass>WorkGiver_DeconstructForBlueprint</giverClass>
+							<workType>Demolishing</workType>
+							<priorityInType>85</priorityInType>
+							<verb>deconstruct</verb>
+							<gerund>deconstructing</gerund>
+							<requiredCapacities>
+							  <li>Manipulation</li>
+							</requiredCapacities>
+						  </WorkGiverDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Uninstall"]/priorityInType</xpath>
+						<value>
+							<priorityInType>75</priorityInType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GrowerHarvest"]/workType</xpath>
+						<value>
+							<workType>Harvesting</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Drill"]/workType</xpath>
+						<value>
+							<workType>Drilling</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsFabricationBench"]/workType</xpath>
+						<value>
+							<workType>Fabricating</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsProduceDrugs"]/workType</xpath>
+						<value>
+							<workType>Drugs</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsRefinery"]/workType</xpath>
+						<value>
+							<workType>Crafting</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsStonecut"]/workType</xpath>
+						<value>
+							<workType>Stonecutting</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsSmelter"]/workType</xpath>
+						<value>
+							<workType>Smelting</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "UnloadCarriers"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LoadTransporters"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HelpGatheringItemsForCaravan"]/workType</xpath>
+						<value>
+							<workType>Hauling</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "Strip"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsCremate"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DoBillsHaulCampfire"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "HaulCorpses"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "ExtractSkull"]/workType</xpath>
+						<value>
+							<workType>Mortifying</workType>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToFrames"]/workType</xpath>
+						<value>
+							<workType>Delivering</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "DeliverResourcesToBlueprints"]/workType</xpath>
+						<value>
+							<workType>Delivering</workType>
+						</value>
+					</li>
+						<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<WorkGiverDef>
+								<defName>JS_DeliverUninstall</defName>
+								<label>uninstall structure</label>
+								<giverClass>WorkGiver_Uninstall</giverClass>
+								<workType>Delivering</workType>
+								<priorityInType>19</priorityInType>
+								<verb>uninstall</verb>
+								<gerund>uninstalling</gerund>
+								<requiredCapacities>
+									<li>Manipulation</li>
+								</requiredCapacities>
+								<nonColonistsCanDo>true</nonColonistsCanDo>
+								<prioritizeSustains>true</prioritizeSustains>
+								<equivalenceGroup>AssistInConstruction</equivalenceGroup>
+							</WorkGiverDef>
+						</value>
+					</li>
+				
+			<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "LongRangeScan"]/workType</xpath>
+						<value>
+							<workType>Scanning</workType>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/WorkGiverDef[defName = "GroundPenetratingScan"]/workType</xpath>
+						<value>
+							<workType>Scanning</workType>
+						</value>
+					</li>
+				</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Rimefeller -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Rimefeller</li>
+		</mods>
+		<match Class="XmlExtensions.OptionalPatch">
+			<modId>Fuglypump.JobSplitter</modId>
+			<key>enableDrilling</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "SuperviseDrilling"]/workType</xpath>
+					<value>
+						<workType>Drilling</workType>
+					</value>
+				</li>
+			</caseTrue>
+			<caseFalse>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "SuperviseDrilling"]/workType</xpath>
+					<value>
+						<workType>Mining</workType>
+					</value>
+				</li>
+			</caseFalse>
+		</match>
+  </Operation>
+</Patch>

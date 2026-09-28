@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableSurgeon</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Paramedic"]/race/mechEnabledWorkTypes/li[.="Surgeon"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Surgeon</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableNursing</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Paramedic"]/race/mechEnabledWorkTypes/li[.="Nursing"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Nursing</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableTeaching</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Teaching</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableRecruiting</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Recruiting</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableRearming</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes/li[.="Rearming"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Rearming</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableTraining</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Training</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableTaming</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Taming</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableButchering</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Butchering"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Butchering</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableBrewing</key>
+    <defaultValue>false</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Brewing"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Brewing</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableDemolishing</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Tunneler"]/race/mechEnabledWorkTypes/li[.="Demolishing"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Constructoid"]/race/mechEnabledWorkTypes/li[.="Demolishing"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Demolishing</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableRepairing</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Constructoid"]/race/mechEnabledWorkTypes/li[.="Repairing"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Repairing</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableHarvesting</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Agrihand"]/race/mechEnabledWorkTypes/li[.="Harvesting"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Harvesting</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableDrilling</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Tunneler"]/race/mechEnabledWorkTypes/li[.="Drilling"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Drilling</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableFabricating</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Fabricating"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Fabricating</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableDrugs</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Drugs"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Drugs</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableRefining</key>
+    <defaultValue>false</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Refining"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Refining</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableStonecutting</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Stonecutting"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Stonecutting</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableSmelting</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Smelting"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Smelting</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableLoading</key>
+    <defaultValue>false</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes/li[.="Loading"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Loading</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableMortifying</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes/li[.="Mortifying"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Mortifying</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableDelivering</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes/li[.="Delivering"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Delivering</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+  <Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Biotech">
+    <modId>Fuglypump.JobSplitter</modId>
+    <key>enableScanning</key>
+    <defaultValue>true</defaultValue>
+    <caseFalse>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[.="Scanning"]</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings/Scanning</xpath>
+          </li>
+        </operations>
+      </li>
+    </caseFalse>
+  </Operation>
+</Patch>

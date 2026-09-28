@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Veggie Mix -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Veggie Mix</li>
+    </mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableButchering</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix5"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMixTwenty"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix50"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix75"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix100"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Butchering</requiredGiverWorkType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix5"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMixTwenty"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix50"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix75"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "VeggieMix100"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+				</value>
+			</li>
+		</caseFalse>
+	</match>
+  </Operation>
+</Patch>

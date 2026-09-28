@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableMortifying</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnApparel"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnDrugs"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnWeapon"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Mortifying</requiredGiverWorkType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnApparel"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Hauling</requiredGiverWorkType>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnDrugs"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Hauling</requiredGiverWorkType>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BurnWeapon"]/requiredGiverWorkType</xpath>
+				<value>
+					<requiredGiverWorkType>Hauling</requiredGiverWorkType>
+				</value>
+			</li>
+		</caseFalse>
+	</Operation>
+</Patch>

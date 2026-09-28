@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>Pour que les paramètres modifiés prennent effet, le jeu doit être redémarré.</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>Paramètres des types de travail</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>Chirurgie</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>Soins infirmiers</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>Les infirmiers soignent les prisonniers</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>Les infirmiers s’occupent des bébés</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>Enseignement des enfants</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>Réarmement et ravitaillement</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>Recharger les mécanoïdes</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>Recrutement des prisonniers</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>Dressage des animaux</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>Apprivoisement des animaux</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>Boucherie des cadavres</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>Les bouchers abattent les animaux</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>Les bouchers exécutent les prisonniers</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>Brassage</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>Réparation</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>Démolition</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>Récolte</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>Forage</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>Fabrication</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>Production de drogues</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>Raffinage</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>Taille de pierre</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>Fonderie</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>Chargement</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>Mise au rebut</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>Livraison</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>Scan</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>Paramètres supplémentaires</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>Déplace les tâches liées à la chirurgie vers leur propre type de travail.</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>Déplace le nourrissage, les visites et le déplacement des patients vers leur propre type de travail.</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>Déplace le nourrissage des prisonniers vers le type de travail Soins infirmiers.</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>Déplace toutes les tâches liées aux bébés vers le type de travail Soins infirmiers.</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>Déplace l’enseignement des enfants vers son propre type de travail.</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>Déplace le réarmement des pièges et le ravitaillement des bâtiments vers leur propre type de travail.</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>Ajoute les mécanoïdes de transport aux stations de recharge dans le type de travail Réarmement. (Les transporteurs continueront à effectuer cette tâche)</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>Déplace les discussions avec les prisonniers vers leur propre type de travail. (Convertit et réduit aussi les prisonniers en esclavage si l’Idéologie est activée)</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>Déplace l’entraînement des animaux vers son propre type de travail.</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>Déplace l’apprivoisement des animaux vers son propre type de travail.</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>Déplace les tâches liées à la boucherie vers leur propre type de travail.</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>Ajoute l’abattage des animaux au type de travail Boucherie. (Les dresseurs continueront à effectuer cette tâche)</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>Ajoute l’exécution des prisonniers au type de travail Boucherie. (Les gardiens continueront à effectuer cette tâche)</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>Déplace les tâches liées au brassage vers leur propre type de travail.</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>Déplace les tâches liées aux réparations vers leur propre type de travail.</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>Déplace les tâches liées à la démolition vers leur propre type de travail. (La construction continuera à construire les toits et à déconstruire les objets sous les plans)</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>Déplace les tâches liées à la récolte des plantes vers leur propre type de travail.</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>Déplace les tâches liées au forage vers leur propre type de travail.</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>Déplace les tâches liées à l’établi de fabrication vers leur propre type de travail.</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>Déplace les tâches liées au laboratoire de drogues vers leur propre type de travail.</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>Déplace les tâches de raffinage chimique vers leur propre type de travail.</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>Déplace les tâches de taille de pierre vers leur propre type de travail.</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>Déplace les tâches de fonderie vers leur propre type de travail.</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>Déplace les tâches de chargement des caravanes vers leur propre type de travail.</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>Déplace les tâches liées aux cadavres et à la crémation vers leur propre type de travail.</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>Déplace les tâches de livraison de matériaux aux plans vers leur propre type de travail.</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>Déplace les tâches de scan vers leur propre type de travail.</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>

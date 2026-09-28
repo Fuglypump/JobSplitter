@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+		<match Class="XmlExtensions.OptionalPatch">
+			<modId>Fuglypump.JobSplitter</modId>
+			<key>enableRecruiting</key>
+			<defaultValue>true</defaultValue>
+
+			<caseTrue>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "EnslavePrisoner"]/workType</xpath>
+					<value>
+						<workType>Recruiting</workType>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "ConvertPrisoner"]/workType</xpath>
+					<value>
+						<workType>Recruiting</workType>
+					</value>
+				</li>
+			</caseTrue>
+
+			<caseFalse>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "EnslavePrisoner"]/workType</xpath>
+					<value>
+						<workType>Warden</workType>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/WorkGiverDef[defName = "ConvertPrisoner"]/workType</xpath>
+					<value>
+						<workType>Warden</workType>
+					</value>
+				</li>
+			</caseFalse>
+		</match>
+    </Operation>        
+</Patch>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Combat Extended: Rearming ON = Rearming; Rearming OFF = Hauling. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="XmlExtensions.OptionalPatch">
+      <modId>Fuglypump.JobSplitter</modId>
+      <key>enableRearming</key>
+      <defaultValue>true</defaultValue>
+      <caseTrue>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadTurrets"]/workType</xpath>
+          <value>
+            <workType>Rearming</workType>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadAutoLoader"]/workType</xpath>
+          <value>
+            <workType>Rearming</workType>
+          </value>
+        </li>
+      </caseTrue>
+      <caseFalse>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadTurrets"]/workType</xpath>
+          <value>
+            <workType>Hauling</workType>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>*/WorkGiverDef[defName = "ReloadAutoLoader"]/workType</xpath>
+          <value>
+            <workType>Hauling</workType>
+          </value>
+        </li>
+      </caseFalse>
+    </match>
+  </Operation>
+</Patch>

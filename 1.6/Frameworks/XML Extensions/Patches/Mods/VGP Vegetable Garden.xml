@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- VGP Vegetable Garden -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="XmlExtensions.OptionalPatch">
+			<modId>Fuglypump.JobSplitter</modId>
+			<key>enable</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "DoBillsHaulBambooCampfire"]/workType</xpath>
+					<value>
+						<workType>Mortifying</workType>
+					</value>
+				</li>
+			</caseTrue>
+			<caseFalse>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "DoBillsHaulBambooCampfire"]/workType</xpath>
+					<value>
+						<workType>Hauling</workType>
+					</value>
+				</li>
+			</caseFalse>
+		</match>
+	</Operation>
+</Patch>

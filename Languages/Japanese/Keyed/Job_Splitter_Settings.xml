@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>変更した設定を有効にするには、ゲームを再起動する必要があります。</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>作業タイプ設定</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>手術</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>看護</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>囚人を看護する</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>赤ちゃんを看護する</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>子供の教育</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>再武装と補給</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>メカノイドを充電する</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>囚人の勧誘</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>動物の訓練</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>動物の手なずけ</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>死体の解体</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>動物を屠殺する</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>囚人を処刑する</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>醸造</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>修理</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>解体</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>収穫</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>掘削</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>製作</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>薬物生産</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>精製</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>石材加工</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>精錬</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>積み込み</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>遺体・物品の処理</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>運搬</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>スキャン</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>追加設定</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>手術に関する作業を専用の作業タイプに移します。</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>患者への食事、面会、移動を専用の作業タイプに移します。</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>囚人への食事を「看護」作業タイプに移します。</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>赤ちゃんに関するすべての作業を「看護」作業タイプに移します。</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>子供への教育を専用の作業タイプに移します。</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>罠の再武装と建物への補給を専用の作業タイプに移します。</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>運搬メカノイドによる充電ステーションへの運搬を「再武装」作業タイプに追加します。（運搬担当者も引き続きこの作業を行います）</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>囚人との会話を専用の作業タイプに移します。（Ideologyが有効な場合、囚人の改宗と奴隷化も行います）</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>動物の訓練を専用の作業タイプに移します。</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>動物の手なずけを専用の作業タイプに移します。</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>解体に関する作業を専用の作業タイプに移します。</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>動物の屠殺を「解体」作業タイプに追加します。（調教担当者も引き続きこの作業を行います）</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>囚人の処刑を「解体」作業タイプに追加します。（看守も引き続きこの作業を行います）</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>醸造に関する作業を専用の作業タイプに移します。</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>修理に関する作業を専用の作業タイプに移します。</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>解体に関する作業を専用の作業タイプに移します。（建築担当者は引き続き屋根を建設し、設計図の下にある物を解体します）</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>植物の収穫に関する作業を専用の作業タイプに移します。</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>掘削に関する作業を専用の作業タイプに移します。</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>製作台に関する作業を専用の作業タイプに移します。</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>ドラッグラボに関する作業を専用の作業タイプに移します。</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>化学精製に関する作業を専用の作業タイプに移します。</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>石材加工に関する作業を専用の作業タイプに移します。</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>精錬に関する作業を専用の作業タイプに移します。</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>キャラバンの積み込みに関する作業を専用の作業タイプに移します。</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>死体と火葬に関する作業を専用の作業タイプに移します。</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>建築計画への資材運搬を専用の作業タイプに移します。</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>スキャン作業を専用の作業タイプに移します。</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>

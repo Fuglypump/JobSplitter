@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Misc. Bees'n'Honey -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Misc. Bees'n'Honey</li>
+		</mods>
+		<match Class="XmlExtensions.OptionalPatch">
+			<modId>Fuglypump.JobSplitter</modId>
+			<key>enableHarvesting</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "GetHoney"]/workType</xpath>
+					<value>
+						<workType>Harvesting</workType>
+					</value>
+				</li>
+			</caseTrue>
+			<caseFalse>
+				<li Class="PatchOperationReplace">
+					<xpath>*/WorkGiverDef[defName = "GetHoney"]/workType</xpath>
+					<value>
+						<workType>Growing</workType>
+					</value>
+				</li>
+			</caseFalse>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Plants Expanded - More Plants -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Plants Expanded - More Plants</li>
+    </mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableHarvesting</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VCE_HarvestAquatic"]/workType</xpath>
+				<value>
+					<workType>Harvesting</workType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VCE_HarvestSandy"]/workType</xpath>
+				<value>
+					<workType>Harvesting</workType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VCE_HarvestAquatic"]/workType</xpath>
+				<value>
+					<workType>Growing</workType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VCE_HarvestSandy"]/workType</xpath>
+				<value>
+					<workType>Growing</workType>
+				</value>
+			</li>
+		</caseFalse>
+	</match>
+  </Operation>
+</Patch>

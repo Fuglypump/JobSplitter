@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Vanilla Brewing Expanded - Coffees and Teas -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Brewing Expanded - Coffees and Teas</li>
+    </mods>
+	<match Class="XmlExtensions.OptionalPatch">
+		<modId>Fuglypump.JobSplitter</modId>
+		<key>enableBrewing</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VBE_DoBillsEspressoMachine"]/workType</xpath>
+				<value>
+					<workType>Brewing</workType>
+				</value>
+			</li>
+		</caseTrue>
+		<caseFalse>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorkGiverDef[defName = "VBE_DoBillsEspressoMachine"]/workType</xpath>
+				<value>
+					<workType>Cooking</workType>
+				</value>
+			</li>
+		</caseFalse>
+	</match>
+  </Operation>
+</Patch>
