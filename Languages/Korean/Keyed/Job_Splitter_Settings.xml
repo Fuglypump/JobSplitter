@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>변경한 설정을 적용하려면 게임을 재시작해야 합니다.</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>작업 유형 설정</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>수술</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>간호</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>죄수 간호</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>아기 간호</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>어린이 교육</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>재장전 및 재급유</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>메카노이드 충전</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>죄수 모집</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>동물 훈련</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>동물 길들이기</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>시체 도축</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>동물 도살</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>죄수 처형</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>양조</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>수리</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>철거</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>수확</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>채굴</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>제작</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>약물 생산</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>정제</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>석재 가공</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>제련</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>적재</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>시체 및 물품 처리</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>자재 운반</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>탐사</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>추가 설정</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>수술 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>환자 먹이기, 방문 및 이동을 별도의 작업 유형으로 이동합니다.</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>죄수에게 먹이를 주는 작업을 간호 작업 유형으로 이동합니다.</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>아기와 관련된 모든 작업을 간호 작업 유형으로 이동합니다.</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>어린이 교육을 별도의 작업 유형으로 이동합니다.</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>함정 재장전과 건물 재급유를 별도의 작업 유형으로 이동합니다.</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>운반 메카노이드의 충전소 운반을 재장전 작업 유형에 추가합니다. (운반 담당자도 계속 이 작업을 수행합니다)</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>죄수와 대화하는 작업을 별도의 작업 유형으로 이동합니다. (이념이 활성화되어 있으면 죄수 개종과 노예화도 수행합니다)</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>동물 훈련을 별도의 작업 유형으로 이동합니다.</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>동물 길들이기를 별도의 작업 유형으로 이동합니다.</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>도축 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>동물 도살을 도축 작업 유형에 추가합니다. (조련사도 계속 이 작업을 수행합니다)</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>죄수 처형을 도축 작업 유형에 추가합니다. (간수도 계속 이 작업을 수행합니다)</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>양조 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>수리 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>철거 관련 작업을 별도의 작업 유형으로 이동합니다. (건설 담당자는 계속 지붕을 건설하고 설계도 아래의 물체를 철거합니다)</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>식물 수확 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>채굴 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>제작 작업대 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>약물 실험실 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>화학 정제 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>석재 가공 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>제련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>카라반 적재 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>시체와 화장 관련 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>설계도에 자재를 운반하는 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>스캔 작업을 별도의 작업 유형으로 이동합니다.</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>

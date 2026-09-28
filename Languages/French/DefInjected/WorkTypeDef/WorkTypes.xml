@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
+	
+	<Firefighter.labelShort>pompier</Firefighter.labelShort>
+	<Patient.labelShort>patient</Patient.labelShort>
+	<Doctor.labelShort>médecin</Doctor.labelShort>
+	<PatientBedRest.labelShort>repos</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>manutention</BasicWorker.labelShort>
+	<Warden.labelShort>geôlier</Warden.labelShort>
+	<Handling.labelShort>dresseur</Handling.labelShort>
+	<Cooking.labelShort>cuisinier</Cooking.labelShort>
+	<Hunting.labelShort>chasseur</Hunting.labelShort>
+	<PlantCutting.labelShort>forestier</PlantCutting.labelShort>
+	<Mining.labelShort>mineur</Mining.labelShort>
+	<Smithing.labelShort>forgeron</Smithing.labelShort>
+	<Tailoring.labelShort>couturier</Tailoring.labelShort>
+	<Art.labelShort>art</Art.labelShort>
+	<Crafting.labelShort>artisan</Crafting.labelShort>
+	<Hauling.labelShort>transporteur</Hauling.labelShort>
+	<Cleaning.labelShort>nettoyeur</Cleaning.labelShort>
+	<Research.labelShort>chercheur</Research.labelShort>
+	
+	<!-- Adjust vanilla worktype descriptions -->
+	
+	<Doctor.description>Soigner les malades, leur apporter de la nourriture, les réconforter et effectuer les opérations chirurgicales. Les médecins prendront soin des colons et des prisonniers.</Doctor.description>
+	<Handling.description>Apprivoiser les animaux, les entraîner, récolter leurs ressources et les abattre.</Handling.description>
+	<Cooking.description>Préparer les repas et dépecer les carcasses.</Cooking.description>
+	<Mining.description>Creuser et forer.</Mining.description>
+	<Crafting.description>Effectuer les travaux peu qualifiés aux postes de travail. Cela inclut la taille de pierre, la fonte et davantage.</Crafting.description>
+
+	<!-- Rename Growing to Sowing -->
+	
+	<Growing.label>Ferme</Growing.label>
+	<Growing.description>Planter des graines, récolter les cultures et cueillir les plantes sauvages.</Growing.description>
+	<Growing.labelShort>fermier</Growing.labelShort>
+	<Growing.pawnLabel>Fermier</Growing.pawnLabel>
+	<Growing.gerundLabel>cultiver</Growing.gerundLabel>
+	<Growing.verb>Cultiver</Growing.verb>
+	
+	<!-- Rename Construction to Building -->
+	
+	<Construction.label>Construction</Construction.label>
+	<Construction.description>Construire les éléments spécifiés et réparer les bâtiments endommagés ou en panne.</Construction.description>
+	<Construction.labelShort>constructeur</Construction.labelShort>
+	<Construction.pawnLabel>Constructeur</Construction.pawnLabel>
+	<Construction.gerundLabel>construction</Construction.gerundLabel>
+	<Construction.verb>Construire</Construction.verb>
+
+	<!-- 1305 Surgeon -->
+
+	<Surgeon.label>Chirurgie</Surgeon.label>
+	<Surgeon.description>Effectuer des opérations chirurgicales sur les humanoïdes et les animaux.</Surgeon.description>
+	<Surgeon.labelShort>chirurgien</Surgeon.labelShort>
+	<Surgeon.pawnLabel>Chirurgien</Surgeon.pawnLabel>
+	<Surgeon.gerundLabel>opération</Surgeon.gerundLabel>
+	<Surgeon.verb>Opérer</Surgeon.verb>
+
+
+	<!-- 1295 Nursing -->
+
+	<Nursing.label>Soins</Nursing.label>
+	<Nursing.description>Aider les médecins en nourrissant, en visitant et en déplaçant les patients.</Nursing.description>
+	<Nursing.labelShort>infirmier</Nursing.labelShort>
+	<Nursing.pawnLabel>Infirmier</Nursing.pawnLabel>
+	<Nursing.gerundLabel>soins</Nursing.gerundLabel>
+	<Nursing.verb>Soigner</Nursing.verb>
+
+
+	<!-- 1135 Rearming -->
+
+	<Rearming.label>Réarmement</Rearming.label>
+	<Rearming.description>Réarmer les tourelles et ravitailler les bâtiments utilisant du combustible.</Rearming.description>
+	<Rearming.labelShort>réarmement</Rearming.labelShort>
+	<Rearming.pawnLabel>Réarmateur</Rearming.pawnLabel>
+	<Rearming.gerundLabel>réarmement</Rearming.gerundLabel>
+	<Rearming.verb>Réarmer</Rearming.verb>
+
+  <!-- 1180 Teaching -->
+
+  <Teaching.label>Enseigner</Teaching.label>
+  <Teaching.description>Enseigner aux enfants aux pupitres scolaires afin d'améliorer leurs compétences et leur développement intellectuel.</Teaching.description>
+  <Teaching.labelShort>Enseigner</Teaching.labelShort>
+  <Teaching.pawnLabel>Enseignant</Teaching.pawnLabel>
+  <Teaching.gerundLabel>Enseignement</Teaching.gerundLabel>
+  <Teaching.verb>Enseigner</Teaching.verb>
+
+  <!-- 1105 Recruiting -->
+
+  <Recruiting.label>Recrutement</Recruiting.label>
+  <Recruiting.description>Parler aux prisonniers, les recruter et les réduire en esclavage.</Recruiting.description>
+  <Recruiting.labelShort>recruter</Recruiting.labelShort>
+  <Recruiting.pawnLabel>Recruteur</Recruiting.pawnLabel>
+  <Recruiting.gerundLabel>recrutement</Recruiting.gerundLabel>
+  <Recruiting.verb>Gérer</Recruiting.verb>
+
+  <!-- 1049 Training -->
+
+	<Training.label>Entraînement</Training.label>
+	<Training.description>Entraîner les animaux domestiqués.</Training.description>
+	<Training.labelShort>entraîner</Training.labelShort>
+	<Training.pawnLabel>Dresseur</Training.pawnLabel>
+	<Training.gerundLabel>entraînement</Training.gerundLabel>
+	<Training.verb>Entraîner</Training.verb>
+
+
+	<!-- 1048 Taming -->
+
+	<Taming.label>Apprivoisement</Taming.label>
+	<Taming.description>Apprivoiser les animaux sauvages.</Taming.description>
+	<Taming.labelShort>apprivoiser</Taming.labelShort>
+	<Taming.pawnLabel>Apprivoiseur</Taming.pawnLabel>
+	<Taming.gerundLabel>apprivoisement</Taming.gerundLabel>
+	<Taming.verb>Apprivoiser</Taming.verb>
+
+
+	<!-- 999 Butchering -->
+
+	<Butchering.label>Boucherie</Butchering.label>
+	<Butchering.description>Abattre les animaux, dépecer la viande et fabriquer de la nourriture pour animaux à une table de boucherie.</Butchering.description>
+	<Butchering.labelShort>boucherie</Butchering.labelShort>
+	<Butchering.pawnLabel>Boucher</Butchering.pawnLabel>
+	<Butchering.gerundLabel>boucherie</Butchering.gerundLabel>
+	<Butchering.verb>Abattre</Butchering.verb>
+
+
+	<!-- 998 Brewing -->
+
+	<Brewing.label>Brassage</Brewing.label>
+	<Brewing.description>Créer des précurseurs à partir de houblon, remplir et vider les tonneaux de fermentation.</Brewing.description>
+	<Brewing.labelShort>brassage</Brewing.labelShort>
+	<Brewing.pawnLabel>Brasseur</Brewing.pawnLabel>
+	<Brewing.gerundLabel>brassage</Brewing.gerundLabel>
+	<Brewing.verb>Brasser</Brewing.verb>
+
+
+	<!-- 899 Demolishing -->
+
+	<Demolishing.label>Démolition</Demolishing.label>
+	<Demolishing.description>Désinstaller ou déconstruire les bâtiments et objets.</Demolishing.description>
+	<Demolishing.labelShort>démolition</Demolishing.labelShort>
+	<Demolishing.pawnLabel>Démolisseur</Demolishing.pawnLabel>
+	<Demolishing.gerundLabel>démolition</Demolishing.gerundLabel>
+	<Demolishing.verb>Démolir</Demolishing.verb>
+
+
+	<!-- 898 Repairing -->
+
+	<Repairing.label>Réparation</Repairing.label>
+	<Repairing.description>Réparer les bâtiments et objets endommagés ou en panne.</Repairing.description>
+	<Repairing.labelShort>réparation</Repairing.labelShort>
+	<Repairing.pawnLabel>Réparateur</Repairing.pawnLabel>
+	<Repairing.gerundLabel>réparation</Repairing.gerundLabel>
+	<Repairing.verb>Réparer</Repairing.verb>
+
+
+	<!-- 710 Harvesting -->
+
+	<Harvesting.label>Récolte</Harvesting.label>
+	<Harvesting.description>Récolter les cultures arrivées à maturité.</Harvesting.description>
+	<Harvesting.labelShort>récolte</Harvesting.labelShort>
+	<Harvesting.pawnLabel>Récolteur</Harvesting.pawnLabel>
+	<Harvesting.gerundLabel>récolte</Harvesting.gerundLabel>
+	<Harvesting.verb>Récolter</Harvesting.verb>
+
+
+	<!-- 595 Drilling -->
+
+	<Drilling.label>Forage</Drilling.label>
+	<Drilling.description>Forer pour extraire des ressources avec des foreuses profondes.</Drilling.description>
+	<Drilling.labelShort>forage</Drilling.labelShort>
+	<Drilling.pawnLabel>Foreur</Drilling.pawnLabel>
+	<Drilling.gerundLabel>forage</Drilling.gerundLabel>
+	<Drilling.verb>Forer</Drilling.verb>
+
+
+	<!-- 480 Fabricating -->
+
+	<Fabricating.label>Fabrication</Fabricating.label>
+	<Fabricating.description>Fabriquer des objets sur un établi de fabrication.</Fabricating.description>
+	<Fabricating.labelShort>fabrication</Fabricating.labelShort>
+	<Fabricating.pawnLabel>Fabricant</Fabricating.pawnLabel>
+	<Fabricating.gerundLabel>fabrication</Fabricating.gerundLabel>
+	<Fabricating.verb>Fabriquer</Fabricating.verb>
+
+
+	<!-- 420 Drug Production -->
+
+	<Drugs.label>Drogues</Drugs.label>
+	<Drugs.description>Synthétiser des drogues dans un laboratoire pharmaceutique.</Drugs.description>
+	<Drugs.labelShort>drogues</Drugs.labelShort>
+	<Drugs.pawnLabel>Chimiste</Drugs.pawnLabel>
+	<Drugs.gerundLabel>production de drogues</Drugs.gerundLabel>
+	<Drugs.verb>Synthétiser</Drugs.verb>
+
+
+	<!-- 415 Refine -->
+
+	<Refining.label>Raffinage</Refining.label>
+	<Refining.description>Raffiner les matériaux pour en faire des produits chimiques dans une raffinerie.</Refining.description>
+	<Refining.labelShort>raffinage</Refining.labelShort>
+	<Refining.pawnLabel>Raffineur</Refining.pawnLabel>
+	<Refining.gerundLabel>raffinage</Refining.gerundLabel>
+	<Refining.verb>Raffiner</Refining.verb>
+
+
+	<!-- 410 StoneCutting -->
+
+	<StoneCutting.label>Taille de pierre</StoneCutting.label>
+	<StoneCutting.description>Tailler la pierre en blocs sur une table de taille de pierre.</StoneCutting.description>
+	<StoneCutting.labelShort>taille de pierre</StoneCutting.labelShort>
+	<StoneCutting.pawnLabel>Tailleur de pierre</StoneCutting.pawnLabel>
+	<StoneCutting.gerundLabel>taille de pierre</StoneCutting.gerundLabel>
+	<StoneCutting.verb>Tailler la pierre</StoneCutting.verb>
+
+
+	<!-- 405 Smelting -->
+
+	<Smelting.label>Fonte</Smelting.label>
+	<Smelting.description>Extraire le métal utilisable des morceaux de scories et autres objets métalliques mélangés.</Smelting.description>
+	<Smelting.labelShort>fonte</Smelting.labelShort>
+	<Smelting.pawnLabel>Fondeur</Smelting.pawnLabel>
+	<Smelting.gerundLabel>extraire le métal</Smelting.gerundLabel>
+	<Smelting.verb>Fondre</Smelting.verb>
+
+
+	<!-- 303 Loading -->
+
+	<Loading.label>Chargement</Loading.label>
+	<Loading.description>Charger et décharger les capsules de transport et les caravanes.</Loading.description>
+	<Loading.labelShort>charger</Loading.labelShort>
+	<Loading.pawnLabel>Chargeur</Loading.pawnLabel>
+	<Loading.gerundLabel>chargement</Loading.gerundLabel>
+	<Loading.verb>Charger</Loading.verb>
+
+
+	<!-- 302 Mortifying -->
+
+	<Mortifying.label>Gestion des cadavres</Mortifying.label>
+	<Mortifying.description>Incinérer ou enterrer les cadavres et détruire les objets.</Mortifying.description>
+	<Mortifying.labelShort>cadavres</Mortifying.labelShort>
+	<Mortifying.pawnLabel>Thanatopracteur</Mortifying.pawnLabel>
+	<Mortifying.gerundLabel>gestion des cadavres</Mortifying.gerundLabel>
+	<Mortifying.verb>Gérer</Mortifying.verb>
+
+
+	<!-- 301 Delivering -->
+
+	<Delivering.label>Livraison</Delivering.label>
+	<Delivering.description>Livrer les matériaux de construction aux plans et aux bâtiments inachevés.</Delivering.description>
+	<Delivering.labelShort>livrer</Delivering.labelShort>
+	<Delivering.pawnLabel>Livreur</Delivering.pawnLabel>
+	<Delivering.gerundLabel>livraison</Delivering.gerundLabel>
+	<Delivering.verb>Livrer</Delivering.verb>
+
+
+	<!-- Scanning -->
+
+	<Scanning.label>Scan</Scanning.label>
+	<Scanning.description>Utiliser le scanner de pénétration du sol et le scanner de minéraux à longue portée.</Scanning.description>
+	<Scanning.labelShort>scan</Scanning.labelShort>
+	<Scanning.pawnLabel>Scanneur</Scanning.pawnLabel>
+	<Scanning.gerundLabel>scan</Scanning.gerundLabel>
+	<Scanning.verb>Scanner</Scanning.verb>
+
+
+</LanguageData>

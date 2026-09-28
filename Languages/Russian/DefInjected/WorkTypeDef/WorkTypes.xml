@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
+	
+	<Firefighter.labelShort>пожарный</Firefighter.labelShort>
+	<Patient.labelShort>пациент</Patient.labelShort>
+	<Doctor.labelShort>врач</Doctor.labelShort>
+	<PatientBedRest.labelShort>отдых</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>работа</BasicWorker.labelShort>
+	<Warden.labelShort>надзиратель</Warden.labelShort>
+	<Handling.labelShort>животные</Handling.labelShort>
+	<Cooking.labelShort>готовка</Cooking.labelShort>
+	<Hunting.labelShort>охота</Hunting.labelShort>
+	<PlantCutting.labelShort>растения</PlantCutting.labelShort>
+	<Mining.labelShort>добыча</Mining.labelShort>
+	<Smithing.labelShort>ковка</Smithing.labelShort>
+	<Tailoring.labelShort>шитьё</Tailoring.labelShort>
+	<Art.labelShort>искусство</Art.labelShort>
+	<Crafting.labelShort>ремесло</Crafting.labelShort>
+	<Hauling.labelShort>переноска</Hauling.labelShort>
+	<Cleaning.labelShort>уборка</Cleaning.labelShort>
+	<Research.labelShort>исследования</Research.labelShort>
+	
+	<!-- Adjust vanilla worktype descriptions -->
+	
+	<Doctor.description>Лечить больных, приносить им еду, подбадривать их и выполнять назначенные операции. Врачи заботятся как о поселенцах, так и о пленниках.</Doctor.description>
+	<Handling.description>Приручать и дрессировать животных, получать от них ресурсы и забивать их.</Handling.description>
+	<Cooking.description>Готовить еду и разделывать туши.</Cooking.description>
+	<Mining.description>Копать и бурить.</Mining.description>
+	<Crafting.description>Выполнять на станках работу, не требующую высокой квалификации. Сюда входят резка камня, плавка металла и многое другое.</Crafting.description>
+
+	<!-- Rename Growing to Sowing -->
+	
+	<Growing.label>Фермерство</Growing.label>
+	<Growing.description>Сажать семена, собирать урожай и добывать пропитание из диких растений.</Growing.description>
+	<Growing.labelShort>фермер</Growing.labelShort>
+	<Growing.pawnLabel>фермер</Growing.pawnLabel>
+	<Growing.gerundLabel>выращивать</Growing.gerundLabel>
+	<Growing.verb>Выращивать</Growing.verb>
+	
+	<!-- Rename Construction to Building -->
+	
+	<Construction.label>Строительство</Construction.label>
+	<Construction.description>Возводить назначенные сооружения и ремонтировать повреждённые или сломанные здания.</Construction.description>
+	<Construction.labelShort>строитель</Construction.labelShort>
+	<Construction.pawnLabel>строитель</Construction.pawnLabel>
+	<Construction.gerundLabel>строительство</Construction.gerundLabel>
+	<Construction.verb>Строить</Construction.verb>
+
+	<!-- 1305 Surgeon -->
+
+	<Surgeon.label>Хирургия</Surgeon.label>
+	<Surgeon.description>Проводить операции на гуманоидах и животных.</Surgeon.description>
+	<Surgeon.labelShort>хирург</Surgeon.labelShort>
+	<Surgeon.pawnLabel>хирург</Surgeon.pawnLabel>
+	<Surgeon.gerundLabel>оперировать</Surgeon.gerundLabel>
+	<Surgeon.verb>Оперировать</Surgeon.verb>
+
+
+	<!-- 1295 Nursing -->
+
+	<Nursing.label>Уход</Nursing.label>
+	<Nursing.description>Помогать врачам, кормя, навещая и перемещая пациентов.</Nursing.description>
+	<Nursing.labelShort>медсестра</Nursing.labelShort>
+	<Nursing.pawnLabel>медсестра</Nursing.pawnLabel>
+	<Nursing.gerundLabel>уход</Nursing.gerundLabel>
+	<Nursing.verb>Ухаживать</Nursing.verb>
+
+
+	<!-- 1135 Rearming -->
+
+	<Rearming.label>Перезарядка</Rearming.label>
+	<Rearming.description>Перезаряжать турели и заправлять здания, использующие топливо.</Rearming.description>
+	<Rearming.labelShort>перезарядка</Rearming.labelShort>
+	<Rearming.pawnLabel>заряжающий</Rearming.pawnLabel>
+	<Rearming.gerundLabel>перезарядка</Rearming.gerundLabel>
+	<Rearming.verb>Перезаряжать</Rearming.verb>
+
+  <!-- 1180 Teaching -->
+
+  <Teaching.label>Обучение</Teaching.label>
+  <Teaching.description>Обучать детей за школьными партами, повышая их навыки и интеллектуальное развитие.</Teaching.description>
+  <Teaching.labelShort>Обучение</Teaching.labelShort>
+  <Teaching.pawnLabel>Учитель</Teaching.pawnLabel>
+  <Teaching.gerundLabel>Обучение</Teaching.gerundLabel>
+  <Teaching.verb>Обучать</Teaching.verb>
+
+  <!-- 1105 Recruiting -->
+
+  <Recruiting.label>Вербовка</Recruiting.label>
+  <Recruiting.description>Общаться с пленниками, вербовать их и обращать в рабство.</Recruiting.description>
+  <Recruiting.labelShort>вербовка</Recruiting.labelShort>
+  <Recruiting.pawnLabel>вербовщик</Recruiting.pawnLabel>
+  <Recruiting.gerundLabel>вербовка</Recruiting.gerundLabel>
+  <Recruiting.verb>Работать с</Recruiting.verb>
+
+  <!-- 1049 Training -->
+
+	<Training.label>Дрессировка</Training.label>
+	<Training.description>Дрессировать приручённых животных.</Training.description>
+	<Training.labelShort>дрессировка</Training.labelShort>
+	<Training.pawnLabel>дрессировщик</Training.pawnLabel>
+	<Training.gerundLabel>дрессировка</Training.gerundLabel>
+	<Training.verb>Дрессировать</Training.verb>
+
+
+	<!-- 1048 Taming -->
+
+	<Taming.label>Приручение</Taming.label>
+	<Taming.description>Приручать диких животных.</Taming.description>
+	<Taming.labelShort>приручение</Taming.labelShort>
+	<Taming.pawnLabel>укротитель</Taming.pawnLabel>
+	<Taming.gerundLabel>приручение</Taming.gerundLabel>
+	<Taming.verb>Приручать</Taming.verb>
+
+
+	<!-- 999 Butchering -->
+
+	<Butchering.label>Разделка</Butchering.label>
+	<Butchering.description>Забивать животных, разделывать мясо и изготавливать корм на мясницком столе.</Butchering.description>
+	<Butchering.labelShort>разделка</Butchering.labelShort>
+	<Butchering.pawnLabel>мясник</Butchering.pawnLabel>
+	<Butchering.gerundLabel>разделка</Butchering.gerundLabel>
+	<Butchering.verb>Разделывать</Butchering.verb>
+
+
+	<!-- 998 Brewing -->
+
+	<Brewing.label>Пивоварение</Brewing.label>
+	<Brewing.description>Создавать сусло из хмеля, наполнять и опустошать бродильные бочки.</Brewing.description>
+	<Brewing.labelShort>пивоварение</Brewing.labelShort>
+	<Brewing.pawnLabel>пивовар</Brewing.pawnLabel>
+	<Brewing.gerundLabel>пивоварение</Brewing.gerundLabel>
+	<Brewing.verb>Варить</Brewing.verb>
+
+
+	<!-- 899 Demolishing -->
+
+	<Demolishing.label>Демонтаж</Demolishing.label>
+	<Demolishing.description>Демонтировать или разбирать здания и объекты.</Demolishing.description>
+	<Demolishing.labelShort>демонтаж</Demolishing.labelShort>
+	<Demolishing.pawnLabel>демонтажник</Demolishing.pawnLabel>
+	<Demolishing.gerundLabel>демонтаж</Demolishing.gerundLabel>
+	<Demolishing.verb>Демонтировать</Demolishing.verb>
+
+
+	<!-- 898 Repairing -->
+
+	<Repairing.label>Ремонт</Repairing.label>
+	<Repairing.description>Ремонтировать повреждённые или сломанные здания и объекты.</Repairing.description>
+	<Repairing.labelShort>ремонт</Repairing.labelShort>
+	<Repairing.pawnLabel>ремонтник</Repairing.pawnLabel>
+	<Repairing.gerundLabel>ремонт</Repairing.gerundLabel>
+	<Repairing.verb>Ремонтировать</Repairing.verb>
+
+
+	<!-- 710 Harvesting -->
+
+	<Harvesting.label>Сбор урожая</Harvesting.label>
+	<Harvesting.description>Собирать созревшие культуры.</Harvesting.description>
+	<Harvesting.labelShort>сбор</Harvesting.labelShort>
+	<Harvesting.pawnLabel>сборщик</Harvesting.pawnLabel>
+	<Harvesting.gerundLabel>сбор урожая</Harvesting.gerundLabel>
+	<Harvesting.verb>Собирать</Harvesting.verb>
+
+
+	<!-- 595 Drilling -->
+
+	<Drilling.label>Бурение</Drilling.label>
+	<Drilling.description>Добывать ресурсы с помощью глубинных буров.</Drilling.description>
+	<Drilling.labelShort>бурение</Drilling.labelShort>
+	<Drilling.pawnLabel>бурильщик</Drilling.pawnLabel>
+	<Drilling.gerundLabel>бурение</Drilling.gerundLabel>
+	<Drilling.verb>Бурить</Drilling.verb>
+
+
+	<!-- 480 Fabricating -->
+
+	<Fabricating.label>Производство</Fabricating.label>
+	<Fabricating.description>Производить предметы на верстаке для изготовления компонентов.</Fabricating.description>
+	<Fabricating.labelShort>производство</Fabricating.labelShort>
+	<Fabricating.pawnLabel>производитель</Fabricating.pawnLabel>
+	<Fabricating.gerundLabel>производство</Fabricating.gerundLabel>
+	<Fabricating.verb>Производить</Fabricating.verb>
+
+
+	<!-- 420 Drug Production -->
+
+	<Drugs.label>Наркотики</Drugs.label>
+	<Drugs.description>Синтезировать наркотики в нарколаборатории.</Drugs.description>
+	<Drugs.labelShort>наркотики</Drugs.labelShort>
+	<Drugs.pawnLabel>химик</Drugs.pawnLabel>
+	<Drugs.gerundLabel>производство наркотиков</Drugs.gerundLabel>
+	<Drugs.verb>Синтезировать</Drugs.verb>
+
+
+	<!-- 415 Refine -->
+
+	<Refining.label>Переработка</Refining.label>
+	<Refining.description>Перерабатывать материалы в химикаты на очистном заводе.</Refining.description>
+	<Refining.labelShort>переработка</Refining.labelShort>
+	<Refining.pawnLabel>переработчик</Refining.pawnLabel>
+	<Refining.gerundLabel>переработка</Refining.gerundLabel>
+	<Refining.verb>Перерабатывать</Refining.verb>
+
+
+	<!-- 410 StoneCutting -->
+
+	<StoneCutting.label>Резка камня</StoneCutting.label>
+	<StoneCutting.description>Резать камень на блоки на камнерезном столе.</StoneCutting.description>
+	<StoneCutting.labelShort>камень</StoneCutting.labelShort>
+	<StoneCutting.pawnLabel>каменщик</StoneCutting.pawnLabel>
+	<StoneCutting.gerundLabel>резка камня</StoneCutting.gerundLabel>
+	<StoneCutting.verb>Резать камень</StoneCutting.verb>
+
+
+	<!-- 405 Smelting -->
+
+	<Smelting.label>Плавка</Smelting.label>
+	<Smelting.description>Извлекать пригодный металл из кусков шлака и других предметов из смешанных металлов.</Smelting.description>
+	<Smelting.labelShort>плавка</Smelting.labelShort>
+	<Smelting.pawnLabel>плавильщик</Smelting.pawnLabel>
+	<Smelting.gerundLabel>извлечение металла</Smelting.gerundLabel>
+	<Smelting.verb>Плавить</Smelting.verb>
+
+
+	<!-- 303 Loading -->
+
+	<Loading.label>Погрузка</Loading.label>
+	<Loading.description>Погружать и разгружать транспортные капсулы и караваны.</Loading.description>
+	<Loading.labelShort>погрузка</Loading.labelShort>
+	<Loading.pawnLabel>грузчик</Loading.pawnLabel>
+	<Loading.gerundLabel>погрузка</Loading.gerundLabel>
+	<Loading.verb>Погружать</Loading.verb>
+
+
+	<!-- 302 Mortifying -->
+
+	<Mortifying.label>Утилизация</Mortifying.label>
+	<Mortifying.description>Кремировать или хоронить тела и уничтожать предметы.</Mortifying.description>
+	<Mortifying.labelShort>утилизация</Mortifying.labelShort>
+	<Mortifying.pawnLabel>утилизатор</Mortifying.pawnLabel>
+	<Mortifying.gerundLabel>утилизация</Mortifying.gerundLabel>
+	<Mortifying.verb>Утилизировать</Mortifying.verb>
+
+
+	<!-- 301 Delivering -->
+
+	<Delivering.label>Доставка</Delivering.label>
+	<Delivering.description>Доставлять строительные материалы к чертежам и незавершённым зданиям.</Delivering.description>
+	<Delivering.labelShort>доставка</Delivering.labelShort>
+	<Delivering.pawnLabel>доставщик</Delivering.pawnLabel>
+	<Delivering.gerundLabel>доставка</Delivering.gerundLabel>
+	<Delivering.verb>Доставлять</Delivering.verb>
+
+
+	<!-- Scanning -->
+
+	<Scanning.label>Сканирование</Scanning.label>
+	<Scanning.description>Работать с глубинным сканером и дальним сканером минералов.</Scanning.description>
+	<Scanning.labelShort>сканирование</Scanning.labelShort>
+	<Scanning.pawnLabel>сканировщик</Scanning.pawnLabel>
+	<Scanning.gerundLabel>сканирование</Scanning.gerundLabel>
+	<Scanning.verb>Сканировать</Scanning.verb>
+
+
+</LanguageData>

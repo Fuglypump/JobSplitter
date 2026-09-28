@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nursing -->
+
+  <JS_NurseRescue.label>rescatar a aliados incapacitados y llevarlos a una cama</JS_NurseRescue.label>
+  <JS_NurseRescue.verb>rescatar</JS_NurseRescue.verb>
+  <JS_NurseRescue.gerund>rescatando</JS_NurseRescue.gerund>
+
+  <JS_NurseToBedToOperate.label>llevar a pacientes a la cama para operar</JS_NurseToBedToOperate.label>
+  <JS_NurseToBedToOperate.verb>llevar a operar</JS_NurseToBedToOperate.verb>
+  <JS_NurseToBedToOperate.gerund>llevando a operar</JS_NurseToBedToOperate.gerund>
+
+
+  <!-- Butchering -->
+
+  <JS_ButcherSlaughter.label>sacrificar animales</JS_ButcherSlaughter.label>
+  <JS_ButcherSlaughter.verb>sacrificar</JS_ButcherSlaughter.verb>
+  <JS_ButcherSlaughter.gerund>sacrificando</JS_ButcherSlaughter.gerund>
+
+
+  <!-- Repairing -->
+
+  <JS_RepairBuildRoofs.label>construir tejados</JS_RepairBuildRoofs.label>
+  <JS_RepairBuildRoofs.verb>construir tejado</JS_RepairBuildRoofs.verb>
+  <JS_RepairBuildRoofs.gerund>construyendo tejado</JS_RepairBuildRoofs.gerund>
+
+
+  <!-- Demolishing -->
+
+  <JS_DemoUninstall.label>desinstalar estructuras</JS_DemoUninstall.label>
+  <JS_DemoUninstall.verb>desinstalar</JS_DemoUninstall.verb>
+  <JS_DemoUninstall.gerund>desinstalando</JS_DemoUninstall.gerund>
+
+
+  <!-- Delivering -->
+
+  <JS_DeliverUninstall.label>desinstalar estructura</JS_DeliverUninstall.label>
+  <JS_DeliverUninstall.verb>desinstalar</JS_DeliverUninstall.verb>
+  <JS_DeliverUninstall.gerund>desinstalando</JS_DeliverUninstall.gerund>
+
+
+</LanguageData>

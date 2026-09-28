@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- Shorten (and capitalize) vanilla worktype labels -->
+	
+	<Firefighter.labelShort>bombero</Firefighter.labelShort>
+	<Patient.labelShort>paciente</Patient.labelShort>
+	<Doctor.labelShort>médico</Doctor.labelShort>
+	<PatientBedRest.labelShort>descansar</PatientBedRest.labelShort>
+	<BasicWorker.labelShort>básico</BasicWorker.labelShort>
+	<Warden.labelShort>guardia</Warden.labelShort>
+	<Handling.labelShort>adiestrar</Handling.labelShort>
+	<Cooking.labelShort>cocinar</Cooking.labelShort>
+	<Hunting.labelShort>cazar</Hunting.labelShort>
+	<PlantCutting.labelShort>silvicultura</PlantCutting.labelShort>
+	<Mining.labelShort>minar</Mining.labelShort>
+	<Smithing.labelShort>forjar</Smithing.labelShort>
+	<Tailoring.labelShort>sastrería</Tailoring.labelShort>
+	<Art.labelShort>arte</Art.labelShort>
+	<Crafting.labelShort>fabricar</Crafting.labelShort>
+	<Hauling.labelShort>transportar</Hauling.labelShort>
+	<Cleaning.labelShort>limpiar</Cleaning.labelShort>
+	<Research.labelShort>investigar</Research.labelShort>
+	
+	<!-- Adjust vanilla worktype descriptions -->
+	
+	<Doctor.description>Trata a los enfermos, lleva sus comidas, les anima y realiza cirugías asignadas. Los médicos cuidarán tanto a los colonos como a los prisioneros.</Doctor.description>
+	<Handling.description>Domestica, entrena y obtiene recursos de los animales y también los sacrifica.</Handling.description>
+	<Cooking.description>Prepara comidas y despieza la carne.</Cooking.description>
+	<Mining.description>Excava y taladra.</Mining.description>
+	<Crafting.description>Realiza tareas de baja cualificación en los puestos de trabajo. Esto incluye cantería, fundición y algunas más.</Crafting.description>
+
+	<!-- Rename Growing to Sowing -->
+	
+	<Growing.label>Agricultura</Growing.label>
+	<Growing.description>Siembra semillas, cosecha cultivos y recolecta plantas silvestres.</Growing.description>
+	<Growing.labelShort>sembrar</Growing.labelShort>
+	<Growing.pawnLabel>Agricultor</Growing.pawnLabel>
+	<Growing.gerundLabel>sembrar</Growing.gerundLabel>
+	<Growing.verb>Cultivar</Growing.verb>
+	
+	<!-- Rename Construction to Building -->
+	
+	<Construction.label>Construcción</Construction.label>
+	<Construction.description>Construye las estructuras que has designado y repara los edificios dañados o averiados.</Construction.description>
+	<Construction.labelShort>construir</Construction.labelShort>
+	<Construction.pawnLabel>Constructor</Construction.pawnLabel>
+	<Construction.gerundLabel>construir</Construction.gerundLabel>
+	<Construction.verb>Construir</Construction.verb>
+
+	<!-- 1305 Surgeon -->
+
+	<Surgeon.label>Cirugía</Surgeon.label>
+	<Surgeon.description>Realiza cirugías a humanoides y animales.</Surgeon.description>
+	<Surgeon.labelShort>cirujano</Surgeon.labelShort>
+	<Surgeon.pawnLabel>Cirujano</Surgeon.pawnLabel>
+	<Surgeon.gerundLabel>operar</Surgeon.gerundLabel>
+	<Surgeon.verb>Operar a</Surgeon.verb>
+
+
+	<!-- 1295 Nursing -->
+
+	<Nursing.label>Enfermería</Nursing.label>
+	<Nursing.description>Ayuda a los médicos alimentando, visitando y trasladando a los pacientes.</Nursing.description>
+	<Nursing.labelShort>enfermero</Nursing.labelShort>
+	<Nursing.pawnLabel>Enfermero</Nursing.pawnLabel>
+	<Nursing.gerundLabel>atender</Nursing.gerundLabel>
+	<Nursing.verb>Atender</Nursing.verb>
+
+
+	<!-- 1135 Rearming -->
+
+	<Rearming.label>Rearmar</Rearming.label>
+	<Rearming.description>Rearma las torretas y reposta los edificios que utilizan combustible.</Rearming.description>
+	<Rearming.labelShort>rearmar</Rearming.labelShort>
+	<Rearming.pawnLabel>Rearmador</Rearming.pawnLabel>
+	<Rearming.gerundLabel>rearmar</Rearming.gerundLabel>
+	<Rearming.verb>Rearmar</Rearming.verb>
+
+  <!-- 1180 Teaching -->
+
+  <Teaching.label>Enseñar</Teaching.label>
+  <Teaching.description>Enseñar a los niños en pupitres escolares para aumentar sus habilidades y desarrollo intelectual.</Teaching.description>
+  <Teaching.labelShort>Enseñar</Teaching.labelShort>
+  <Teaching.pawnLabel>Profesor</Teaching.pawnLabel>
+  <Teaching.gerundLabel>Enseñando</Teaching.gerundLabel>
+  <Teaching.verb>Enseñar</Teaching.verb>
+
+  <!-- 1105 Recruiting -->
+
+  <Recruiting.label>Reclutar</Recruiting.label>
+  <Recruiting.description>Habla con los prisioneros, reclútalos y esclavízalos.</Recruiting.description>
+  <Recruiting.labelShort>reclutar</Recruiting.labelShort>
+  <Recruiting.pawnLabel>Reclutador</Recruiting.pawnLabel>
+  <Recruiting.gerundLabel>reclutar</Recruiting.gerundLabel>
+  <Recruiting.verb>Gestionar</Recruiting.verb>
+
+  <!-- 1049 Training -->
+
+	<Training.label>Entrenar</Training.label>
+	<Training.description>Entrena a los animales domesticados.</Training.description>
+	<Training.labelShort>entrenar</Training.labelShort>
+	<Training.pawnLabel>Entrenador</Training.pawnLabel>
+	<Training.gerundLabel>entrenar</Training.gerundLabel>
+	<Training.verb>Entrenar</Training.verb>
+
+
+	<!-- 1048 Taming -->
+
+	<Taming.label>Domesticar</Taming.label>
+	<Taming.description>Domestica animales salvajes.</Taming.description>
+	<Taming.labelShort>domesticar</Taming.labelShort>
+	<Taming.pawnLabel>Domador</Taming.pawnLabel>
+	<Taming.gerundLabel>domesticar</Taming.gerundLabel>
+	<Taming.verb>Entrenar</Taming.verb>
+
+
+	<!-- 999 Butchering -->
+
+	<Butchering.label>Carnicería</Butchering.label>
+	<Butchering.description>Sacrifica animales, despieza carne y prepara pienso en una mesa de carnicería.</Butchering.description>
+	<Butchering.labelShort>carnicería</Butchering.labelShort>
+	<Butchering.pawnLabel>Carnicero</Butchering.pawnLabel>
+	<Butchering.gerundLabel>despiezar</Butchering.gerundLabel>
+	<Butchering.verb>Despiezar</Butchering.verb>
+
+
+	<!-- 998 Brewing -->
+
+	<Brewing.label>Elaborar cerveza</Brewing.label>
+	<Brewing.description>Crea precursores a partir de lúpulo, llena y vacía barriles de fermentación.</Brewing.description>
+	<Brewing.labelShort>elaborar</Brewing.labelShort>
+	<Brewing.pawnLabel>Cervecero</Brewing.pawnLabel>
+	<Brewing.gerundLabel>elaborar cerveza</Brewing.gerundLabel>
+	<Brewing.verb>Elaborar</Brewing.verb>
+
+
+	<!-- 899 Demolishing -->
+
+	<Demolishing.label>Demoler</Demolishing.label>
+	<Demolishing.description>Desinstala o deconstruye edificios y objetos.</Demolishing.description>
+	<Demolishing.labelShort>demoler</Demolishing.labelShort>
+	<Demolishing.pawnLabel>Demoledor</Demolishing.pawnLabel>
+	<Demolishing.gerundLabel>demoler</Demolishing.gerundLabel>
+	<Demolishing.verb>Demoler</Demolishing.verb>
+
+
+	<!-- 898 Repairing -->
+
+	<Repairing.label>Reparar</Repairing.label>
+	<Repairing.description>Repara edificios y objetos dañados o averiados.</Repairing.description>
+	<Repairing.labelShort>reparar</Repairing.labelShort>
+	<Repairing.pawnLabel>Reparador</Repairing.pawnLabel>
+	<Repairing.gerundLabel>reparar</Repairing.gerundLabel>
+	<Repairing.verb>Reparar</Repairing.verb>
+
+
+	<!-- 710 Harvesting -->
+
+	<Harvesting.label>Cosechar</Harvesting.label>
+	<Harvesting.description>Cosecha cultivos maduros.</Harvesting.description>
+	<Harvesting.labelShort>cosechar</Harvesting.labelShort>
+	<Harvesting.pawnLabel>Cosechador</Harvesting.pawnLabel>
+	<Harvesting.gerundLabel>cosechar</Harvesting.gerundLabel>
+	<Harvesting.verb>Cosechar</Harvesting.verb>
+
+
+	<!-- 595 Drilling -->
+
+	<Drilling.label>Perforar</Drilling.label>
+	<Drilling.description>Extrae recursos con perforadoras profundas.</Drilling.description>
+	<Drilling.labelShort>perforar</Drilling.labelShort>
+	<Drilling.pawnLabel>Perforador</Drilling.pawnLabel>
+	<Drilling.gerundLabel>perforar</Drilling.gerundLabel>
+	<Drilling.verb>Perforar</Drilling.verb>
+
+
+	<!-- 480 Fabricating -->
+
+	<Fabricating.label>Fabricar</Fabricating.label>
+	<Fabricating.description>Fabrica objetos en un banco de fabricación.</Fabricating.description>
+	<Fabricating.labelShort>fabricar</Fabricating.labelShort>
+	<Fabricating.pawnLabel>Fabricante</Fabricating.pawnLabel>
+	<Fabricating.gerundLabel>fabricar</Fabricating.gerundLabel>
+	<Fabricating.verb>Fabricar en</Fabricating.verb>
+
+
+	<!-- 420 Drug Production -->
+
+	<Drugs.label>Drogas</Drugs.label>
+	<Drugs.description>Sintetiza drogas en un laboratorio de drogas.</Drugs.description>
+	<Drugs.labelShort>drogas</Drugs.labelShort>
+	<Drugs.pawnLabel>Químico</Drugs.pawnLabel>
+	<Drugs.gerundLabel>producir drogas</Drugs.gerundLabel>
+	<Drugs.verb>Sintetizar en</Drugs.verb>
+
+
+	<!-- 415 Refine -->
+
+	<Refining.label>Refinar</Refining.label>
+	<Refining.description>Refina materiales para convertirlos en productos químicos en una refinería.</Refining.description>
+	<Refining.labelShort>refinar</Refining.labelShort>
+	<Refining.pawnLabel>Refinador</Refining.pawnLabel>
+	<Refining.gerundLabel>refinar</Refining.gerundLabel>
+	<Refining.verb>Refinar en</Refining.verb>
+
+
+	<!-- 410 StoneCutting -->
+
+	<StoneCutting.label>Cantería</StoneCutting.label>
+	<StoneCutting.description>Corta piedra para convertirla en bloques en una mesa de cantería.</StoneCutting.description>
+	<StoneCutting.labelShort>cantería</StoneCutting.labelShort>
+	<StoneCutting.pawnLabel>Cantero</StoneCutting.pawnLabel>
+	<StoneCutting.gerundLabel>cortar piedra</StoneCutting.gerundLabel>
+	<StoneCutting.verb>Cortar piedra</StoneCutting.verb>
+
+
+	<!-- 405 Smelting -->
+
+	<Smelting.label>Fundir</Smelting.label>
+	<Smelting.description>Extrae metal utilizable de trozos de escoria y otros objetos de metal mezclado.</Smelting.description>
+	<Smelting.labelShort>fundir</Smelting.labelShort>
+	<Smelting.pawnLabel>Fundidor</Smelting.pawnLabel>
+	<Smelting.gerundLabel>extraer metal</Smelting.gerundLabel>
+	<Smelting.verb>Fundir</Smelting.verb>
+
+
+	<!-- 303 Loading -->
+
+	<Loading.label>Cargar</Loading.label>
+	<Loading.description>Carga y descarga cápsulas de transporte y caravanas.</Loading.description>
+	<Loading.labelShort>cargar</Loading.labelShort>
+	<Loading.pawnLabel>Cargador</Loading.pawnLabel>
+	<Loading.gerundLabel>cargar</Loading.gerundLabel>
+	<Loading.verb>Cargar</Loading.verb>
+
+
+	<!-- 302 Mortifying -->
+
+	<Mortifying.label>Gestionar cadáveres</Mortifying.label>
+	<Mortifying.description>Crema o entierra cadáveres y destruye objetos.</Mortifying.description>
+	<Mortifying.labelShort>cadáveres</Mortifying.labelShort>
+	<Mortifying.pawnLabel>Sepulturero</Mortifying.pawnLabel>
+	<Mortifying.gerundLabel>gestionar cadáveres</Mortifying.gerundLabel>
+	<Mortifying.verb>Gestionar</Mortifying.verb>
+
+
+	<!-- 301 Delivering -->
+
+	<Delivering.label>Entregar</Delivering.label>
+	<Delivering.description>Entrega materiales de construcción a planos y edificios sin terminar.</Delivering.description>
+	<Delivering.labelShort>entregar</Delivering.labelShort>
+	<Delivering.pawnLabel>Repartidor</Delivering.pawnLabel>
+	<Delivering.gerundLabel>entregar</Delivering.gerundLabel>
+	<Delivering.verb>Entregar</Delivering.verb>
+
+
+	<!-- Scanning -->
+
+	<Scanning.label>Escanear</Scanning.label>
+	<Scanning.description>Opera el escáner de penetración terrestre y el escáner mineral de largo alcance.</Scanning.description>
+	<Scanning.labelShort>escanear</Scanning.labelShort>
+	<Scanning.pawnLabel>Escaneador</Scanning.pawnLabel>
+	<Scanning.gerundLabel>escanear</Scanning.gerundLabel>
+	<Scanning.verb>Escanear en</Scanning.verb>
+
+
+</LanguageData>

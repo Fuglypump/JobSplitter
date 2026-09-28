@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>任何變更的設定都必須重新啟動遊戲後才能生效。</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>工作類型設定</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>手術</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>護理</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>護理囚犯</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>護理嬰兒</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>教導兒童</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>重新武裝與補給</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>為機械族充電</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>招募囚犯</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>訓練動物</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>馴服動物</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>屠宰屍體</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>屠宰動物</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>處決囚犯</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>釀造</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>修理</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>拆除</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>收穫</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>鑽探</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>製造</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>藥物生產</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>精煉</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>切割石材</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>冶煉</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>裝載</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>處理屍體與物品</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>遞送</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>掃描</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>其他設定</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>將手術相關工作移動到獨立的工作類型。</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>將餵食、探視和移動病人的工作移動到獨立的工作類型。</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>將餵食囚犯的工作移動到護理工作類型。</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>將所有與嬰兒相關的工作移動到護理工作類型。</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>將教導兒童的工作移動到獨立的工作類型。</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>將重新武裝陷阱和為建築物補充燃料的工作移動到獨立的工作類型。</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>將由搬運機械族把機械族帶到充電站的工作加入重新武裝工作類型。（搬運工仍會執行此任務）</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>將與囚犯聊天的工作移動到獨立的工作類型。（啟用Ideology時也會進行改信和奴役囚犯）</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>將訓練動物的工作移動到獨立的工作類型。</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>將馴服動物的工作移動到獨立的工作類型。</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>將屠宰相關工作移動到獨立的工作類型。</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>將屠殺動物加入屠宰工作類型。（馴獸師仍會執行此任務）</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>將處決囚犯加入屠宰工作類型。（獄卒仍會執行此任務）</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>將釀造相關工作移動到獨立的工作類型。</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>將修理相關工作移動到獨立的工作類型。</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>將拆除相關工作移動到獨立的工作類型。（建造者仍會建造屋頂並拆除藍圖下方的物體）</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>將植物收穫相關工作移動到獨立的工作類型。</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>將鑽探相關工作移動到獨立的工作類型。</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>將製造台相關工作移動到獨立的工作類型。</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>將藥物實驗室相關工作移動到獨立的工作類型。</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>將化學精煉工作移動到獨立的工作類型。</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>將石材切割工作移動到獨立的工作類型。</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>將冶煉工作移動到獨立的工作類型。</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>將裝載運輸隊相關工作移動到獨立的工作類型。</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>將屍體和火化相關工作移動到獨立的工作類型。</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>將向藍圖運送材料的工作移動到獨立的工作類型。</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>將掃描工作移動到獨立的工作類型。</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>

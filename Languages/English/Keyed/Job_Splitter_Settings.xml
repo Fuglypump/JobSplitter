@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <JobSplitterModWarning>For any changed settings to take effect the game must be restarted.</JobSplitterModWarning>
+  <JobSplitterWorktypeSettingsTitle>Worktype Settings</JobSplitterWorktypeSettingsTitle>
+  <JobSplitterSurgeonWorktypeTitle>Surgeon</JobSplitterSurgeonWorktypeTitle>
+  <JobSplitterNursingWorktypeTitle>Nursing</JobSplitterNursingWorktypeTitle>
+  <JobSplitterNursingPrisonersTitle>Nurses care for prisoners</JobSplitterNursingPrisonersTitle>
+  <JobSplitterNursingBabiesTitle>Nurses care for babies.</JobSplitterNursingBabiesTitle>
+  <JobSplitterTeachingWorktypeTitle>Teaching Children</JobSplitterTeachingWorktypeTitle>
+  <JobSplitterRearmingWorktypeTitle>Rearming and Refueling</JobSplitterRearmingWorktypeTitle>
+  <JobSplitterRearmingRechargeTitle>Recharging mechanoids</JobSplitterRearmingRechargeTitle>
+  <JobSplitterRecruitingWorktypeTitle>Recruiting prisoners</JobSplitterRecruitingWorktypeTitle>
+  <JobSplitterTrainingWorktypeTitle>Training animals</JobSplitterTrainingWorktypeTitle>
+  <JobSplitterTamingWorktypeTitle>Taming animals</JobSplitterTamingWorktypeTitle>
+  <JobSplitterButcheringWorktypeTitle>Butchering corpses</JobSplitterButcheringWorktypeTitle>
+  <JobSplitterButcheringSlaughterTitle>Butchers slaughter animals</JobSplitterButcheringSlaughterTitle>
+  <JobSplitterButcheringExecutionTitle>Butchers execute prisoners</JobSplitterButcheringExecutionTitle>
+  <JobSplitterBrewingWorktypeTitle>Brewing</JobSplitterBrewingWorktypeTitle>
+  <JobSplitterRepairingWorktypeTitle>Repairing</JobSplitterRepairingWorktypeTitle>
+  <JobSplitterDemolishingWorktypeTitle>Demolishing</JobSplitterDemolishingWorktypeTitle>
+  <JobSplitterHarvestingWorktypeTitle>Harvesting</JobSplitterHarvestingWorktypeTitle>
+  <JobSplitterDrillingWorktypeTitle>Drilling</JobSplitterDrillingWorktypeTitle>
+  <JobSplitterFabricatingWorktypeTitle>Fabrication</JobSplitterFabricatingWorktypeTitle>
+  <JobSplitterDrugsWorktypeTitle>Drug Production</JobSplitterDrugsWorktypeTitle>
+  <JobSplitterRefiningWorktypeTitle>Refining</JobSplitterRefiningWorktypeTitle>
+  <JobSplitterStonecuttingWorktypeTitle>Stonecutting</JobSplitterStonecuttingWorktypeTitle>
+  <JobSplitterSmeltingWorktypeTitle>Smelting</JobSplitterSmeltingWorktypeTitle>
+  <JobSplitterLoadingWorktypeTitle>Loading</JobSplitterLoadingWorktypeTitle>
+  <JobSplitterMortifyingWorktypeTitle>Mortifying</JobSplitterMortifyingWorktypeTitle>
+  <JobSplitterDeliveringWorktypeTitle>Delivering</JobSplitterDeliveringWorktypeTitle>
+  <JobSplitterScanningWorktypeTitle>Scanning</JobSplitterScanningWorktypeTitle>
+  <JobSplitterAdditionalSettingsTitle>Additional Settings</JobSplitterAdditionalSettingsTitle>
+  <JobSplitterSurgeonWorktypeTooltip>Moves surgery related tasks to their own worktype.</JobSplitterSurgeonWorktypeTooltip>
+  <JobSplitterNursingWorktypeTooltip>Moves feeding, visiting and moving patients to their own worktype.</JobSplitterNursingWorktypeTooltip>
+  <JobSplitterNursingPrisonersTooltip>Moves feeding prisoners to the Nursing worktype.</JobSplitterNursingPrisonersTooltip>
+  <JobSplitterNursingBabiesTooltip>Moves all baby related tasks to the Nursing worktype.</JobSplitterNursingBabiesTooltip>
+  <JobSplitterTeachingWorktypeTooltip>Moves teaching children to its own worktype.</JobSplitterTeachingWorktypeTooltip>
+  <JobSplitterRearmingWorktypeTooltip>Moves rearming traps and refueling buildings to their own worktype.</JobSplitterRearmingWorktypeTooltip>
+  <JobSplitterRearmingRechargeTooltip>Adds hauling mechanoids to charging stations to the Rearming Worktype. (Haulers will still perform this task)</JobSplitterRearmingRechargeTooltip>
+  <JobSplitterRecruitingWorktypeTooltip>Moves chatting with prisoners to its own worktype. (Will also convert and enslave prisoners if Ideology is enabled)</JobSplitterRecruitingWorktypeTooltip>
+  <JobSplitterTrainingWorktypeTooltip>Moves training animals to its own worktype.</JobSplitterTrainingWorktypeTooltip>
+  <JobSplitterTamingWorktypeTooltip>Moves taming animals to its own worktype.</JobSplitterTamingWorktypeTooltip>
+  <JobSplitterButcheringWorktypeTooltip>Moves butchering related tasks to their own Worktype.</JobSplitterButcheringWorktypeTooltip>
+  <JobSplitterButcheringSlaughterTooltip>Adds slaughtering animals to the Butchering Worktype. (Handlers will still perform this task)</JobSplitterButcheringSlaughterTooltip>
+  <JobSplitterButcheringExecutionTooltip>Adds prisoner execution to the Butchering Worktype. (Wardens will still perform this task)</JobSplitterButcheringExecutionTooltip>
+  <JobSplitterBrewingWorktypeTooltip>Moves brewing related tasks to their own Worktype.</JobSplitterBrewingWorktypeTooltip>
+  <JobSplitterRepairingWorktypeTooltip>Moves repairing related tasks to their own Worktype.</JobSplitterRepairingWorktypeTooltip>
+  <JobSplitterDemolishingWorktypeTooltip>Moves demolition related tasks to their own Worktype. (Construct will still build roofs and deconstruct things underneath blueprints)</JobSplitterDemolishingWorktypeTooltip>
+  <JobSplitterHarvestingWorktypeTooltip>Moves plant harvesting related tasks to their own Worktype.</JobSplitterHarvestingWorktypeTooltip>
+  <JobSplitterDrillingWorktypeTooltip>Moves drilling related tasks to their own Worktype.</JobSplitterDrillingWorktypeTooltip>
+  <JobSplitterFabricatingWorktypeTooltip>Moves fabrication bench related tasks to their own Worktype.</JobSplitterFabricatingWorktypeTooltip>
+  <JobSplitterDrugsWorktypeTooltip>Moves drug lab related tasks to their own Worktype.</JobSplitterDrugsWorktypeTooltip>
+  <JobSplitterRefiningWorktypeTooltip>Moves chemical refining tasks to their own Worktype.</JobSplitterRefiningWorktypeTooltip>
+  <JobSplitterStonecuttingWorktypeTooltip>Moves stonecutting tasks to their own Worktype.</JobSplitterStonecuttingWorktypeTooltip>
+  <JobSplitterSmeltingWorktypeTooltip>Moves smelting tasks to their own Worktype.</JobSplitterSmeltingWorktypeTooltip>
+  <JobSplitterLoadingWorktypeTooltip>Moves caravan loading related tasks to their own Worktype.</JobSplitterLoadingWorktypeTooltip>
+  <JobSplitterMortifyingWorktypeTooltip>Moves corpse and cremation related tasks to their own Worktype.</JobSplitterMortifyingWorktypeTooltip>
+  <JobSplitterDeliveringWorktypeTooltip>Moves delivering materials to blueprints tasks to their own Worktype.</JobSplitterDeliveringWorktypeTooltip>
+  <JobSplitterScanningWorktypeTooltip>Moves scanning tasks to their own Worktype.</JobSplitterScanningWorktypeTooltip>
+
+</LanguageData>
